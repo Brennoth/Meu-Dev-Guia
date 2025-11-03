@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/python.css">
+    <link rel="stylesheet" href="css/python.scss">
+    <!--FONTE-ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--FONTE-ICONS-->
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header_nav">
+
+            <div class="header_nav_logo">
+                <figure>
+                    <a href="python.html">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt=""
+                            width="50">
+                    </a>
+                </figure>
+                <p>Python</p>
+            </div>
+
+            <a href="../index.html"><i class="fas fa-home"></i> Início</a>
+
+        </nav>
+
+    </header>
+
+    <div class="containerMain">
+
+        <address class="address">
+            <nav class="address_nav">
+                <ul class="address_nav_list-link">
+
+                    <li><a href="#infos">Infos</a></li>
+
+                    <!--Bibliotecas em python-->
+                    <li class="li-bibliotecas">
+                        <button class="btn-bibliotecas">Bibliotecas ▾</button>
+                        <ul class="li-bibliotecas_list">
+                            <li><a href="#math">Math</a></li>
+                            <li><a href="#random">Random</a></li>
+                            <li><a href="#time">Time</a></li>
+                        </ul>
+                    </li>
+
+                    <!--Bibliotecas em python com IA-->
+                    <li class="li-IA">
+                        <button class="btn-IA">IA ▾</button>
+                        <ul class="li-IA_list">
+                            <li><a href="#numpy">Numpy</a></li>
+                            <li><a href="#pandas">Pandas</a></li>
+                            <li><a href="#matplotlib.pyplot">Matplotlib.pyplot</a></li>
+                            <li><a href="#seaborn">Seaborn</a></li>
+                            <li><a href="#plot.express">Ploty Express</a></li>
+                        </ul>
+                    </li> 
+
+                    <li><a href="#condicao">codição</a></li>
+                    <li><a href="#estruturaDeRepetição">Estrutura de repetição</a></li>
+                    <li><a href="#array">Array = Tupla</a></li>
+                    <li><a href="#lista">Lista</a></li>
+                    <li><a href="#dicionario">Dicionario</a></li>
+                    <li><a href="#matriz">Matrizes</a></li>
+                    <li><a href="#função">Função</a></li>
+                    <li><a href="#tratamentoDeErros">Tratamento de Erros</a></li>
+                    <li><a href="#arquivos">Arquivos</a></li>
+
+                </ul>
+            </nav>
+        </address>
+
+
+        <main class="main largura-definida">
+
+
+            <section class="main_infos" id="infos">
+                <h1 class="main_infos_title">Python</h1>
+
+                <div class="main_infos_content">
+                    <h2>Identificadores</h2>
+                    <ul>
+                        <li>Podem começar com letra ou <code class="traço">_</code></li>
+                        <li>Não podem começar com número</li>
+                        <li>É possível usar letras ou números</li>
+                        <li>É possível usar acentos e símbolos</li>
+                        <li>Não podem conter espaços</li>
+                        <li>Não podem ser palavras reservadas</li>
+                    </ul>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Tipos primitivos</h2>
+                    <ul>
+                        <li><strong>int:</strong> numeros inteiros <strong> ex: </strong>7, -4, 0</li>
+                        <li><strong>floot:</strong> numeros reais <strong>ex:</strong> 4.5 | 0.076</li>
+                        <li><strong>bool:</strong> valores logicos <strong>ex:</strong> true,false</li>
+                        <li><strong>string:</strong> textos<strong> ex:</strong> "ola", "7.5"</li>
+
+                    </ul>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Operadores Aritmeticos</h2>
+                    <ul class="main_infos_content_list-operadores">
+                        <li><strong>+</strong> Adição <strong>ex: </strong> 5+2 = 7</li>
+                        <li><strong>-</strong> Subtração <strong>ex: </strong> 5-2 = 3</li>
+                        <li><strong>*</strong> Multipliacação <strong>ex: </strong> 5*2 = 10</li>
+                        <li><strong>/</strong> Divisão <strong>ex: </strong> 5/2 = 2.5</li>
+                        <li><strong>**</strong> Potência <strong>ex: </strong> 5**2 = 25</li>
+                        <li><strong>//</strong> Divisão inteira <strong>ex: </strong> 5//2 = 2</li>
+                        <li><strong>%</strong> Resto da divisão <strong>ex: </strong> 5%2 = 1</li>
+
+
+                    </ul>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Ordem de procedencia</h2>
+                    <ol class="main_infos_content_list-procedencia">
+                        <li>()</li>
+                        <li>**</li>
+                        <li>* / // %</li>
+                        <li>+ -</li>
+                    </ol>
+
+
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Auto-atribuição</h2>
+                    <p>n = 3</p>
+                    <p>n = n + 4</p>
+                    <p>7</p>
+                    <h3>Simplificando</h3>
+                    <p>n = 3</p>
+                    <p>n += 4</p>
+                    <p>7</p>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Relacionais</h2>
+                    <ul class="main_infos_content_list-relacionais">
+                        <li><strong>></strong> maior </li>
+                        <li><strong>&lt;</strong> menor</li>
+                        <li><strong>>=</strong> maior ou igual</li>
+                        <li><strong>&lt;=</strong> menor ou igual</li>
+                        <li><strong>==</strong> igual</li>
+                        <li><strong>!=</strong> não igual</li>
+                        <li><strong>is</strong> indentico</li>
+                    </ul>
+
+
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Operadores lógicos</h2>
+                    <ul class="main_infos_content_listOperadores">
+                        <li><strong>not</strong> negação <span>quero uma caneta azul <span>não</span> vermelha</span>
+                        </li>
+                        <li><strong>and</strong> conjunção <span>quero uma caneta azul <span>e</span> vermelha</span>
+                        </li>
+                        <li><strong>or</strong> disjunção <span>quero uma caneta azul <span>ou</span> vermelha</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="main_infos_content import">
+                    <h2>Importar arquivos</h2>
+                    <p>import <span>nome do arquivo</span> as <span>apelido do arquivo para usar</span></p>
+
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>ERROS</h2>
+                    <ul class="main_infos_content_listOperadores">
+                        <li><strong>NameError:</strong> Variavel não foi definida</li>
+                        <li><strong>TypeError:</strong> Tipos d dados incompatíveiis</li>
+                        <li><strong>RuntimeError:</strong> Erro de execução</li>
+                        <li><strong>SytaxError:</strong> Sintaxe digitada é invalida e não reconhecida pelo
+                            interpretador</li>
+                        <li><strong>ValueError:</strong> Acontece quando o tipo do dado está certo, mas o valor em si
+                            não é válido para a operação.</li>
+                        <li><strong>ZeroDivisionErrror:</strong> Divisão por zero</li>
+                        <li><strong>IndiceError:</strong> Indice está fora da coleção</li>
+                    </ul>
+
+                </div>
+
+
+            </section>
+
+
+            <!--Bibliotecas em python-->
+            <div id="bibliotecas">
+                <section class="main_caixa" id="math">
+                    <h1 class="main_caixa_title">Bibliotecas</h1>
+
+                    <div class="main_caixa_container">
+                        <h2 class="main_caixa_title2">Math</h2>
+                        <div class="main_caixa_container_codes">
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                    import math
+                
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Importar o math</p>
+                                </div>
+                            </div>
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                    match.Sqrt(<span>9</span>)
+                
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Descubrir a raiz quadrada</p>
+                                </div>
+                            </div>
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                    math.sin(<span>45</span>)
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Descubrir o seno</p>
+
+                                </div>
+                            </div>
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                            math.cos(<span>45</span>)
+                                                                        </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Descubrir o cseno</p>
+
+                                </div>
+                            </div>
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                            math.log(<span>1000,10</span>)
+                                                                        </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Logaritmo</p>
+
+                                </div>
+                            </div>
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                            math.pi
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Descubrir o valor do PI</p>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                </section>
+
+                <section class="main_caixa" id="random">
+
+                    <div class="main_caixa_container">
+                        <h2 class="main_caixa_title2">Random</h2>
+                        <div class="main_caixa_container_codes">
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                import random
+                
+                                                            </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Importar o random</p>
+                                </div>
+                            </div>
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                random.random()
+                
+                                                            </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Número aleatório</p>
+                                </div>
+                            </div>
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                random.randint(<span>1</span> <span>5</span>)
+                                                            </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>para gerar numeros aleatorios entre <strong>n</strong> a <strong>n</strong></p>
+
+                                </div>
+                            </div>
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                                        random.randrange(<span>0</span>, <span>10</span>, <span>2</span>)
+                                                                                    </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Parar gerar numero e escolher por exemplo so pode numero par, de 0 ate 10, porem
+                                        so em dois em
+                                        dois</p>
+
+                                </div>
+                            </div>
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                                        random.choice(<span>variavel</span>)
+                                                                                    </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Para selecionar qualquer dado em lista</p>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </section>
+
+                <section class="main_caixa" id="time">
+
+                    <div class="main_caixa_container">
+                        <h2 class="main_caixa_title2">Time</h2>
+                        <div class="main_caixa_container_codes">
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                            import time as <span>tm</span>
+                
+                                                                        </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Importar o time</p>
+                                </div>
+                            </div>
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                            <span>tm</span>.time()
+                
+                                                                        </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Mostrar quanto tempo levou para executar</p>
+                                </div>
+                            </div>
+
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                            <span>tm</span>.sleep(<span>2</span>)
+                                                                        </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Parar o tempo por segundos</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </section>
+            </div>
+
+            <!--Bibliotecas em python com IA-->
+            <div id="bibliotecas-ia">
+                <section class="main_caixa" id="numpy">
+                    <h1 class="main_caixa_title">Bibliotecas em python IA</h1>
+                
+                    <div class="main_caixa_container">
+                        <h2>NUMPY</h2>
+                        <div class="main_caixa_container_codes">
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                    import numpy as <span>np</span>
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Importar a biblioteca, que serve para calculos matemáticos e arrays</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                    pip install numpy
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Para instalar a biblioteca</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                    <span>np</span>.unique(<span>variavel</span>)
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Encontrar valores únicos, valores sem repetição</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                    <span>np</span>.unique(<span>variavel, </span>return_counts=True)
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Encontrar valores únicos, valores sem repetição, e o "return_counts=True" também
+                                        retorna quantas vezes cada valor aparece.</p>
+                                </div>
+                            </div>
+                
+                
+                
+                        </div>
+                
+                    </div>
+                
+                
+                </section>
+                
+                <section class="main_caixa" id="pandas">
+                
+                    <div class="main_caixa_container">
+                        <h2 class="main_caixa_title2">Pandas</h2>
+                        <div class="main_caixa_container_codes">
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                import pandas as <span>pd</span>
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Importar a biblioteca, que serve para manipular dados</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                pip install pandas
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Para instalar a biblioteca</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                    <span>dados = pd</span>.read_CSV("")
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Ler o arquivo .CSV</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                    <span>variavel</span>.head(<span>10</span>)
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Mostrar as 10 primeiras linhas no arquivo, ou outros valores</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                    <span>variavel</span>.tail(<span>10</span>)
+                                                       
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Mostrar as 10 ultimas linhas no arquivo, ou outros valores</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                    <span>variavel</span>.describe()
+                                                                               
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Mostrar as estatisticas <br>
+                                        <strong>count:</strong>número de valores não nulos <br>
+                                        <strong>mean:</strong> média <br>
+                                        <strong>std:</strong> desvio padrão ele mede o quanto os valores de uma coluna
+                                        variam em relação à média. <br>
+                                        <strong>min:</strong> valor mínimo <br>
+                                        <strong>25%:</strong> primeiro quartil <br>
+                                        <strong>50%:</strong> mediana (segundo quartil) <br>
+                                        <strong>75%:</strong> terceiro quartil <br>
+                                        <strong>max:</strong> valor máximo
+                                    </p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                    <span>variavel</span>.loc[<span>variavel["nome da coluna"] &lt; 0</span>]                              
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>E usado para selecionar linha com base em uma condição</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                            <span>variavel</span>.mean()
+                                                                               
+                                                </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Saber a média aritmética</p>
+                                </div>
+                            </div>
+                
+                
+                
+                
+                        </div>
+                
+                    </div>
+                
+                
+                </section>
+
+                <section class="main_caixa" id="matplotlib.pyplot">
+                    <div class="main_caixa_container">
+                        <h2 class="main_caixa_title2">Matplotlib.pyplot</h2>
+                        <div class="main_caixa_container_codes">
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                    import matplotlib.pyplot as <span>plt</span>
+                                    </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Importar a biblioteca, oferece uma interface de alto nível para criar gráficos em Python</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                    pip install matplotlib
+                                    </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Para instalar a biblioteca</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                        <span>plt</span>.show()
+                                    </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Mostrar o grafico na tela</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                        <span>plt</span>.hist ( x = <span>variavel["coluna"]</span>)
+                                    </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p> Mostra a distribuição dos dados numéricos, quantas vezes certos valores aparecem no intervalo </p>
+                                </div>
+                            </div>
+                
+                
+                
+                        </div>
+                
+                    </div>
+                
+                
+                </section>
+
+                <section class="main_caixa" id="seaborn">
+                    <div class="main_caixa_container">
+                        <h2 class="main_caixa_title2">Seaborn</h2>
+                        <div class="main_caixa_container_codes">
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                                    import seaborn as <span>sns</span>
+                                    </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Importar a biblioteca, cria gráficos estatísticos atraentes e informativos de forma mais fácil, depende do <strong>Matplotlib.pyplot</strong></p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                                    pip install seaborn
+                                    </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Para instalar a biblioteca</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                         <span>sns</span>.counplot(x = <span>variavel["coluna da variavel"]</span>) <br>
+                                         <span>plt.show()</span>
+                                    </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Contas quantas vezes cada categoria aparece, e precisa espesificar a coluna</p>
+                                </div>
+                            </div>
+                
+                
+                
+                
+                        </div>
+                
+                    </div>
+                
+                
+                </section>
+
+                <section class="main_caixa" id="plot.express">
+                    <div class="main_caixa_container">
+                        <h2 class="main_caixa_title2">Plot.express</h2>
+                        <div class="main_caixa_container_codes">
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                                                    import plotly.express as <span>px</span>
+                                                    </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Importar a biblioteca, cria gráficos estatísticos atraentes e informativos de forma mais fácil,
+                                        depende do <strong>Matplotlib.pyplot</strong></p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                                                                                    pip install plotly--upgrade
+                                                    </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Para instalar a biblioteca</p>
+                                </div>
+                            </div>
+                
+                            <div class="main_caixa_container_codes_itens">
+                                <div class="main_caixa_container_codigo">
+                                    <code>
+                                        <span>grafico</span> = <span>px</span>.scatter_matrix() <br>
+                                        <span>grafico</span>.show
+                                    </code>
+                                </div>
+                                <div class="main_caixa_container_explicacao">
+                                    <h2>Explicação:</h2>
+                                    <p>Criar uma matrix de graficos de dispersão</p>
+                                </div>
+                            </div>
+                
+                
+                
+                
+                        </div>
+                
+                    </div>
+                
+                
+                </section>
+
+                
+
+            </div>
+
+
+
+            <section class="main_caixa" id="condicao">
+                <h1 class="main_caixa_title">Condição</h1>
+
+                <div class="main_caixa_container">
+                    <h2>If</h2>
+                    <div class="main_caixa_container_codigo">
+                        <code>
+                        if <span>5 > 10</span>: <br>
+                        <span class="espaco">print ("<span>5 e maior</span>") <br></span>
+                        else: <br>
+                        <span class="espaco">print ("<span>5 não e maior</span>")</span>
+                    </code>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section class="main_repetição" id="estruturaDeRepetição">
+
+                <h1 class="main_repetição_title">Estrutura de repetição</h1>
+
+                <div class="main_repetição_content">
+                    <h2>For</h2>
+
+                    <div class="main_container_content_codigo">
+                        <code>
+                                for <span>variavel</span> in range (<span>1(Inicio),5(Fim)</span>): <br>
+                                <span class="espaço">print (<span>variavel</span>)</span> <br>
+
+                                <span class="ou">Ou</span>
+
+                                for <span>variavel</span> in range (<span>1(Inicio),5(Fim),2(passo)</span>): <br>
+                                <span class="espaço">print (<span>variavel</span>)</span>
+                            </code>
+                    </div>
+
+                </div>
+                <div class="main_repetição_content">
+                    <h2>While</h2>
+                    <div class="main_container_content_codigo">
+                        <code>
+                                n1 = 1 <br>
+                                while <span>n1</span> < 6: <br>
+                                      <span class="espaço">print (<span>n1</span>) <br></span>
+                                      <span class="espaço"><span>n1</span>+ = 1</span>
+                                      
+                            </code>
+                    </div>
+                    <div class="main_container_content_text">
+                        <h3>Explicação</h3>
+                        <p>Enquanto n1 for menor a 6 faça</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="main_caixa" id="array">
+                <h1 class="main_caixa_title">Array = Tupla</h1>
+
+                <div class="main_caixa_container">
+                    <h2>Array ( )</h2>
+                    <div class="main_caixa_container_codigo">
+
+                        <code>
+                            <span>nome</span> = ("<span>maça</span>", "<span>abacate</span>")<br>
+                        </code>
+                    </div>
+
+                    <div class="main_caixa_container_explicacao main_caixa_container_explicacao-doisCodigos">
+                        <h2>Explicação:</h2>
+                        <p>Depois de criado não pode ser mudado</p>
+                    </div>
+
+                    <h2>Código</h2>
+                    <div class="main_caixa_container_codigo">
+                        <code>
+                            <span>nome</span>=  [<span>0</span>]
+                        </code>
+                    </div>
+
+                    <div class="main_caixa_container_explicacao">
+                        <h2>Explicação:</h2>
+                        <p>Escolher o valor no array</p>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section class="main_caixa" id="lista">
+                <h1 class="main_caixa_title">Lista</h1>
+
+                <div class="main_caixa_container">
+                    <h2>Lista [ ]</h2>
+                    <div class="main_caixa_container_codigo">
+                        <code>
+                            <span>nome</span>= ["<span>maça</span>", "<span>abacate</span>"]
+                                
+                        </code>
+                    </div>
+                    <div class="main_caixa_container_explicacao main_caixa_container_explicacao-doisCodigos">
+                        <h2>Explicação:</h2>
+                        <p>A lista pode ser alterado, pode adicionar ou remover</p>
+                    </div>
+
+
+                    <h2>Códigos</h2>
+
+
+                    <div class="main_caixa_container_codes">
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                <span>nome</span>=  [<span>0</span>]
+                            </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Escolher o valor no array</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                 <span>nome</span>.append("<span>uva</span>")
+                            </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Adicionar mais elementos na lista</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                <span>nome</span>.remove("<span>maça</span>")
+                            </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Remover algum elemento na lista</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                del(<span>nome</span>)
+                            </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Apagar uma lista</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                set(<span>variavel</span>)
+                            </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Seleciona os dados unicos, ou seja dados repetidos irão so aparecer uma vez, funciona
+                                    tanto
+                                    em listas e tuplas</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section class="main_caixa" id="dicionario">
+                <h1 class="main_caixa_title">Dicionario</h1>
+
+                <div class="main_caixa_container">
+                    <h2>Dicionario { }</h2>
+                    <div class="main_caixa_container_codigo">
+                        <code>
+                            <span>aluno</span> = {"<span>nome</span>": "<span>brenno</span>",<br>
+                                                  <span class="espacoMais">"<span>idade</span>": <span>20,</span></span> <br>
+                                                  <span class="espacoMais">"<span>cidade</span>": <span>"RJ"</span></span> <br>}
+                        </code>
+                    </div>
+                    <div class="main_caixa_container_explicacao main_caixa_container_explicacao-doisCodigos">
+                        <h2>Explicação:</h2>
+                        <p>Um dicionário é uma coleção não ordenada. <br>
+                            Os elementos são guardados em pares chave-valor. <br>
+                            A chave funciona como um identificador único. <br>
+                            O valor é o dado que você quer guardar. <br>
+                            A vantagem é que você não precisa lembrar a posição (índice), só a chave.</p>
+                        <p>Use dicionário quando cada dado precisa de uma “etiqueta” (chave) para ser encontrado
+                            rapidamente.</p>
+                    </div>
+
+
+                    <h2>Códigos</h2>
+
+
+                    <div class="main_caixa_container_codes">
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    <span>aluno</span> = ["<span>nome</span>"]
+                                    
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Acessando as <strong>Chaves</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    <span>aluno</span> = ["<span>sobrenome</span>"] = "<span>thiago</span>"
+                                        
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Adicionando uma <strong>chave</strong> com um <strong>dado</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                            del(<span>aluno</span>)
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Apagando um dicionario</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    <span>aluno</span>.keys()
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Mostrar apenas as <strong>chaves</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    <span>aluno</span>.values()
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Mostrar os <strong>dados</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                                            <span>aluno</span>.update(<span>nome</span>)
+                                                        </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>concatenando dois dicionarios</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    <span>aluno</span>.items()
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Mostrar o dicionario</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section class="main_caixa" id="matriz">
+                <h1 class="main_caixa_title">Matrizes</h1>
+
+                <div class="main_caixa_container">
+                    <h2>Matriz</h2>
+                    <div class="main_caixa_container_codes">
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    import numpy as <span>np</span>         
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Para criar matrizes, tem que ter uma biblioteca</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    pip install numpy
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Para instalar terminal</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    <span>np</span>.array()
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>transforma a lista em array</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    <span>matriz</span> = <span>np</span>.array([[<span>2,3,1</span>], [<span>4,5,7</span>]])
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>cria o array</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    <span>matriz</span>.shape
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>mostra quantidade de linhas e colunas</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    <span>matriz</span>[0]
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>mostra a primeira linha</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                                            <span>matriz</span>[1]
+                                                        </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>mostra as colunas</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                                            <span>matriz</span>[0] [0]
+                                                        </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>mostra os dados</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section class="main_caixa" id="função">
+                <h1 class="main_caixa_title">Função</h1>
+
+                <div class="main_caixa_container">
+                    <h2>Função</h2>
+                    <div class="main_caixa_container_codes">
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    def <span>mensagem</span>(): <br>
+                                    <span class="espaco"><span>print("ola mundo")</span></span>
+                                                       
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Criando uma função</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    def <span>somar</span>(<span>numero</span>): <br>
+                                    <span class="espaco"> <span>res = numero + 5</span></span> <br>
+                                    <span>somar(2)</span>
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p><strong>Parâmetro </strong>na função e uma variavel que a função recebe para
+                                    trabalhar.</p>
+                                <p>E o <strong>argumento </strong>e a chama da função e o valor que passa na função.</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                        def <span>somar</span>(<span>numero</span>): <br>
+                                        <span class="espaco"> return =<span> numero + 5</span></span> <br>
+                                        <span>somar(2)</span>
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>A função ira retornar um valor</p>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section class="main_caixa" id="tratamentoDeErros">
+                <h1 class="main_caixa_title">Tratamento de Erros</h1>
+
+                <div class="main_caixa_container">
+                    <h2>Tratamento de Erros</h2>
+                    <div class="main_caixa_container_codes">
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    try: <br>
+                                    <span class="espaco"><span>n = int(input("digite um numero"))</span></span> <br>
+                                    except: <br>
+                                    <span class="espaco"> <span>print ("so aceita numero e não string")</span></span> <br>
+                                    else: <br>
+                                    <span class="espaco"> <span>print (f"valor digitado é {n}")</span></span> <br>
+                                    <span class="ou" style="text-align: center; width: 100%; display: inline-block;">OU</span> <br>
+
+                                    try: <br>
+                                    <span class="espaco"><span>n = int(input("digite um numero"))</span></span> <br>
+                                    except <span>valueError</span>: <br>
+                                    <span class="espaco"> <span>print ("so aceita numero e não string")</span></span> <br>
+                                    else: <br>
+                                    <span class="espaco"> <span>print (f"valor digitado é {n}")</span></span> <br>
+
+                                                                                                       
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Se der erro, com isso o programa não ira parar</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section class="main_caixa" id="arquivos">
+                <h1 class="main_caixa_title">Arquivos</h1>
+
+                <div class="main_caixa_container">
+                    <h2>Arquivos</h2>
+                    <div class="main_caixa_container_codes">
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    with open ("<span>caminho da pasta</span>") as <span>text</span>: <br>
+                                    for <span>linha</span> in <span>text</span>: <br>
+                                    <span class="espaco">print (<span>linha</span>)</span> <br>
+                                    <span style="text-align: center; width: 100%; display: inline-block;">OU</span> <br>
+                                    <span>r</span> = <span>text</span>.readlins()
+                                    print(<span>r</span>)                                                                            
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Abrir um arquivo externo</p>
+                            </div>
+                        </div>
+
+                        <div class="main_caixa_container_codes_itens">
+                            <div class="main_caixa_container_codigo">
+                                <code>
+                                    with open ("<span>caminho da pasta</span>", "w") as <span>texto</span><br>
+                                    <span>texto</span>.write("<span>ola a todos</span>")                                                                       
+                                </code>
+                            </div>
+                            <div class="main_caixa_container_explicacao">
+                                <h2>Explicação:</h2>
+                                <p>Criar um arquivo</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+
+        </main>
+
+    </div>
+
+
+
+
+
+
+    <script>
+        const btnIA = document.querySelector(".btn-IA")
+        const liIA = document.querySelector(".li-IA")
+        btnIA.addEventListener("click", function () {
+            liIA.classList.toggle("open")
+        })
+
+        const btnBibliotecas = document.querySelector(".btn-bibliotecas")
+        const liBibliotecas = document.querySelector(".li-bibliotecas")
+        btnBibliotecas.addEventListener("click", function () {
+            liBibliotecas.classList.toggle("open")
+        })
+
+    </script>
+</body>
+
+</html>

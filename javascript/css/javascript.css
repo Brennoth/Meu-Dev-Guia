@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brancoClaroHover: #E7E9ED;
+  --colorLetra-cinza: #686868;
+  --colorLetraCodigo: #EBC555;
+  --colorLetraCodigoGray: #9E9E9E;
+  --colorFundoCodigo: #2D2D2D;
+  --colorTitle: #B50007;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: auto;
+  background-color: #E7E9ED;
+}
+
+.largura-definida {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.795);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+.header .header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+.header .header_nav_logo {
+  display: flex;
+  align-items: center;
+}
+.header .header_nav_logo p {
+  font-size: 1.6em;
+  margin-left: 0.5rem;
+  color: #686868;
+}
+.header .header_nav > a {
+  font-size: 1.6em;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  color: black;
+  text-decoration: none;
+}
+.header .header_nav > a:hover {
+  background-color: var(--brancoClaroHover);
+}
+
+.containerMain {
+  display: flex;
+}
+.containerMain .address {
+  position: sticky;
+  top: 0;
+  overflow-y: scroll;
+  max-height: 100vh;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.767);
+  z-index: 2;
+  background-color: white;
+  padding: 1rem 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.containerMain .address .address_nav {
+  margin-top: 6rem;
+}
+.containerMain .address .address_nav_list > li {
+  margin-bottom: 1rem;
+}
+.containerMain .address .address_nav_list > li > a {
+  width: 100%;
+  color: var(--colorLetra-cinza);
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.8em;
+  transition: all 0.3s ease-in-out;
+}
+.containerMain .address .address_nav_list > li > a:hover {
+  background-color: var(--brancoClaroHover);
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+.containerMain .main {
+  margin-top: 10rem;
+}
+.containerMain .main .main_infos {
+  background-color: white;
+  width: 70rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 8rem;
+}
+.containerMain .main .main_infos .main_infos_title {
+  font-size: 2.5em;
+  color: rgb(219, 219, 45);
+  font-weight: bold;
+  text-align: center;
+}
+.containerMain .main .main_infos .main_infos_content {
+  margin: 3rem 0;
+}
+.containerMain .main .main_infos .main_infos_content > p {
+  font-size: 1.8em;
+}
+.containerMain .main .main_infos .main_infos_content h2 {
+  color: #B50007;
+  font-size: 2em;
+  border-bottom: 2px solid #B50007;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.containerMain .main .main_infos .main_infos_content_list {
+  margin: 1rem 0;
+}
+.containerMain .main .main_infos .list-SemBolinha > li {
+  list-style: none !important;
+  margin-left: 0 !important;
+}
+.containerMain .main .main_infos .main_infos_content_list > li {
+  font-size: 1.8em;
+  list-style: disc;
+  margin-left: 2rem;
+}
+.containerMain .main .main_infos .main_infos_content_aritmeticos {
+  margin: 1rem 0;
+}
+.containerMain .main .main_infos .main_infos_content_aritmeticos > p {
+  font-size: 1.8em;
+}
+.containerMain .main .main_infos .main_infos_content_aritmeticos > p > span {
+  color: #B50007;
+  font-weight: bold;
+}
+.containerMain .main .main_caixa .codigo {
+  background-color: var(--colorFundoCodigo);
+  padding: 2rem;
+  margin: 1rem 0;
+}
+.containerMain .main .main_caixa .codigo > p {
+  color: var(--colorLetraCodigo);
+  font-size: 1.6em;
+}
+.containerMain .main .main_caixa .codigo > p > span {
+  color: var(--colorLetra-cinza);
+}
+.containerMain .main .main_caixa .main_caixa_title {
+  color: var(--colorTitle);
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 8rem;
+}
+.containerMain .main .main_caixa .main_caixa_side {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.containerMain .main .main_caixa .main_caixa_content {
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 2rem;
+  flex: 1 0 calc(33.3333333333% - 2rem);
+}
+.containerMain .main .main_caixa .main_caixa_content h2 {
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+}
+.containerMain .main .main_caixa .main_caixa_content_explicacao h3 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.containerMain .main .main_caixa .main_caixa_content_explicacao p {
+  font-size: 1.6em;
+}
+.containerMain .main .main_caixa .span-MaisEspaco {
+  margin-left: 2rem;
+}
+.containerMain .main .main_caixa .span-MuitoMaisEspaco {
+  margin-left: 4rem;
+}
+.containerMain .main .main_caixa p > .spanDentroDeSpan {
+  color: var(--colorLetraCodigo) !important;
+}
+.containerMain .main .main_caixa p > .spanDentroDeSpan > span {
+  color: var(--colorLetra-cinza);
+}/*# sourceMappingURL=javascript.css.map */

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/javascript.scss">
+    <link rel="stylesheet" href="css/javascript.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--FONTE-ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--FONTE-ICONS-->
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="header_nav">
+
+            <div class="header_nav_logo">
+                <figure>
+                    <a href="javascript.html">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="" width="50">
+                    </a>
+                </figure>
+                <p>Javascript</p>
+            </div>
+
+            <a href="../index.html"><i class="fas fa-home"></i> Início</a>
+
+        </nav>
+    </header>
+
+    <div class="containerMain">
+        <address class="address">
+            <nav class="address_nav">
+                <ul class="address_nav_list">
+                    <li><a href="#infos">Infos</a></li>
+                    <li><a href="#dom">DOM</a></li>
+                    <li><a href="#condicao">Condição</a></li>
+                    <li><a href="#switch">Switch</a></li>
+                </ul>
+            </nav>
+        </address>
+
+        <main class="main largura-definida">
+            <section id="infos" class="main_infos">
+                <h1 class="main_infos_title">JavaScript</h1>
+
+                <div class="main_infos_content">
+                    <h2>Indentificadores</h2>
+                    <ul class="main_infos_content_list">
+                        <li>Podem começar com <strong>letra, $ ou _</strong></li>
+                        <li>Não podem começar com <strong>números</strong></li>
+                        <li>É possivel usar <strong>letras</strong> ou <strong>numeros</strong></li>
+                        <li>É possibel usar <strong>acentos</strong> e <strong>símbolos</strong></li>
+                        <li>Não podem conter <strong>espaços</strong></li>
+                        <li>Não podem ser <strong>palavras reservadas</strong></li>
+                    </ul>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Tipos Primitivos</h2>
+                    <ul class="main_infos_content_list">
+                        <li>Number
+                            <ul style="list-style: circle;
+                            margin-left: 2rem;">
+                                <li>Infinity</li>
+                                <li>NAN</li>
+                            </ul>
+                        </li>
+                        <li>String</li>
+                        <li>boolean (true ou false)</li>
+                        <li>undefined</li>
+                        <li>Null</li>
+
+
+                    </ul>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Operadores Aritmeticos</h2>
+                    <div class="main_infos_content_aritmeticos">
+                        <p>5 <span>+</span> 2 = 7 Adição</p>
+                        <p>5 <span>-</span> 2 = 3 Subtração</p>
+                        <p>5 <span>*</span> 2 = 10 Multiplicação</p>
+                        <p>5 <span>/</span> 2 = 2.5 Divisão</p>
+                        <p>5 <span>%</span> 2 = 1 Resto da divisão</p>
+                        <p>5 <span>**</span> 2 = 25 Potencia</p>
+                    </div>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Ordem De Precedência</h2>
+                    <ol style="list-style: decimal;
+                    font-size: 1.8em;
+                    margin-left: 2rem;">
+                        <li>()</li>
+                        <li>**</li>
+                        <li>* / %</li>
+                        <li>+ -</li>
+                    </ol>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Auto-Atribuição</h2>
+                    <p>Var n = 3</p>
+                    <p>n = n + 4</p>
+                    <p>7</p>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>simplificando</h2>
+                    <p>Var n = 3</p>
+                    <p>n += 4</p>
+                    <p>7</p>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Incremento</h2>
+                    <p>Var n = 3</p>
+                    <p>n++</p>
+                    <p>4</p>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Relacionais</h2>
+                    <ul class="main_infos_content_list list-SemBolinha">
+                        <li><strong>&gt;</strong> maior</li>
+                        <li><strong>&lt;</strong> menor</li>
+                        <li><strong>&gt;=</strong> maior ou igual</li>
+                        <li><strong>&lt;=</strong> menor ou igual</li>
+                        <li><strong>==</strong> igual (valor)</li>
+                        <li><strong>===</strong> idêntico (valor e tipo)</li>
+                        <li><strong>!=</strong> não igual (valor)</li>
+                        <li><strong>!==</strong> não igual (valor e tipo)</li>
+                    </ul>
+
+                </div>
+
+                <div class="main_infos_content">
+
+                    <h2>Operadores lógicos</h2>
+                    <ul class="main_infos_content_list list-SemBolinha">
+                        <li><strong>!</strong> negação quero uma caneta azul <strong>não </strong>vermelha
+                        </li>
+                        <li><strong>&&</strong> conjunção quero uma caneta azul <strong>e</strong> vermelha
+                        </li>
+                        <li><strong>||</strong> disjunção quero uma caneta azu <strong>ou</strong> vermelh
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Ordem De Precedência</h2>
+                    <ol style="list-style: decimal;
+                                    font-size: 1.8em;
+                                    margin-left: 2rem;">
+                        <li>() ** / ...</li>
+                        <li>> &gt; >= ...</li>
+                        <li>!</li>
+                        <li>&&</li>
+                        <li>||</li>
+                    </ol>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Ternario</h2>
+                    <p>Teste <strong>?</strong> true <strong>:</strong> false</p>
+                    <p>let idade = 20</p>
+                    <p>let podeEntrar = idade >= 18 ? "Sim" : "Não"</p>
+                </div>
+
+
+            </section>
+
+            <section class="main_caixa" id="dom">
+                <h1 class="main_caixa_title">Selecionando elementos no DOM</h1>
+
+
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>document.getElementById("")</h2>
+                        <div class="codigo">
+                            <p><span>let titulo </span> = document.getElementById("");</p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega um elemento pelo ID</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>document.getElementsByClassName("")</h2>
+                        <div class="codigo">
+                            <p><span>let titulo </span>= document.getElementsByClassName("");</p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega vários elementos pela classe que nem CSS</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>document.getElementsByTagName("")</h2>
+                        <div class="codigo">
+                            <p><span>let titulo </span> = document.getElementsByTagName("p");</p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega pelo nome da tag (ex: p, div, h1)</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>document.getElementsByName("email")</h2>
+                        <div class="codigo">
+                            <p><span>let email </span> = document.getElementsByName("email")</p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>seleciona elementos pelo atributo name</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>document.querySelector("seletorCSS")</h2>
+                        <div class="codigo">
+                            <p><span>let titulo</span> = document.querySelector("#meuTitulo")</p>
+                            <p><span>let box</span>= document.querySelector(".container")</p>
+                            <p><span>let p </span>= document.querySelector("p")</p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega um elemento pelo ID</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>document.querySelectorAll("")</h2>
+                        <div class="codigo">
+                            <p><span>let titulo </span> = document.querySelectorAll("p"); <span>todos os p</span></p>
+                            <p><span>let titulo </span> = document.querySelectorAll(".item"); <span>todos com class
+                                    item</span></p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Retorna todos que combinarem com o seletor</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="main_caixa" id="condicao">
+
+                <h1 class="main_caixa_title">Condição</h1>
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>Condição (if / else)</h2>
+                        <div class="codigo">
+                            <p>
+                                if (<span>idade >= 18</span>) {<br>
+                                <span class="span-MaisEspaco">console.log("maior de 18")</span> <br>
+                                } else { <br>
+                                <span class="span-MaisEspaco">console.log("menor de 18")</span> <br>
+                                }
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele verifica uma condição (verdadeira ou falsa) e executa um bloco de código apenas se a
+                                condição for verdadeira.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Condição Aninhadas</h2>
+                        <div class="codigo">
+                            <p>
+                                if (<span>idade >= 18</span>) {<br>
+                                <span class="span-MaisEspaco">console.log("maior de 18")</span> <br>
+                                } else if (<span>idade >= 50</span>){ <br>
+                                <span class="span-MaisEspaco">console.log("senhor de idade")</span> <br>
+                                } else { <br>
+                                <span class="span-MaisEspaco">console.log("menor de idade")</span> <br>
+                                }
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele verifica uma condição (verdadeira ou falsa) e executa um bloco de código apenas se a
+                                condição for verdadeira.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Condição Multiplica</h2>
+                        <div class="codigo">
+                            <p> 
+                                <span>const cor = "vermelho" </span> <br>
+                                Switch (<span>cor</span>){ <br>
+                                    <span class="spanDentroDeSpan span-MaisEspaco">case <span>"vermelho"</span>:</span> <br>
+                                    <span class="span-MuitoMaisEspaco">console.log("cor quente")</span> <br>
+                                    break <br>
+
+                                    <span class="spanDentroDeSpan span-MaisEspaco">case <span>"azul"</span>:</span> <br>
+                                    <span class="span-MuitoMaisEspaco">console.log("cor fria")</span> <br>
+                                    break <br>
+
+                                    default: <br>
+                                    <span class="span-MaisEspaco">console.log("Outra cor")</span>
+                                }
+
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele verifica uma condição (verdadeira ou falsa) e executa um bloco de código apenas se a
+                                condição for verdadeira.</p>
+                    
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
