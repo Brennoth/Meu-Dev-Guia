@@ -204,4 +204,8 @@ body {
 }
 .containerMain .main .main_caixa p > .spanDentroDeSpan > span {
   color: var(--colorLetra-cinza);
+}
+
+#infos, #dom, #condicao, #estruturaDeRepeticao {
+  scroll-margin-top: 10rem;
 }/*# sourceMappingURL=javascript.css.map */
