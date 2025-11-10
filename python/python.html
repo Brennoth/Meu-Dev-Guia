@@ -43,7 +43,7 @@
 
                     <!--Bibliotecas em python-->
                     <li class="li-bibliotecas">
-                        <button class="btn-bibliotecas">Bibliotecas ▾</button>
+                        <button class="btn-bibliotecas" onclick="esconderBotaoBiblioteca()">Bibliotecas ▾</button>
                         <ul class="li-bibliotecas_list">
                             <li><a href="#math">Math</a></li>
                             <li><a href="#random">Random</a></li>
@@ -53,15 +53,15 @@
 
                     <!--Bibliotecas em python com IA-->
                     <li class="li-IA">
-                        <button class="btn-IA">IA ▾</button>
+                        <button class="btn-IA" onclick="esconderBotaoIa()">IA ▾</button>
                         <ul class="li-IA_list">
-                            <li><a href="#numpy">Numpy</a></li>
+                            <li><a href="#ia">Numpy</a></li>
                             <li><a href="#pandas">Pandas</a></li>
                             <li><a href="#matplotlib.pyplot">Matplotlib.pyplot</a></li>
                             <li><a href="#seaborn">Seaborn</a></li>
                             <li><a href="#plot.express">Ploty Express</a></li>
                         </ul>
-                    </li> 
+                    </li>
 
                     <li><a href="#condicao">codição</a></li>
                     <li><a href="#estruturaDeRepetição">Estrutura de repetição</a></li>
@@ -430,14 +430,13 @@
             </div>
 
             <!--Bibliotecas em python com IA-->
+            <button class="main_caixa_btn" onclick="esconderTitleIa()" id="ia">Bibliotecas em python IA ▾</button>
             <div id="bibliotecas-ia">
                 <section class="main_caixa" id="numpy">
-                    <h1 class="main_caixa_title">Bibliotecas em python IA</h1>
-                
                     <div class="main_caixa_container">
                         <h2>NUMPY</h2>
                         <div class="main_caixa_container_codes">
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -449,7 +448,7 @@
                                     <p>Importar a biblioteca, que serve para calculos matemáticos e arrays</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -461,7 +460,7 @@
                                     <p>Para instalar a biblioteca</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -473,7 +472,7 @@
                                     <p>Encontrar valores únicos, valores sem repetição</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -486,22 +485,22 @@
                                         retorna quantas vezes cada valor aparece.</p>
                                 </div>
                             </div>
-                
-                
-                
+
+
+
                         </div>
-                
+
                     </div>
-                
-                
+
+
                 </section>
-                
+
                 <section class="main_caixa" id="pandas">
-                
+
                     <div class="main_caixa_container">
                         <h2 class="main_caixa_title2">Pandas</h2>
                         <div class="main_caixa_container_codes">
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -513,7 +512,7 @@
                                     <p>Importar a biblioteca, que serve para manipular dados</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -525,7 +524,7 @@
                                     <p>Para instalar a biblioteca</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -537,7 +536,7 @@
                                     <p>Ler o arquivo .CSV</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -549,7 +548,7 @@
                                     <p>Mostrar as 10 primeiras linhas no arquivo, ou outros valores</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -562,7 +561,7 @@
                                     <p>Mostrar as 10 ultimas linhas no arquivo, ou outros valores</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -585,7 +584,7 @@
                                     </p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -597,7 +596,7 @@
                                     <p>E usado para selecionar linha com base em uma condição</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -610,22 +609,22 @@
                                     <p>Saber a média aritmética</p>
                                 </div>
                             </div>
-                
-                
-                
-                
+
+
+
+
                         </div>
-                
+
                     </div>
-                
-                
+
+
                 </section>
 
                 <section class="main_caixa" id="matplotlib.pyplot">
                     <div class="main_caixa_container">
                         <h2 class="main_caixa_title2">Matplotlib.pyplot</h2>
                         <div class="main_caixa_container_codes">
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -634,10 +633,11 @@
                                 </div>
                                 <div class="main_caixa_container_explicacao">
                                     <h2>Explicação:</h2>
-                                    <p>Importar a biblioteca, oferece uma interface de alto nível para criar gráficos em Python</p>
+                                    <p>Importar a biblioteca, oferece uma interface de alto nível para criar gráficos em
+                                        Python</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -649,7 +649,7 @@
                                     <p>Para instalar a biblioteca</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -661,7 +661,7 @@
                                     <p>Mostrar o grafico na tela</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -670,24 +670,25 @@
                                 </div>
                                 <div class="main_caixa_container_explicacao">
                                     <h2>Explicação:</h2>
-                                    <p> Mostra a distribuição dos dados numéricos, quantas vezes certos valores aparecem no intervalo </p>
+                                    <p> Mostra a distribuição dos dados numéricos, quantas vezes certos valores aparecem
+                                        no intervalo </p>
                                 </div>
                             </div>
-                
-                
-                
+
+
+
                         </div>
-                
+
                     </div>
-                
-                
+
+
                 </section>
 
                 <section class="main_caixa" id="seaborn">
                     <div class="main_caixa_container">
                         <h2 class="main_caixa_title2">Seaborn</h2>
                         <div class="main_caixa_container_codes">
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -696,10 +697,11 @@
                                 </div>
                                 <div class="main_caixa_container_explicacao">
                                     <h2>Explicação:</h2>
-                                    <p>Importar a biblioteca, cria gráficos estatísticos atraentes e informativos de forma mais fácil, depende do <strong>Matplotlib.pyplot</strong></p>
+                                    <p>Importar a biblioteca, cria gráficos estatísticos atraentes e informativos de
+                                        forma mais fácil, depende do <strong>Matplotlib.pyplot</strong></p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -711,7 +713,7 @@
                                     <p>Para instalar a biblioteca</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -724,22 +726,22 @@
                                     <p>Contas quantas vezes cada categoria aparece, e precisa espesificar a coluna</p>
                                 </div>
                             </div>
-                
-                
-                
-                
+
+
+
+
                         </div>
-                
+
                     </div>
-                
-                
+
+
                 </section>
 
                 <section class="main_caixa" id="plot.express">
                     <div class="main_caixa_container">
                         <h2 class="main_caixa_title2">Plot.express</h2>
                         <div class="main_caixa_container_codes">
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -748,11 +750,12 @@
                                 </div>
                                 <div class="main_caixa_container_explicacao">
                                     <h2>Explicação:</h2>
-                                    <p>Importar a biblioteca, cria gráficos estatísticos atraentes e informativos de forma mais fácil,
+                                    <p>Importar a biblioteca, cria gráficos estatísticos atraentes e informativos de
+                                        forma mais fácil,
                                         depende do <strong>Matplotlib.pyplot</strong></p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -764,7 +767,7 @@
                                     <p>Para instalar a biblioteca</p>
                                 </div>
                             </div>
-                
+
                             <div class="main_caixa_container_codes_itens">
                                 <div class="main_caixa_container_codigo">
                                     <code>
@@ -777,18 +780,18 @@
                                     <p>Criar uma matrix de graficos de dispersão</p>
                                 </div>
                             </div>
-                
-                
-                
-                
+
+
+
+
                         </div>
-                
+
                     </div>
-                
-                
+
+
                 </section>
 
-                
+
 
             </div>
 
@@ -1371,22 +1374,7 @@
 
 
 
-
-
-    <script>
-        const btnIA = document.querySelector(".btn-IA")
-        const liIA = document.querySelector(".li-IA")
-        btnIA.addEventListener("click", function () {
-            liIA.classList.toggle("open")
-        })
-
-        const btnBibliotecas = document.querySelector(".btn-bibliotecas")
-        const liBibliotecas = document.querySelector(".li-bibliotecas")
-        btnBibliotecas.addEventListener("click", function () {
-            liBibliotecas.classList.toggle("open")
-        })
-
-    </script>
+    <script src="javascript/esconderBotões.js"></script>
 </body>
 
 </html>

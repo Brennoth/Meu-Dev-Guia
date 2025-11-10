@@ -95,12 +95,19 @@ body {
 .containerMain .address .li-IA, .containerMain .address .li-bibliotecas {
   position: relative;
 }
+.containerMain .address .btn-bibliotecas {
+  transition: all 0.3s ease-in-out;
+}
 .containerMain .address .li-IA_list, .containerMain .address .li-bibliotecas_list {
-  display: none;
   margin-left: 2rem;
+  opacity: 0; /* invisível */
+  max-height: 0; /* encolhe para 0 */
+  overflow: hidden; /* esconde o conteúdo que passa do limite */
+  transition: all 0.5s ease;
 }
 .containerMain .address .li-IA.open .li-IA_list, .containerMain .address .li-bibliotecas.open .li-bibliotecas_list {
-  display: block;
+  opacity: 1; /* aparece */
+  max-height: 50rem;
 }
 .containerMain .address .address_nav_list-link a:hover {
   background-color: var(--brancoClaroHover);
@@ -108,6 +115,20 @@ body {
 }
 .containerMain .main {
   margin-top: 8rem;
+}
+.containerMain .main .main_caixa_btn {
+  text-align: center;
+  font-size: 2.5em;
+  color: red;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.containerMain .main .main_caixa_btn:hover {
+  background-color: rgb(209, 197, 197);
+  border-radius: 1rem;
 }
 .containerMain .main .main_infos {
   background: #fff;
@@ -308,7 +329,17 @@ body {
   flex: 1 1 calc(25% - 2rem);
   margin-top: 1rem;
 }
-.containerMain .main #infos, .containerMain .main #condicao, .containerMain .main #estruturaDeRepetição, .containerMain .main #array, .containerMain .main #lista, .containerMain .main #matriz, .containerMain .main #função, .containerMain .main #math, .containerMain .main #random, .containerMain .main #time, .containerMain .main #tratamentoDeErros {
+.containerMain .main #bibliotecas-ia {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.containerMain .main #bibliotecas-ia.openTitle {
+  max-height: 50000000rem;
+  opacity: 1;
+}
+.containerMain .main #infos, .containerMain .main #condicao, .containerMain .main #estruturaDeRepetição, .containerMain .main #array, .containerMain .main #lista, .containerMain .main #matriz, .containerMain .main #função, .containerMain .main #math, .containerMain .main #random, .containerMain .main #time, .containerMain .main #tratamentoDeErros, .containerMain .main #ia {
   scroll-margin-top: 10rem;
 }
 

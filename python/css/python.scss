@@ -100,12 +100,21 @@ body {
         .li-IA, .li-bibliotecas{
             position: relative;
         }
+        .btn-bibliotecas{
+            transition: all 0.3s ease-in-out;
+        }
         .li-IA_list, .li-bibliotecas_list{
-            display: none;
             margin-left: 2rem;
+
+            opacity: 0;/* invisível */
+            max-height: 0;/* encolhe para 0 */
+            overflow: hidden;/* esconde o conteúdo que passa do limite */
+            transition: all 0.5s ease;
+
         }
         .li-IA.open .li-IA_list, .li-bibliotecas.open .li-bibliotecas_list{
-            display: block;
+            opacity: 1;/* aparece */
+            max-height: 50rem;
         }
         .address_nav_list-link a:hover {
             background-color: var(--brancoClaroHover);
@@ -118,6 +127,21 @@ body {
 
     .main {
         margin-top: 8rem;
+
+        .main_caixa_btn {
+            text-align: center;
+            font-size: 2.5em;
+            color: red;
+            margin-top: 8rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            padding: 1rem;
+            transition: all 0.3s ease-in-out;
+        }
+        .main_caixa_btn:hover{
+            background-color: rgb(209, 197, 197);
+            border-radius: 1rem;
+        }
 
         .main_infos {
             background: #fff;
@@ -268,14 +292,14 @@ body {
         }
 
         .main_caixa{
-            .main_caixa_title{
-                text-align: center;
-                font-size: 2.5em;
-                color: red;
-                margin-top: 8rem;
-                margin-bottom: 2rem;
-                text-transform: uppercase;
-            }
+            .main_caixa_title {
+                    text-align: center;
+                    font-size: 2.5em;
+                    color: red;
+                    margin-top: 8rem;
+                    margin-bottom: 2rem;
+                    text-transform: uppercase;
+                }
             .main_caixa_title2{
                 margin-top: 6rem;
                 text-decoration: underline;
@@ -339,9 +363,19 @@ body {
                 margin-top: 1rem;
             }
         }
+        #bibliotecas-ia{
+           max-height: 0;
+           opacity: 0;
+           overflow: hidden;
+           transition: all 0.3s ease-in-out;
+        }
+        #bibliotecas-ia.openTitle{
+            max-height: 50000000rem;
+            opacity: 1;
+        }
 
 
-        #infos, #condicao, #estruturaDeRepetição, #array, #lista, #matriz, #função, #math, #random, #time, #tratamentoDeErros{
+        #infos, #condicao, #estruturaDeRepetição, #array, #lista, #matriz, #função, #math, #random, #time, #tratamentoDeErros, #ia{
             scroll-margin-top: 10rem;
         }
     }
@@ -361,5 +395,4 @@ body {
 }
 @media screen and (min-width: 1025px) and (max-width:1580px) { /*Telas grandes*/
 }
-
 
