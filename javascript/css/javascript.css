@@ -64,11 +64,7 @@ body {
 .header .header_nav > a:hover {
   background-color: var(--brancoClaroHover);
 }
-
-.containerMain {
-  display: flex;
-}
-.containerMain .address {
+.header .links {
   position: sticky;
   top: 0;
   overflow-y: scroll;
@@ -80,13 +76,13 @@ body {
   width: -moz-fit-content;
   width: fit-content;
 }
-.containerMain .address .address_nav {
+.header .links .links_nav {
   margin-top: 6rem;
 }
-.containerMain .address .address_nav_list > li {
+.header .links .links_nav_list > li {
   margin-bottom: 1rem;
 }
-.containerMain .address .address_nav_list > li > a {
+.header .links .links_nav_list > li > a {
   width: 100%;
   color: var(--colorLetra-cinza);
   display: inline-block;
@@ -94,7 +90,42 @@ body {
   font-size: 1.8em;
   transition: all 0.3s ease-in-out;
 }
-.containerMain .address .address_nav_list > li > a:hover {
+.header .links .links_nav_list > li > a:hover {
+  background-color: var(--brancoClaroHover);
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+
+.containerMain {
+  display: flex;
+}
+.containerMain .links {
+  position: sticky;
+  top: 0;
+  overflow-y: scroll;
+  max-height: 100vh;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.767);
+  z-index: 2;
+  background-color: white;
+  padding: 1rem 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.containerMain .links .links_nav {
+  margin-top: 6rem;
+}
+.containerMain .links .links_nav_list > li {
+  margin-bottom: 1rem;
+}
+.containerMain .links .links_nav_list > li > a {
+  width: 100%;
+  color: var(--colorLetra-cinza);
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.8em;
+  transition: all 0.3s ease-in-out;
+}
+.containerMain .links .links_nav_list > li > a:hover {
   background-color: var(--brancoClaroHover);
   border-radius: 1rem;
   transform: scale(1.1);
@@ -208,4 +239,9 @@ body {
 
 #infos, #dom, #condicao, #estruturaDeRepeticao {
   scroll-margin-top: 10rem;
-}/*# sourceMappingURL=javascript.css.map */
+}
+
+@media screen and (max-width: 767px) { /*MOBILE*/ }
+@media screen and (min-width: 768px) and (max-width: 1024px) { /*tablet*/ }
+@media screen and (min-width: 1025px) and (max-width: 1440px) { /* Estilos para monitores comuns */ }
+@media screen and (min-width: 1441px) { /* Estilos para telas grandes*/ }/*# sourceMappingURL=javascript.css.map */
