@@ -304,7 +304,18 @@ body {
  }
 
  @media screen and (min-width: 768px) and (max-width: 1024px) { /*tablet*/
-
+    .links{
+        max-width: 20rem;
+    }
+    .main{
+        flex: 1 1 0;
+    }
+    .main_infos{
+        width: auto !important;
+    }
+    .main_caixa_content{
+        flex: 1 1 calc((100% / 2) - 2rem) !important;
+    }
     
     
  }
