@@ -40,21 +40,31 @@ body {
   z-index: 99;
   /*mudando a posição dos traços de cima e de baixo*/
 }
-.header .menu-icon {
+.header .hamburguer {
+  position: relative;
+  display: none;
+}
+.header .input-hamburguer {
+  position: absolute;
+  clip-path: inset(100%);
+}
+.header .label-hamburguer {
   position: relative;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none; /* o usuario n intereja com o elemnto*/
+  display: inline-block;
+  height: 2.2rem;
 }
-.header .nav-icon { /*Criando o traço do meio*/
+.header .traço-hambuerguer { /*Criando o traço do meio*/
   background-color: #333;
   display: inline-block;
   height: 0.2rem;
   width: 2.4rem;
   position: relative;
 }
-.header .nav-icon::after, .header .nav-icon::before { /*criando os dois restante traços*/
+.header .traço-hambuerguer:after, .header .traço-hambuerguer::before { /*criando os dois restante traços*/
   content: "";
   background-color: #333;
   display: inline-block;
@@ -62,11 +72,22 @@ body {
   width: 2.4rem;
   position: absolute;
 }
-.header .nav-icon::after {
+.header .traço-hambuerguer::after {
   transform: translateY(8px);
+  transition: all 0.3s ease-in-out;
 }
-.header .nav-icon::before {
+.header .traço-hambuerguer::before {
   transform: translateY(-8px);
+  transition: all 0.3s ease-in-out;
+}
+.header .input-hamburguer:checked + .label-hamburguer .traço-hambuerguer::after {
+  transform: rotate(45deg);
+}
+.header .input-hamburguer:checked + .label-hamburguer .traço-hambuerguer::before {
+  transform: rotate(-45deg);
+}
+.header .input-hamburguer:checked + .label-hamburguer .traço-hambuerguer {
+  background-color: transparent;
 }
 .header .header_nav {
   display: flex;
@@ -281,17 +302,28 @@ body {
     padding: 0 !important;
     gap: 2rem;
   }
+  .hamburguer {
+    display: block !important;
+  }
   .links {
     position: absolute !important;
     right: 0;
     margin-top: 8rem;
-    display: none;
+    height: 0;
+    transition: all 0.3s ease-in-out !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    background-color: #CCCCCC !important;
   }
   .links_nav {
     margin-top: 0 !important;
+    padding: 1.5rem;
   }
   .links_nav_list li {
     margin-bottom: 0.5rem !important;
+  }
+  .header:has(.input-hamburguer:checked) .links {
+    height: 100vh;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) { /*tablet*/
