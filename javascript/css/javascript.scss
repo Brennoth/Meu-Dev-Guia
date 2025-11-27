@@ -38,6 +38,38 @@ body {
     top: 0;
     z-index: 99;
 
+    .hamburguer{
+        
+    }
+    .menu-icon{
+        position: relative;
+        cursor: pointer;
+        user-select: none; /* o usuario n intereja com o elemnto*/
+    }
+    .nav-icon{ /*Criando o traço do meio*/
+        background-color: #333;
+        display: inline-block;
+        height: 0.2rem;
+        width: 2.4rem;
+        position: relative;
+    }
+    .nav-icon::after, .nav-icon::before{ /*criando os dois restante traços*/
+        content: "";
+        background-color: #333;
+        display: inline-block;
+        height: 0.2rem;
+        width: 2.4rem;
+        position: absolute;
+    }
+    
+    /*mudando a posição dos traços de cima e de baixo*/
+    .nav-icon::after{
+        transform: translateY(8px);
+    }
+    .nav-icon::before{
+        transform: translateY(-8px);
+    }
+
     .header_nav {
         display: flex;
         justify-content: space-between;
@@ -299,6 +331,27 @@ body {
 
 
  @media screen and (max-width: 767px){ /*MOBILE*/
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+    .header_nav{
+        padding: 0 !important;
+        gap: 2rem;
+    }
+    .links{
+        position: absolute !important;
+        right: 0;
+        margin-top: 8rem;
+        display: none;
+    }
+    .links_nav{
+        margin-top: 0 !important;
+    }
+    .links_nav_list li{
+        margin-bottom: 0.5rem !important;
+    }
     
 
  }
@@ -316,6 +369,7 @@ body {
     .main_caixa_content{
         flex: 1 1 calc((100% / 2) - 2rem) !important;
     }
+    
     
     
  }

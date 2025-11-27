@@ -2,8 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -32,132 +31,91 @@ body {
 
 .header {
   background-color: white;
-  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.795);
-          box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.795);
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.795);
   position: fixed;
   right: 0;
   left: 0;
   top: 0;
   z-index: 99;
 }
-
 .header .header_nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 4rem;
 }
-
 .header .header_nav_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header .header_nav_logo p {
   font-size: 1.6em;
   margin-left: 0.5rem;
   color: #686868;
 }
-
 .header .header_nav > a {
   font-size: 1.6em;
   padding: 1rem;
   border-radius: 1rem;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .header .header_nav > a:hover {
   background-color: var(--brancoClaroHover);
 }
 
 .containerMain {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .containerMain .address {
   background-color: white;
   max-height: 100vh;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding: 1rem 1rem 1rem 2rem;
-  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.767);
-          box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.767);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.767);
   z-index: 2;
   overflow-y: scroll;
 }
-
 .containerMain .address .address_nav_list-link {
   margin-top: 8rem;
 }
-
 .containerMain .address .address_nav_list-link a, .containerMain .address .btn-IA, .containerMain .address .btn-bibliotecas {
   font-size: 1.8em;
   display: inline-block;
   padding: 1rem 2rem;
   border-radius: 1rem;
-  -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   margin-bottom: 1rem;
   color: var(--color-cinzaClaro);
 }
-
 .containerMain .address .btn-IA:hover, .containerMain .address .btn-bibliotecas:hover {
   background-color: var(--brancoClaroHover);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .containerMain .address .li-IA, .containerMain .address .li-bibliotecas {
   position: relative;
 }
-
 .containerMain .address .btn-bibliotecas {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .containerMain .address .li-IA_list, .containerMain .address .li-bibliotecas_list {
   margin-left: 2rem;
-  opacity: 0;
-  /* invisível */
-  max-height: 0;
-  /* encolhe para 0 */
-  overflow: hidden;
-  /* esconde o conteúdo que passa do limite */
-  -webkit-transition: all 0.5s ease;
+  opacity: 0; /* invisível */
+  max-height: 0; /* encolhe para 0 */
+  overflow: hidden; /* esconde o conteúdo que passa do limite */
   transition: all 0.5s ease;
 }
-
 .containerMain .address .li-IA.open .li-IA_list, .containerMain .address .li-bibliotecas.open .li-bibliotecas_list {
-  opacity: 1;
-  /* aparece */
+  opacity: 1; /* aparece */
   max-height: 50rem;
 }
-
 .containerMain .address .address_nav_list-link a:hover {
   background-color: var(--brancoClaroHover);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .containerMain .main {
   margin-top: 8rem;
 }
-
 .containerMain .main .main_caixa_btn {
   text-align: center;
   font-size: 2.5em;
@@ -166,15 +124,12 @@ body {
   margin-bottom: 2rem;
   text-transform: uppercase;
   padding: 1rem;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .containerMain .main .main_caixa_btn:hover {
-  background-color: #d1c5c5;
+  background-color: rgb(209, 197, 197);
   border-radius: 1rem;
 }
-
 .containerMain .main .main_infos {
   background: #fff;
   border: 2px solid #ccc;
@@ -184,23 +139,19 @@ body {
   position: relative;
   /* Efeito folha pautada */
 }
-
 .containerMain .main .main_infos .main_infos_title {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #333;
 }
-
 .containerMain .main .main_infos .main_infos_content {
   margin-bottom: 2rem;
 }
-
 .containerMain .main .main_infos .main_infos_content li {
   font-size: 1.8em;
   margin: 0.5rem 0;
 }
-
 .containerMain .main .main_infos .main_infos_content h2 {
   color: #b30000;
   font-size: 2rem;
@@ -209,130 +160,105 @@ body {
   padding-bottom: 0.3rem;
   margin-bottom: 0.8rem;
 }
-
 .containerMain .main .main_infos .import > p {
   color: var(--color-azulCodigo);
 }
-
 .containerMain .main .main_infos .import > p > span {
   color: var(--color-pretoCodgio);
 }
-
 .containerMain .main .main_infos .traço {
   background: #eee;
   padding: 2px 6px;
   border-radius: 5px;
   font-family: monospace;
 }
-
 .containerMain .main .main_infos .main_infos_content ul {
   list-style: disc;
   padding-left: 1rem;
 }
-
 .containerMain .main .main_infos .main_infos_content li {
   margin: 0.5rem 0;
 }
-
 .containerMain .main .main_infos .main_infos_content_list-operadores {
   list-style: none !important;
 }
-
 .containerMain .main .main_infos .main_infos_content_list-operadores strong:nth-child(1) {
   color: red;
   font-size: 1.6em;
 }
-
 .containerMain .main .main_infos .main_infos_content_list-procedencia {
   list-style: decimal;
   margin-left: 2rem;
 }
-
 .containerMain .main .main_infos .main_infos_content p {
   font-size: 1.8em;
 }
-
 .containerMain .main .main_infos .main_infos_content h3 {
   font-size: 2em;
-  color: #101052;
-  border-bottom: 2px solid #101052;
+  color: rgb(16, 16, 82);
+  border-bottom: 2px solid rgb(16, 16, 82);
   display: inline-block;
   padding-bottom: 0.3rem;
   margin-bottom: 0.8rem;
 }
-
 .containerMain .main .main_infos .main_infos_content_list-relacionais, .containerMain .main .main_infos .main_infos_content ul {
   margin-left: 1rem;
 }
-
 .containerMain .main .main_infos .main_infos_content_listOperadores > li > span {
   margin-left: 4rem;
 }
-
 .containerMain .main .main_infos .main_infos_content_listOperadores > li > span > span {
   color: red;
 }
-
 .containerMain .main .main_repetição .main_repetição_title {
   color: red;
   font-size: 2.5em;
   margin-top: 8rem;
   text-align: center;
 }
-
 .containerMain .main .main_repetição .main_repetição_content {
   background-color: white;
   margin-top: 3rem;
   border-radius: 1rem;
 }
-
 .containerMain .main .main_repetição .main_repetição_content h2 {
   font-size: 2em;
   text-align: center;
   padding: 1rem 0;
   font-weight: bolder;
 }
-
 .containerMain .main .main_repetição .main_container_content_codigo {
   background-color: var(--color-PretoClaro);
   padding: 1.5rem;
 }
-
 .containerMain .main .main_repetição .main_container_content_codigo > code {
-  color: #4848e0;
+  color: rgb(72, 72, 224);
   font-size: 1.8em;
 }
-
 .containerMain .main .main_repetição .main_container_content_codigo > code span {
-  color: #9e9e9e;
+  color: rgb(158, 158, 158);
 }
-
 .containerMain .main .main_repetição .espaço {
-  color: #4848e0 !important;
+  color: rgb(72, 72, 224) !important;
   margin-left: 4rem;
 }
-
 .containerMain .main .main_repetição .ou {
   text-align: center;
   display: inline-block;
   width: 100%;
   margin: 1rem 0;
 }
-
 .containerMain .main .main_repetição .main_container_content_text {
   padding: 1rem;
 }
-
 .containerMain .main .main_repetição .main_container_content_text h3 {
   font-size: 2em;
   font-weight: bold;
 }
-
 .containerMain .main .main_repetição .main_container_content_text p {
   font-size: 1.8em;
   margin-top: 1rem;
 }
-
 .containerMain .main .main_caixa .main_caixa_title {
   text-align: center;
   font-size: 2.5em;
@@ -341,119 +267,89 @@ body {
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
-
 .containerMain .main .main_caixa .main_caixa_title2 {
   margin-top: 6rem;
   text-decoration: underline;
 }
-
 .containerMain .main .main_caixa .main_caixa_container {
   background-color: white;
 }
-
 .containerMain .main .main_caixa .main_caixa_container > h2 {
   font-size: 2em;
   text-align: center;
   padding: 1rem 0;
   font-weight: bolder;
 }
-
 .containerMain .main .main_caixa .main_caixa_container_codigo {
   background-color: var(--color-PretoClaro);
   padding: 1.5rem;
 }
-
 .containerMain .main .main_caixa .main_caixa_container_codigo code {
   font-size: 1.8em;
-  color: #4848e0;
+  color: rgb(72, 72, 224);
 }
-
 .containerMain .main .main_caixa .main_caixa_container_codigo > code > span {
-  color: #9e9e9e;
+  color: rgb(158, 158, 158);
 }
-
 .containerMain .main .main_caixa .main_caixa_container_codigo > code > .espaco {
-  color: #4848e0;
+  color: rgb(72, 72, 224);
   margin-left: 2rem;
 }
-
 .containerMain .main .main_caixa .main_caixa_container_codigo > code > .espacoMais {
-  color: #4848e0;
+  color: rgb(72, 72, 224);
   margin-left: 7.5rem;
 }
-
 .containerMain .main .main_caixa .main_caixa_container_codigo > code > .espaco > span, .containerMain .main .main_caixa .main_caixa_container_codigo > code > .espacoMais > span {
-  color: #9e9e9e;
+  color: rgb(158, 158, 158);
 }
-
 .containerMain .main .main_caixa .main_caixa_container_explicacao {
   padding: 1rem;
 }
-
 .containerMain .main .main_caixa .main_caixa_container_explicacao-doisCodigos {
   border-bottom: 2px solid rgba(255, 0, 0, 0.411);
   margin-bottom: 1rem;
 }
-
 .containerMain .main .main_caixa .main_caixa_container_explicacao > h2 {
   font-size: 2em;
   font-weight: bolder;
   margin-bottom: 1rem;
 }
-
 .containerMain .main .main_caixa .main_caixa_container_explicacao > p {
   color: black;
   font-size: 1.8em;
 }
-
 .containerMain .main .main_caixa .main_caixa_container_codes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 2rem;
   background-color: rgba(128, 128, 128, 0.541);
 }
-
 .containerMain .main .main_caixa .main_caixa_container_codes_itens {
   background-color: white;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 calc((100% / 4) - 2rem);
-          flex: 1 1 calc((100% / 4) - 2rem);
+  flex: 1 1 calc(25% - 2rem);
   margin-top: 1rem;
 }
-
 .containerMain .main #bibliotecas-ia {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .containerMain .main #bibliotecas-ia.openTitle {
   max-height: 50000000rem;
   opacity: 1;
 }
-
 .containerMain .main #infos, .containerMain .main #condicao, .containerMain .main #estruturaDeRepetição, .containerMain .main #array, .containerMain .main #lista, .containerMain .main #matriz, .containerMain .main #função, .containerMain .main #math, .containerMain .main #random, .containerMain .main #time, .containerMain .main #tratamentoDeErros, .containerMain .main #ia {
   scroll-margin-top: 10rem;
 }
 
-@media screen and (min-width: 668px) and (max-width: 1024px) {
-  /*Tablet*/
+@media screen and (min-width: 668px) and (max-width: 1024px) { /*Tablet*/
   .main_infos {
     width: auto !important;
   }
   .address_nav_list-link a {
-    width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
   }
 }
-
-@media screen and (min-width: 1025px) and (max-width: 1580px) {
-  /*Telas grandes*/
-}
-/*# sourceMappingURL=python.css.map */
+@media screen and (min-width: 1025px) and (max-width: 1580px) { /*Telas grandes*/ }/*# sourceMappingURL=python.css.map */

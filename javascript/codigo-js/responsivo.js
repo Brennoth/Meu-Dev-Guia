@@ -16,3 +16,4 @@ function moverLinks(px) {
 moverLinks(mediaQuery) /*pega o valor da mediaquery e envia pra função*/
 
 mediaQuery.addEventListener("change", moverLinks) /* ele ira vereficar se mudou algum evento, que verefica isso e o "change", se mudou ele aciona a função*/
+
