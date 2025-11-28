@@ -367,7 +367,7 @@ body {
         position: absolute !important;
         right: 0;
         margin-top: 8rem;
-        height: 0;
+        max-height: 0 !important;
         transition: all 0.3s ease-in-out !important;
         padding: 0 !important;
         box-shadow: none !important;
@@ -381,7 +381,15 @@ body {
         margin-bottom: 0.5rem !important;
     }
     .header:has(.input-hamburguer:checked) .links{
-        height: 100vh;
+        max-height: 100vh !important;
+    }
+    .main_infos{
+        width: auto !important;
+    }
+    .main_caixa_content {
+
+        flex: 1  1 calc((100% / 2) - 2rem) !important;
+
     }
     
 
@@ -408,10 +416,14 @@ body {
 
 
  @media screen and (min-width: 1025px) and (max-width: 1440px) { /* Estilos para monitores comuns */
-
+    .main_infos{
+        margin: 0 auto 8rem;
+    }
+    .links{
+        width: 60rem !important;
+    }
     
  }
-
   @media screen and (min-width: 1441px){/* Estilos para telas grandes*/
 
       
