@@ -62,6 +62,58 @@
                         </div>
                     </div>
 
+                    <div class="main_caixa_content">
+                        <h2>CONCATENAR()</h2>
+                    
+                        <div class="codigo">
+                            <p><span>Brenno |</span> <span>Thiago</span> = CONCATENAR(<span>A1;" ";B1</span>)</p>
+                            <p class="res">Resultado = <span>Brenno Thiago</span></p>
+                        </div>
+                    
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O excel ira juntar. <br><strong>O primeiro (A1);</strong> tera que selecionar a palavra.
+                                <br><strong>O segundo ("");</strong> e so para deixar um espaço. <br><strong>O terceiro (B1);</strong> Vc seleciona a outra palavra que quer juntar</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>LOCALIZAR()</h2>
+                    
+                        <div class="codigo">
+                            <p><span>Brenno Thiago Sousa</span> = LOCALIZAR(<span>Thiago;A1;1</span>)</p>
+                            <p class="res">Resultado = <span>8</span></p>
+                        </div>
+                    
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O excel ira procurar o texto que vc quer, e ira mostrar o indice desse texto. <br><strong>O primeiro (Thiago);</strong> É o texto que vc quer achar
+                                <br><strong>O segundo (A1);</strong>É a frase onde vc quer selecionar o texto. <br><strong>O terceiro (1);</strong>Por onde o excel ira começar a procurar
+                            </p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>LOCALIZAR() + EXE.TEXTO()</h2>
+                    
+                        <div class="codigo">
+                            <p><span>Brenno Thiago Sousa</span> = EXE.TEXTO(<span>A1;1;</span>LOCALIZAR<span>(" ";A1;1)</span> ) </p>
+                            <p class="res">Resultado = <span>Brenno</span></p>
+                        </div>
+                    
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Seleciona o caracter que desejar.<br>
+                                <strong>O primeiro (A1);</strong> tera que selecionar a frase/palavra. <br>
+                                <strong>O segundo (1);</strong> vc seleciona aonde quer começar. <br>
+                                <strong>O terceiro (LOCALIZAR);</strong> vc seleciona quantos caracter são, pq a função localizar retorna o indice.
+                            </p>
+                    
+                        </div>
+                    </div>
+
                 </div>
 
             </section>
