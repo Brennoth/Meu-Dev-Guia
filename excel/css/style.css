@@ -114,7 +114,7 @@ body {
   background-color: white;
   padding: 2rem;
   border-radius: 1rem;
-  flex: 1 1 0;
+  flex: 1 1 calc(33.3333333333% - 2rem);
 }
 .container .main_caixa .main_caixa_content h2 {
   font-size: 2em;

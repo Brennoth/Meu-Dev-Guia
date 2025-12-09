@@ -112,7 +112,7 @@ body{
             background-color: white;
             padding: 2rem;
             border-radius: 1rem;
-            flex: 1 1 0;
+            flex: 1 1 calc((100% / 3) - 2rem);
         }
         .main_caixa_content h2{
             font-size: 2em;
