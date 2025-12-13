@@ -55,7 +55,10 @@
                     <li><a href="#estruturaDeRepeticao">Estrutura de repetição</a></li>
                     <li><a href="#function">Função</a></li>
                     <li><a href="#array">Array</a></li>
+                    <li><a href="#objetoLiteral">Objeto Literal</a></li>
                     <li><a href="#date">Date</a></li>
+                    
+                    
                 </ul>
             </nav>
         </div>
@@ -366,6 +369,72 @@
                         </div>
                     </div>
 
+                    <div class="main_caixa_content">
+                        <h2>.textContent</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const p = document.getElementById("msg");</span><br>
+                                <span>console.log(p</span>.textContent<span>);</span>
+                                
+                                
+                                
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>para visualizar ou alterar o texto tbm</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.innerHTML</h2>
+                        <div class="codigo">
+                            <p>
+                                .innerHTML                                  
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Altera o texto e implementa no HTML, e aceita tag HTMLS</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.value</h2>
+                        <div class="codigo">
+                            <p>
+                                .value
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega o valor de um input</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>defer</h2>
+                        <div class="codigo">
+                            <p>
+                                &lt;script defer src="..."&gt;
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele serve para carregar um arquivo JavaScript externo, mas dizendo ao navegador para baixar esse arquivo mas so executar dps que o html tiver 100% completo</p>
+                    
+                        </div>
+                    </div>
+
+                    
+
                     
 
                     
@@ -503,6 +572,54 @@
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
                             <p>Pega o indice de uma string</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>toFixed()</h2>
+                        <div class="codigo">
+                            <p>
+                                toFixed(<span>2</span>)
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Colocar mais casas decimais em numeros</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>indexOf()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = "uva</span><br>
+                                <span>console.log(texto</span>.indexOf(<span>"a"</span>)<span>)</span>
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Para visualizar o indice dessa palavra/texto selecionado</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>slice()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = "javascript"</span><br>
+                                <span>const parte = texto</span>.slice(<span>0(inicio), 4(Inicio)</span>) 
+                                
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O slice() recorta uma parte de algo e retorna uma cópia sem alterar o original</p>
                     
                         </div>
                     </div>
@@ -1106,6 +1223,48 @@
                     </div>
             
                     
+            
+                </div>
+            
+            </section>
+
+            <section class="main_caixa" id="objetoLiteral">
+            
+                <h1 class="main_caixa_title">Objeto literal {}</h1>
+                <div class="main_caixa_side">
+            
+                    <div class="main_caixa_content">
+                        <h2>Objeto</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let caneta = </span>{<span>nome</span>:"<span>Caneta</span>", <span> preco</span>:<span> 2 </span>, <span> quantidade</span>:<span> 10 </span>}
+                            </p>
+            
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Para criar um objeto literal.</p>
+                            <p><strong>Canete:</strong>caneta é uma variável essa variável guarda um objeto</p>
+                            <p><strong>nome:</strong> é a chave, também pode ser chamada de propriedade,key</p>
+                            <p><strong>"caneta":</strong> é o valor da chave</p>
+            
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Acessar o valor</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>caneta</span>.<span>nome</span>
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>ira acessar o valor da chave</p>
+                    
+                        </div>
+                    </div>
             
                 </div>
             
