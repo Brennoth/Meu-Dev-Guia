@@ -54,6 +54,8 @@
                     <li><a href="#condicao">Condição</a></li>
                     <li><a href="#estruturaDeRepeticao">Estrutura de repetição</a></li>
                     <li><a href="#function">Função</a></li>
+                    <li><a href="#array">Array</a></li>
+                    <li><a href="#date">Date</a></li>
                 </ul>
             </nav>
         </div>
@@ -489,6 +491,21 @@
                     
                         </div>
                     </div>
+
+                    <div class="main_caixa_content">
+                        <h2>CharAt()</h2>
+                        <div class="codigo">
+                            <p>
+                                .CharAt(<span>6</span>)
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega o indice de uma string</p>
+                    
+                        </div>
+                    </div>
             
                 </div>
             
@@ -871,12 +888,271 @@
                     
                         </div>
                     </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Break</h2>
+                        <div class="codigo">
+                            <p>
+                                for ( <span>let i = 1; i &lt;= 5; i++</span> ){ <br>
+                                    <span class="span-MaisEspaco">if (i == 3){ <br></span>
+                                       <span class="spanDentroDeSpan span-MuitoMaisEspaco">Break</span><br>
+                                   <span class="span-MaisEspaco">}</span> <br>
+                                }
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O break serve para parar imediatamente um laço (for, while, do...while) ou um switch, mesmo que ele ainda não tenha
+                            terminado.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Continue</h2>
+                        <div class="codigo">
+                            <p>
+                                for ( <span>let i = 1; i &lt;= 5; i++</span> ){ <br>
+                                <span class="span-MaisEspaco">if (i == 3){ <br></span>
+                                <span class="spanDentroDeSpan span-MuitoMaisEspaco">Continue</span><br>
+                                <span class="span-MaisEspaco">}</span> <br>
+                                }
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O continue serve para pular a repetição atual do loop, mas não para o loop inteiro.</p>
+                    
+                        </div>
+                    </div>
             
             
             
                 </div>
             
             </section>
+
+            <section class="main_caixa" id="array">
+            
+                <h1 class="main_caixa_title">Array[]</h1>
+                <div class="main_caixa_side">
+            
+                    <div class="main_caixa_content">
+                        <h2>Variavel composta (array)</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let fruta = </span>[ <span>"maça", "pera", "uva"</span> ]
+                               
+                            </p>
+            
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Uma variavel que armazena varios valores</p>
+            
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Variavel composta (array)</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let fruta = </span> new Array(<span>"maça", "pera", "uva"</span>)                         
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Uma variavel que armazena varios valores</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Elementos do array</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>[<span>0</span>]
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Selecionar os elementos do array</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.length</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>.length
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Mostra a quantidade de elementos que existe no array</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Add elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>[<span>3</span>] = "abacaxi"
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Adicionando um novo elemnto no array, no indice 3</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Add elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>.push("<span>cacau</span>")
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Adicionando um novo elemento no ultimo indice</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Add elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>.unshift("<span>goiba</span>")
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Adicionando um novo elemento no começo do indice</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>remover elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>.pop()
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Remove o ultimo indice</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>remover elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                Delete <span>fruta</span>[<span>1</span>]
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Remove o elemento mas o indice fica</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>remover elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>fruta</span>.shift()
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Remove o primeiro indice, ou seja o começo</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Selecionar</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>fruta</span>.slice(<span>0</span>,<span>3</span>)
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Seleciona um indice ate o outro</p>
+                    
+                        </div>
+                    </div>
+            
+                    
+            
+                </div>
+            
+            </section>
+
+            <section class="main_caixa" id="date">
+            
+                <h1 class="main_caixa_title">Date</h1>
+                <div class="main_caixa_side">
+            
+                    <div class="main_caixa_content">
+                        <h2>New Date</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let agr = </span>new Date()
+                            </p>
+            
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O new Date() cria um objeto de data e hora no JavaScript.</p>
+            
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>getDay</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let agr = </span>new Date()
+                                <span>let hoje =</span>.getDay()
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O new Date() cria um objeto de data e hora no JavaScript.</p>
+                        </div>
+                    </div>
+            
+                    
+            
+                </div>
+            
+            </section>
+
+            
             
 
         </main>
