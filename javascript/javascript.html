@@ -485,28 +485,7 @@
                         </div>
                     </div>
 
-                    <div class="main_caixa_content">
-                        <h2>This</h2>
-                        <div class="codigo">
-                            <p>
-                                <span>const pessoa =</span> { <br>
-                                <span class="span-MaisEspaco">nome: "Ana",</span> <br>
-                                <span class="span-MaisEspaco">idade: 20,</span><br>
-                                
-                                <span class="span-MaisEspaco">apresentar</span>(){ <br>
-                                <span class="spanDentroDeSpan span-MaisEspaco"><span>console.log(</span>this.<span>nome)</span></span>
-                                } <br>
-                                };
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Dentro de um objeto, Dentro de um método (função do objeto), this aponta para o próprio objeto,this.nome é a mesma coisa que pessoa.nome</p>
-                    
-                        </div>
-                    </div>
-
+                   
 
 
 
@@ -1033,7 +1012,7 @@
                         </div>
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
-                            <p>Fazer algo quando e chamado</p>
+                            <p>Fazer algo quando e chamado, função anonima, ou funções imediatas(IIEF)</p>
 
                         </div>
                     </div>
@@ -1183,10 +1162,107 @@
                         </div>
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
-                            <p>O continue serve para pular a repetição atual do loop, mas não para o loop inteiro.</p>
+                            <p>Quando uma função fica armazenada em uma variavel</p>
 
                         </div>
                     </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Factory Function</h2>
+                        <div class="codigo">
+                            <p>
+                                function <span>criaPessoa</span>(<span>nome, sobrenome</span>) { <br>
+                                return {<span>nome,sobrenome</span>} <br>
+                                }     <br>
+                                <span>console.log(criaPessoa("brenno", "thiago"))</span>
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Quando uma função  retorna um objeto</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>This</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const pessoa =</span> { <br>
+                                <span class="span-MaisEspaco">nome: "Ana",</span> <br>
+                                <span class="span-MaisEspaco">idade: 20,</span><br>
+                    
+                                <span class="span-MaisEspaco">apresentar</span>(){ <br>
+                                <span class="spanDentroDeSpan span-MaisEspaco"><span>console.log(</span>this.<span>nome)</span></span>
+                                } <br>
+                                };
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Dentro de um objeto, Dentro de um método (função do objeto), this aponta para o próprio objeto,this.nome é a
+                                mesma coisa que pessoa.nome</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Get</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const pessoa =</span> { <br>
+                                <span class="span-MaisEspaco">nome: "Ana",</span> <br>
+                                <span class="span-MaisEspaco">idade: 20,</span><br>
+                    
+                                <span class=" spanDentroDeSpan span-MaisEspaco">get <span>apresentar</span></span>(){ <br>
+                                <span class="spanDentroDeSpan span-MaisEspaco"><span>console.log(</span>this.<span>nome)</span></span>
+                                } <br>
+                                };
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>A função vai fingir ser um atributo do objeto</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Set</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const pessoa =</span> { <br>
+                                <span class="span-MaisEspaco">nome: "",</span> <br>
+                                <span class="span-MaisEspaco">sobrenome: "",</span> <br>
+                                
+                                
+                                <span class="spanDentroDeSpan span-MaisEspaco">get <span>nomeCompleto</span>() {</span> <br>
+                                <span class="span-MaisEspaco spanDentroDeSpan">return <span>`${this.nome} ${this.sobrenome}`</span> </span><br>
+                                } <br>
+                                
+                                <span class="span-MaisEspaco spanDentroDeSpan">set <span>nomeCompleto</span>(<span>valor</span>)</span> { <br>
+                                
+                                <span class="span-MaisEspaco">const partes = valor.split(" ") </span> <br>
+                                <span class="span-MaisEspaco">this.nome = partes[0]</span> <br>
+                                <span class="span-MaisEspaco">this.sobrenome = partes[1]</span> <br>
+                                
+                                } <br>
+                                }
+
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Em JavaScript, set (setter) é uma função especial usada para alterar um valor interno do objeto, como se fosse uma
+                            propriedade normal.</p>
+                    
+                        </div>
+                    </div>
+
 
 
 
