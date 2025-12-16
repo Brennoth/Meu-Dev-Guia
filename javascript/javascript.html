@@ -1127,7 +1127,24 @@
             <section class="main_caixa" id="array">
 
                 <h1 class="main_caixa_title">Array[]</h1>
+
                 <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>Variavel composta (array)</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let fruta = </span>new Array(<span>1,2,3</span>)
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Uma variavel que armazena varios valores, metodo construtor</p>
+                    
+                        </div>
+                    </div>
 
                     <div class="main_caixa_content">
                         <h2>Variavel composta (array)</h2>
@@ -1174,7 +1191,7 @@
 
                         </div>
                     </div>
-
+                                
                     <div class="main_caixa_content">
                         <h2>.length</h2>
                         <div class="codigo">
@@ -1217,6 +1234,21 @@
                             <h3>Explicação</h3>
                             <p>Adicionando um novo elemento no ultimo indice</p>
 
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Add elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>.unshift("<span>cacau</span>")
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Adicionando um novo elemento no primeiro indice</p>
+                    
                         </div>
                     </div>
 
@@ -1281,6 +1313,23 @@
                     </div>
 
                     <div class="main_caixa_content">
+                        <h2>remover elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let letras = ["a", "b", "c", "d", "e"]</span> <br>
+                                <span>letras</span>.splice(<span>2, 2</span>)                              
+
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Remove qualquer indice, o primeiro e a posição do indice, e o segundo a quantidade</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
                         <h2>Selecionar</h2>
                         <div class="codigo">
                             <p>
@@ -1294,6 +1343,190 @@
 
                         </div>
                     </div>
+
+                    <div class="main_caixa_content">
+                        <h2>indexOf()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = [10, 20, 30]</span><br>
+                                <span>console.log(texto</span>.indexOf(<span>10</span>)<span>)</span>
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Para visualizar o indice desse valor selecionado</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>includes()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = [10, 20, 30]</span><br>
+                                <span>console.log(texto</span>.include(<span>10</span>)<span>)</span>
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O .includes() é um método do JavaScript que serve para verificar se algo existe dentro de outra coisa, Ele sempre retorna: true → se encontrou e false → se não encontrou.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>find()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = [10, 20, 30]</span><br>
+                                <span>console.log(texto</span>.find( function(<span>elemento</span>){<br>
+                                    return <span>elemento > 10</span> <br>
+                                }<span>)</span> <br>
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O .find() é um método de arrays que serve para procurar um elemento dentro do array e devolver o primeiro que bater com a condição.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>findIndex()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = [10, 20, 30]</span><br>
+                                <span>console.log(texto</span>.findIndex( function(<span>elemento</span>){<br>
+                                return <span>elemento > 10</span> <br>
+                                }<span>)</span> <br>
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O .find() é um método de arrays que serve para procurar um elemento dentro do array e devolver o primeiro que
+                                bater com a condição, porem ira voltar o index do valor.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>join()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = [10, 20, 30]</span><br>
+                                <span>console.log(texto</span>.join(<span>"-(separador)"</span>)<span>)</span>
+                               
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O .join() é um método de array que serve para juntar todos os elementos do array em uma única string (texto) e separador o que vai ficar entre os itens.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>concat()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>
+                                    let arr1 = [1, 2, 3] <br>
+                                    let arr2 = [5, 6, 7] <br>
+                                    let arr3 = arr1</span>.concat(<span>arr2</span>)
+                                
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira juntar as arrays em uma so</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>reverse()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>
+                                    let arr1 = [1, 2, 3] <br>
+                                    let arr3 = arr1</span>.reverse()
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira inverter os valores</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>reduce()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let arr1 = [10, 20, 30, 40, 50]</span>
+                                <span>const soma = arr1</span>.reduce(function (<span>acumulador,valorAtual, index, _arr</span>) {<br>
+                                <span>return acumulador + valorAtual</span>
+                                })
+                                
+
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O reduce() é um método de arrays que reduz um array a um único valor. Ele percorre o array, aplica uma função em cada
+                            elemento e retorna um valor acumulado.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Array.from()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const arr1 = new Array(1,2,3)</span>
+                                
+                                <span>const arr2 = </span>Array.from(<span>arr1</span>)
+                                <span>arr2.push(4,5)</span>
+                                console.log(arr2)
+                    
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira criar uma copia do array antigo</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Array.of()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const arr =</span>Array.of(3)
+                    
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira criar um array com o valor 3, pq se fazer isso assim "new Array(3), ira criar um array com 3 espaços</p>
+                    
+                        </div>
+                    </div>
+
+                    
 
 
 

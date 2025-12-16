@@ -288,7 +288,7 @@ body {
   color: var(--colorLetra-cinza);
 }
 
-#infos, #dom, #condicao, #estruturaDeRepeticao, #function, #codigos, #array {
+#infos, #dom, #condicao, #estruturaDeRepeticao, #function, #codigos, #array, #date {
   scroll-margin-top: 10rem;
 }
 
@@ -351,7 +351,7 @@ body {
     margin: 0 auto 8rem;
   }
   .links {
-    width: 60rem !important;
+    width: 130% !important;
   }
 }
 @media screen and (min-width: 1441px) { /* Estilos para telas grandes*/ }/*# sourceMappingURL=javascript.css.map */
