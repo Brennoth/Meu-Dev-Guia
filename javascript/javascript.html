@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/javascript.scss">
+    <link rel="stylesheet" href="css/javascript.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--FONTE-ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--FONTE-ICONS-->
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="header_nav">
+
+            <div class="header_nav_logo">
+                <figure>
+                    <a href="javascript.html">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="" width="50">
+                    </a>
+                </figure>
+                <p>Javascript</p>
+            </div>
+
+            <a href="../index.html"><i class="fas fa-home"></i> Início</a>
+
+        </nav>
+
+
+        <div class="hamburguer">
+            <input type="checkbox" class="input-hamburguer" id="input-hamburguer">
+            <label for="input-hamburguer" class="label-hamburguer">
+                <span class="traço-hambuerguer"></span>
+            </label>
+        </div>
+    </header>
+
+    <div class="containerMain">
+
+        <div class="links">
+            <nav class="links_nav">
+                <ul class="links_nav_list">
+                    <li><a href="#infos">Infos</a></li>
+                    <li><a href="#codigos">Códigos</a></li>
+                    <li><a href="#funções">Funções</a></li>
+                    <li><a href="#dom">DOM</a></li>
+                    <li><a href="#condicao">Condição</a></li>
+                    <li><a href="#estruturaDeRepeticao">Estrutura de repetição</a></li>
+                    <li><a href="#function">Função</a></li>
+                    <li><a href="#array">Array</a></li>
+                    <li><a href="#objetoLiteral">Objeto Literal</a></li>
+                    <li><a href="#date">Date</a></li>
+                    <li><a href="#math">Math</a></li>
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <main class="main largura-definida">
+            <section id="infos" class="main_infos">
+                <h1 class="main_infos_title">JavaScript</h1>
+
+                <div class="main_infos_content">
+                    <h2>Indentificadores</h2>
+                    <ul class="main_infos_content_list">
+                        <li>Podem começar com <strong>letra, $ ou _</strong></li>
+                        <li>Não podem começar com <strong>números</strong></li>
+                        <li>É possivel usar <strong>letras</strong> ou <strong>numeros</strong></li>
+                        <li>É possibel usar <strong>acentos</strong> e <strong>símbolos</strong></li>
+                        <li>Não podem conter <strong>espaços</strong></li>
+                        <li>Não podem ser <strong>palavras reservadas</strong></li>
+                    </ul>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Tipos Primitivos</h2>
+                    <ul class="main_infos_content_list">
+                        <li>Number
+                            <ul style="list-style: circle;
+                            margin-left: 2rem;">
+                                <li>Infinity</li>
+                                <li>NAN</li>
+                            </ul>
+                        </li>
+                        <li>String</li>
+                        <li>boolean (true ou false)</li>
+                        <li>undefined</li>
+                        <li>Null</li>
+
+
+                    </ul>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Operadores Aritmeticos</h2>
+                    <div class="main_infos_content_aritmeticos">
+                        <p>5 <span>+</span> 2 = 7 Adição</p>
+                        <p>5 <span>-</span> 2 = 3 Subtração</p>
+                        <p>5 <span>*</span> 2 = 10 Multiplicação</p>
+                        <p>5 <span>/</span> 2 = 2.5 Divisão</p>
+                        <p>5 <span>%</span> 2 = 1 Resto da divisão</p>
+                        <p>5 <span>**</span> 2 = 25 Potencia</p>
+                    </div>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Ordem De Precedência</h2>
+                    <ol style="list-style: decimal;
+                    font-size: 1.8em;
+                    margin-left: 2rem;">
+                        <li>()</li>
+                        <li>**</li>
+                        <li>* / %</li>
+                        <li>+ -</li>
+                    </ol>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Auto-Atribuição</h2>
+                    <p>Var n = 3</p>
+                    <p>n = n + 4</p>
+                    <p>7</p>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>simplificando</h2>
+                    <p>Var n = 3</p>
+                    <p>n += 4</p>
+                    <p>7</p>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Incremento</h2>
+                    <p>Var n = 3</p>
+                    <p>n++</p>
+                    <p>4</p>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Relacionais</h2>
+                    <ul class="main_infos_content_list list-SemBolinha">
+                        <li><strong>&gt;</strong> maior</li>
+                        <li><strong>&lt;</strong> menor</li>
+                        <li><strong>&gt;=</strong> maior ou igual</li>
+                        <li><strong>&lt;=</strong> menor ou igual</li>
+                        <li><strong>==</strong> igual (valor)</li>
+                        <li><strong>===</strong> idêntico (valor e tipo)</li>
+                        <li><strong>!=</strong> não igual (valor)</li>
+                        <li><strong>!==</strong> não igual (valor e tipo)</li>
+                    </ul>
+
+                </div>
+
+                <div class="main_infos_content">
+
+                    <h2>Operadores lógicos</h2>
+                    <ul class="main_infos_content_list list-SemBolinha">
+                        <li><strong>!</strong> negação quero uma caneta azul <strong>não </strong>vermelha
+                        </li>
+                        <li><strong>&&</strong> conjunção quero uma caneta azul <strong>e</strong> vermelha
+                        </li>
+                        <li><strong>||</strong> disjunção quero uma caneta azu <strong>ou</strong> vermelh
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Ordem De Precedência</h2>
+                    <ol style="list-style: decimal;
+                                    font-size: 1.8em;
+                                    margin-left: 2rem;">
+                        <li>() ** / ...</li>
+                        <li>> &gt; >= ...</li>
+                        <li>!</li>
+                        <li>&&</li>
+                        <li>||</li>
+                    </ol>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Ternario</h2>
+                    <p>Teste <strong>?</strong> true <strong>:</strong> false</p>
+                    <p>let idade = 20</p>
+                    <p>let podeEntrar = idade >= 18 ? "Sim" : "Não"</p>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Diferença entre null, undefined e NaN</h2>
+                    <p><strong>Undefined:</strong> Criou uma variavel e esqueceu de colocar o valor</p>
+                    <p><strong>Null:</strong> Você cra uma variavel mas não quer atribuir nenhum valor <strong>Exemplo:
+                        </strong>Let nome = null</p>
+                    <p><strong>NaN:</strong> Equando tenta converter algo em número</p>
+                </div>
+
+                <div class="main_infos_content">
+                    <h2>Métodos de objeto</h2>
+                    <p>Métodos de objeto são funções dentro de objetos</p>
+                </div>
+
+
+            </section>
+
+            <section class="main_caixa" id="codigos">
+                <h1 class="main_caixa_title">Codigos</h1>
+
+
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>alert</h2>
+                        <div class="codigo">
+                            <p>aler ("<span>Frase</span>")</p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Fazer que o site mostre um alert para vc</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Confirm</h2>
+                        <div class="codigo">
+                            <p>confirm ("<span>Frase</span>")</p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Fazer que o site pede para vc confirmar algo</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>prompt</h2>
+                        <div class="codigo">
+                            <p>prompt ("<span>Qual e o seu nome?</span>")</p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O site mostra um input para vc</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Variavel</h2>
+                        <div class="codigo">
+                            <p>
+                                var = <span>nome</span>
+                                let = <span>nome</span>
+                                const = <span>nome</span>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>São caixa que pode armazenar informações, o mais recomendavel de usar e o
+                                <strong>LET</strong> pq pode alterar o valor e mais atualizado do VAR e o
+                                <strong>CONST</strong> não e possivel alterar o valor
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Comentarios</h2>
+                        <div class="codigo">
+                            <p>
+                                // <span>comentario em uma linha</span><br>
+                                /* */ <span>comentario de mais de uma linha</span>
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Fazer comentarios</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>typeof</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let idade = 10</span> <br>
+                                <span>console.log(</span> typeof <span>idade)</span>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O site mostra um input para vc</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Conversão</h2>
+                        <div class="codigo">
+                            <p>
+                                Number
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Converte para numero completo porem se tiver string da erro</p>
+
+                        </div>
+
+                        <div class="codigo">
+                            <p>
+                                parseInt
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega so a parte inteira do numero, se tiver decimal vira inteiro</p>
+
+                        </div>
+
+                        <div class="codigo">
+                            <p>
+                                Parsefloat
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>pega a parte decimal e se tiver string e ignorado e so ler os numeros, tem que começãr
+                                com numero</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Boolean</h2>
+                        <div class="codigo">
+                            <p>
+                                console.log(boolean(0))
+                                console.log(boolean(undefined))
+                                console.log(boolean(null))
+                                console.log(boolean(""))
+                                console.log(boolean(NAN))
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>tudo isso vai ser false</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Numero aleatorio</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>parseInt</span> (math.random( ) * <span>6 + 1</span> )
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>tMostrar um numero entre 1 e 6</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.textContent</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const p = document.getElementById("msg");</span><br>
+                                <span>console.log(p</span>.textContent<span>);</span>
+                                <span style="color: red;">OU</span> <br>
+                                <span>const p = document.getElementById("msg");</span><br>
+                                <span>console.log(p</span>.createtextnode<span>);</span>
+
+
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>para visualizar ou alterar o texto tbm</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.innerHTML</h2>
+                        <div class="codigo">
+                            <p>
+                                .innerHTML
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Altera o texto e implementa no HTML, e aceita tag HTMLS</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.value</h2>
+                        <div class="codigo">
+                            <p>
+                                .value
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega o valor de um input</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>defer</h2>
+                        <div class="codigo">
+                            <p>
+                                &lt;script defer src="..."&gt;
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele serve para carregar um arquivo JavaScript externo, mas dizendo ao navegador para
+                                baixar esse arquivo mas so executar dps que o html tiver 100% completo</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Try</h2>
+                        <div class="codigo">
+                            <p>
+                                try{ <br>
+                                <span>//bloco de codigo que pode grar um erro</span> <br>
+                                } cath(<span>erro</span>){ <br>
+                                <span>//bloco de codigo que executa se houver um erro</span> <br>
+                                } finally{<br>
+                                <span>//bloco de codigo que sempre executa</span><br>
+                                }
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele serve para carregar um arquivo JavaScript externo, mas dizendo ao navegador para
+                                baixar esse arquivo mas so executar dps que o html tiver 100% completo</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Throw new Error</h2>
+                        <div class="codigo">
+                            <p>
+                                throw new Error("<span>Erro no codigo</span>")
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pode editar o erro no console</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>This</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const pessoa =</span> { <br>
+                                <span class="span-MaisEspaco">nome: "Ana",</span> <br>
+                                <span class="span-MaisEspaco">idade: 20,</span><br>
+                                
+                                <span class="span-MaisEspaco">apresentar</span>(){ <br>
+                                <span class="spanDentroDeSpan span-MaisEspaco"><span>console.log(</span>this.<span>nome)</span></span>
+                                } <br>
+                                };
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Dentro de um objeto, Dentro de um método (função do objeto), this aponta para o próprio objeto,this.nome é a mesma coisa que pessoa.nome</p>
+                    
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+            </section>
+
+            <section class="main_caixa" id="funções">
+
+                <h1 class="main_caixa_title">Funções</h1>
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>tostring()</h2>
+                        <div class="codigo">
+                            <p>
+                                .tostring()
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Transforma um numero ou qualquer coisa em string</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Boolean()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let nome = "Bn"<br></span>
+
+                                <span>if (</span>Boolean(nome) <span>) { <br>
+                                    console.log("O nome existe") <br>
+                                    } <br> </span>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Função que converte um valor para true ou false.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>tolowercase()</h2>
+                        <div class="codigo">
+                            <p>
+                                .tolowercase()
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Deixar tudo minusculo</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>tolowercase()</h2>
+                        <div class="codigo">
+                            <p>
+                                .touppercase()
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Deixar tudo minusculo</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>isNaN()</h2>
+                        <div class="codigo">
+                            <p>
+                                .isNaN(<span>Variavel</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira verificar se a conversão e NaN</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>isinfinite()</h2>
+                        <div class="codigo">
+                            <p>
+                                .isinfinite(<span>Variavel</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>E inverso de "isNaN"</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>isInteger()</h2>
+                        <div class="codigo">
+                            <p>
+                                .isInteger(<span>Variavel</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Descubrir se a variavel e nmero inteiro</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>tostring()</h2>
+                        <div class="codigo">
+                            <p>
+                                .tostring()
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Transforma qualquer valor em uma string</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>CharAt()</h2>
+                        <div class="codigo">
+                            <p>
+                                .CharAt(<span>6</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega o indice de uma string</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>toFixed()</h2>
+                        <div class="codigo">
+                            <p>
+                                toFixed(<span>2</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Colocar mais casas decimais em numeros</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>indexOf()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = "uva</span><br>
+                                <span>console.log(texto</span>.indexOf(<span>"a"</span>)<span>)</span>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Para visualizar o indice dessa palavra/texto selecionado</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>slice()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = "javascript"</span><br>
+                                <span>const parte = texto</span>.slice(<span>0(inicio), 4(Inicio)</span>)
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O slice() recorta uma parte de algo e retorna uma cópia sem alterar o original</p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main_caixa" id="dom">
+                <h1 class="main_caixa_title">Selecionando elementos no DOM</h1>
+
+
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>document.getElementById("")</h2>
+                        <div class="codigo">
+                            <p><span>let titulo </span> = document.getElementById("");</p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega um elemento pelo ID</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>document.getElementsByClassName("")</h2>
+                        <div class="codigo">
+                            <p><span>let titulo </span>= document.getElementsByClassName("")[i];</p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega vários elementos pela classe que nem CSS</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>document.getElementsByTagName("")</h2>
+                        <div class="codigo">
+                            <p><span>let titulo </span> = document.getElementsByTagName("p")[i];</p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega pelo nome da tag (ex: p, div, h1)</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>document.getElementsByName("email")</h2>
+                        <div class="codigo">
+                            <p><span>let email </span> = document.getElementsByName("email")[i]</p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>seleciona elementos pelo atributo name</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>document.querySelector("seletorCSS")</h2>
+                        <div class="codigo">
+                            <p><span>let titulo</span> = document.querySelector("#meuTitulo")</p>
+                            <p><span>let box</span>= document.querySelector(".container")</p>
+                            <p><span>let p </span>= document.querySelector("p")</p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>só pega um elemento, o primeiro</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>document.querySelectorAll("")</h2>
+                        <div class="codigo">
+                            <p><span>let titulo </span> = document.querySelectorAll("p")[i]; <span>todos os p</span></p>
+                            <p><span>let titulo </span> = document.querySelectorAll(".item"); <span>todos com class
+                                    item</span></p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Retorna todos que combinarem com o seletor</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>createElement("")</h2>
+                        <div class="codigo">
+                            <p>document.createElement("<span>p</span>")</p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Criar uma tag</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.appendChild()</h2>
+                        <div class="codigo">
+                            <p>.appendChild(<span>variavel</span>)</p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Para adicionar um elemnto em outra tag.</p>
+                    
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+            </section>
+
+            <section class="main_caixa" id="condicao">
+
+                <h1 class="main_caixa_title">Condição</h1>
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>Condição (if / else)</h2>
+                        <div class="codigo">
+                            <p>
+                                if (<span>idade >= 18</span>) {<br>
+                                <span class="span-MaisEspaco">console.log("maior de 18")</span> <br>
+                                } else { <br>
+                                <span class="span-MaisEspaco">console.log("menor de 18")</span> <br>
+                                }
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele verifica uma condição (verdadeira ou falsa) e executa um bloco de código apenas se a
+                                condição for verdadeira.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Condição Aninhadas</h2>
+                        <div class="codigo">
+                            <p>
+                                if (<span>idade >= 18</span>) {<br>
+                                <span class="span-MaisEspaco">console.log("maior de 18")</span> <br>
+                                } else if (<span>idade >= 50</span>){ <br>
+                                <span class="span-MaisEspaco">console.log("senhor de idade")</span> <br>
+                                } else { <br>
+                                <span class="span-MaisEspaco">console.log("menor de idade")</span> <br>
+                                }
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele verifica uma condição (verdadeira ou falsa) e executa um bloco de código apenas se a
+                                condição for verdadeira.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Condição Multiplica</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const cor = "vermelho" </span> <br>
+                                Switch (<span>cor</span>){ <br>
+                                <span class="spanDentroDeSpan span-MaisEspaco">case <span>"vermelho"</span>:</span> <br>
+                                <span class="span-MuitoMaisEspaco">console.log("cor quente")</span> <br>
+                                break <br>
+
+                                <span class="spanDentroDeSpan span-MaisEspaco">case <span>"azul"</span>:</span> <br>
+                                <span class="span-MuitoMaisEspaco">console.log("cor fria")</span> <br>
+                                break <br>
+
+                                default: <br>
+                                <span class="span-MaisEspaco">console.log("Outra cor")</span>
+                                }
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele verifica uma condição (verdadeira ou falsa) e executa um bloco de código apenas se a
+                                condição for verdadeira.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="main_caixa" id="estruturaDeRepeticao">
+
+                <h1 class="main_caixa_title">Estrutura de Repetição</h1>
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>While = enquanto</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let contador = 1</span> <br>
+                                while (<span>contador &lt= 5</span>){<br>
+                                <span class="span-MaisEspaco">console.log(contador)</span><br>
+                                <span class="span-MaisEspaco">contador++</span> <br>
+                                }
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O while é uma estrutura de repetição (loop) em JavaScript, priemiro teste, e depois
+                                executa o bloco
+                                Ele repete um bloco de código enquanto a condição for verdadeira, e usado quando vc n
+                                sabe o valor final</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2> Do While</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let contador = 1</span> <br>
+                                Do{<br>
+                                <span class="span-MaisEspaco">console.log(contador)</span><br>
+                                <span class="span-MaisEspaco">contador++</span> <br>
+                                } while (<span>contador &lt= 5</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O while é uma estrutura de repetição (loop) em JavaScript, primeiro executa o bloco e
+                                depois testa,
+                                ele repete um bloco de código enquanto a condição for verdadeira, e usado quando vc n
+                                sabe o valor final</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>For</h2>
+                        <div class="codigo">
+                            <p>
+                                for (<span>let = 1</span>; <span>i &lt 10 </span>; <span>i++</span> ){ <br>
+                                <span class="span-MaisEspaco">console.log(i)</span> <br>
+
+                                }
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Estrutura de repetição com variavel de controle, vc usa quando sabe o valor final</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Quando usar</h2>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p><strong>While: </strong>Ideal quando <strong>não</strong> sabemos quantas vezes sera
+                                executado.</p>
+                            <p><strong>For: </strong>Ideal quando <strong>sabemos</strong> exatamente quantas vezes sera
+                                executado.</p>
+                            <p><strong>do...while: </strong>Similar ao while, mas <strong>executa </strong>ao menos uma
+                                vez, mesmo que na primeira vez, a condição seja falso.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Break</h2>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p><strong>While: </strong>Ideal quando <strong>não</strong> sabemos quantas vezes sera
+                                executado.</p>
+                            <p><strong>For: </strong>Ideal quando <strong>sabemos</strong> exatamente quantas vezes sera
+                                executado.</p>
+                            <p><strong>do...while: </strong>Similar ao while, mas <strong>executa </strong>ao menos uma
+                                vez, mesmo que na
+                                primeira vez, a condição seja falso.</p>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </section>
+
+            <section class="main_caixa" id="function">
+
+                <h1 class="main_caixa_title">Função</h1>
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>Função não no escopo global</h2>
+                        <div class="codigo">
+                            <p>
+                                ( function () { <br>
+                                <span>Resto do codigo...</span> <br>
+                                }) () <span>Chama a função</span> <br>
+                                <span style="color: red;">OU</span> <br>
+                                &lt;script type="module" src="..."&gt;
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Fazer algo quando e chamado</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Função</h2>
+                        <div class="codigo">
+                            <p>
+                                function <span>somar</span>() {<br>
+
+                                }
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Fazer algo quando e chamado</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2> Arrow function</h2>
+                        <div class="codigo">
+                            <p>
+                                Let <span>nome</span> = () => {<br>
+                                } <br>
+                                <span style="color: red;">ou</span> <br>
+                                let <span>nome</span> n => <span>n*2</span>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Uma função curta</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Pâmetros</h2>
+                        <div class="codigo">
+                            <p>
+                                function <span>somar</span>(<span>n1, n2</span>){<br>
+                                <span class="span-MaisEspaco">return n1 + n2</span> <br>
+                                } <br>
+                                somar(1, 2)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>pâremtro na função e uma variavel que a função recebe para trabalhar, e o argumento e a
+                                chamada da função e o valor que passa na função</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Receber varios valores</h2>
+                        <div class="codigo">
+                            <p>
+                                function <span>nome</span>(){<br>
+                                console.log( arguments ) <br>
+                                } <br>
+                                <span style="color: red;">OU</span> <br>
+                                function <span>nome</span> (...<span>dado</span>){<br>
+                                }
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Esses parâmetros irão se transformar em um array, com isso pode inserir varios valores
+                                sem definir quantos serão</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Return</h2>
+                        <div class="codigo">
+                            <p>
+                                function <span>somar</span>(){<br>
+                                <span class="span-MaisEspaco">return 10 + 10</span> <br>
+                                } <br>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Devolve um valor dentro da função para quem chamou</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Break</h2>
+                        <div class="codigo">
+                            <p>
+                                for ( <span>let i = 1; i &lt;= 5; i++</span> ){ <br>
+                                <span class="span-MaisEspaco">if (i == 3){ <br></span>
+                                <span class="spanDentroDeSpan span-MuitoMaisEspaco">Break</span><br>
+                                <span class="span-MaisEspaco">}</span> <br>
+                                }
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O break serve para parar imediatamente um laço (for, while, do...while) ou um switch,
+                                mesmo que ele ainda não tenha
+                                terminado.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Continue</h2>
+                        <div class="codigo">
+                            <p>
+                                for ( <span>let i = 1; i &lt;= 5; i++</span> ){ <br>
+                                <span class="span-MaisEspaco">if (i == 3){ <br></span>
+                                <span class="spanDentroDeSpan span-MuitoMaisEspaco">Continue</span><br>
+                                <span class="span-MaisEspaco">}</span> <br>
+                                }
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O continue serve para pular a repetição atual do loop, mas não para o loop inteiro.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Function Expression</h2>
+                        <div class="codigo">
+                            <p>
+                                const souUmDado = function (<span>nome</span>) { <br>
+                                <span class="span-MaisEspaco">console.log(`ola ${nome}`)</span> <br>
+                                } <br>
+                                <span>souUmDado("brenno")</span> <br>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O continue serve para pular a repetição atual do loop, mas não para o loop inteiro.</p>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </section>
+
+            <section class="main_caixa" id="array">
+
+                <h1 class="main_caixa_title">Array[]</h1>
+
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>Variavel composta (array)</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let fruta = </span>new Array(<span>1,2,3</span>)
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Uma variavel que armazena varios valores, metodo construtor</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Variavel composta (array)</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let fruta = </span>[ <span>"maça", "pera", "uva"</span> ]
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Uma variavel que armazena varios valores</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Variavel composta (array)</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let fruta = </span> new Array(<span>"maça", "pera", "uva"</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Uma variavel que armazena varios valores</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Elementos do array</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>[<span>0</span>]
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Selecionar os elementos do array</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.length</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>.length
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Mostra a quantidade de elementos que existe no array</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Add elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>[<span>3</span>] = "abacaxi"
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Adicionando um novo elemnto no array, no indice 3</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Add elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>.push("<span>cacau</span>")
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Adicionando um novo elemento no ultimo indice</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Add elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>.unshift("<span>cacau</span>")
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Adicionando um novo elemento no primeiro indice</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Add elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>.unshift("<span>goiba</span>")
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Adicionando um novo elemento no começo do indice</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>remover elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Fruta</span>.pop()
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Remove o ultimo indice</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>remover elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                Delete <span>fruta</span>[<span>1</span>]
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Remove o elemento mas o indice fica</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>remover elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>fruta</span>.shift()
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Remove o primeiro indice, ou seja o começo</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>remover elemento</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let letras = ["a", "b", "c", "d", "e"]</span> <br>
+                                <span>letras</span>.splice(<span>2, 2</span>)
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Remove qualquer indice, o primeiro e a posição do indice, e o segundo a quantidade</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Selecionar</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>fruta</span>.slice(<span>0</span>,<span>3</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Seleciona um indice ate o outro</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>indexOf()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = [10, 20, 30]</span><br>
+                                <span>console.log(texto</span>.indexOf(<span>10</span>)<span>)</span>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Para visualizar o indice desse valor selecionado</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>includes()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = [10, 20, 30]</span><br>
+                                <span>console.log(texto</span>.include(<span>10</span>)<span>)</span>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O .includes() é um método do JavaScript que serve para verificar se algo existe dentro de
+                                outra coisa, Ele sempre retorna: true → se encontrou e false → se não encontrou.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>find()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = [10, 20, 30]</span><br>
+                                <span>console.log(texto</span>.find( function(<span>elemento</span>){<br>
+                                return <span>elemento > 10</span> <br>
+                                }<span>)</span> <br>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O .find() é um método de arrays que serve para procurar um elemento dentro do array e
+                                devolver o primeiro que bater com a condição.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>findIndex()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = [10, 20, 30]</span><br>
+                                <span>console.log(texto</span>.findIndex( function(<span>elemento</span>){<br>
+                                return <span>elemento > 10</span> <br>
+                                }<span>)</span> <br>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O .find() é um método de arrays que serve para procurar um elemento dentro do array e
+                                devolver o primeiro que
+                                bater com a condição, porem ira voltar o index do valor.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>join()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const texto = [10, 20, 30]</span><br>
+                                <span>console.log(texto</span>.join(<span>"-(separador)"</span>)<span>)</span>
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O .join() é um método de array que serve para juntar todos os elementos do array em uma
+                                única string (texto) e separador o que vai ficar entre os itens.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>concat()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>
+                                    let arr1 = [1, 2, 3] <br>
+                                    let arr2 = [5, 6, 7] <br>
+                                    let arr3 = arr1</span>.concat(<span>arr2</span>)
+
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira juntar as arrays em uma so</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>reverse()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>
+                                    let arr1 = [1, 2, 3] <br>
+                                    let arr3 = arr1</span>.reverse()
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira inverter os valores</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>reduce()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let arr1 = [10, 20, 30, 40, 50]</span>
+                                <span>const soma = arr1</span>.reduce(function (<span>acumulador,valorAtual, index,
+                                    _arr</span>) {<br>
+                                <span>return acumulador + valorAtual</span>
+                                })
+
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O reduce() é um método de arrays que reduz um array a um único valor. Ele percorre o
+                                array, aplica uma função em cada
+                                elemento e retorna um valor acumulado.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Array.from()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const arr1 = new Array(1,2,3)</span>
+
+                                <span>const arr2 = </span>Array.from(<span>arr1</span>)
+                                <span>arr2.push(4,5)</span>
+                                console.log(arr2)
+
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira criar uma copia do array antigo</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Array.of()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const arr =</span>Array.of(3)
+
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira criar um array com o valor 3, pq se fazer isso assim "new Array(3), ira criar um
+                                array com 3 espaços</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </section>
+
+            <section class="main_caixa" id="objetoLiteral">
+
+                <h1 class="main_caixa_title">Objeto literal {}</h1>
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>Objeto</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let caneta = </span>{<span>nome</span>:"<span>Caneta</span>", <span>
+                                    preco</span>:<span> 2 </span>, <span> quantidade</span>:<span> 10 </span>}
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Para criar um objeto literal.</p>
+                            <p><strong>Canete:</strong>caneta é uma variável essa variável guarda um objeto</p>
+                            <p><strong>nome:</strong> é a chave, também pode ser chamada de propriedade,key</p>
+                            <p><strong>"caneta":</strong> é o valor da chave</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Acessar o valor</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>caneta</span>.<span>nome</span>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>ira acessar o valor da chave</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="main_caixa" id="date">
+
+                <h1 class="main_caixa_title">Date</h1>
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>New Date</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let agr = </span>new Date()
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O new Date() cria um objeto de data e hora no JavaScript.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>getDay</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let agr = </span>new Date()
+                                <span>let hoje =</span>.getDay()
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O new Date() cria um objeto de data e hora no JavaScript.</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </section>
+
+            <section class="main_caixa" id="math">
+
+                <h1 class="main_caixa_title">Math</h1>
+
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>Math</h2>
+                        <div class="codigo">
+                            <p>
+                                Math.
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele serve para fazer cálculos matemáticos: números aleatórios, arredondamento,
+                                potência, raiz quadrada, etc.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Pi</h2>
+                        <div class="codigo">
+                            <p>
+                                Math.Pi
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pegar o numero pi</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Math</h2>
+                        <div class="codigo">
+                            <p>
+                                Math.sqrt(<span>16</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Raiz quadrada de um numero</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Math</h2>
+                        <div class="codigo">
+                            <p>
+                                Math.pow(<span>2,3</span>) = <span> 2<sup>3</sup>=8 </span>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>fazer a potência</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Floor</h2>
+                        <div class="codigo">
+                            <p>
+                                Math.floor()
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Arredondar um numero para baixo</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Math</h2>
+                        <div class="codigo">
+                            <p>
+                                Math.ceil()
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Serve para arredondar para cima.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Round</h2>
+                        <div class="codigo">
+                            <p>
+                                Math.round
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele serve arredondar para o mais proximo.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Max</h2>
+                        <div class="codigo">
+                            <p>
+                                Math.Max(<span>1,2,3</span>)
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pegar o maior numero.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Max</h2>
+                        <div class="codigo">
+                            <p>
+                                Math.min(<span>1,2,3</span>)
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pegar o menor numero.</p>
+                    
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+        </main>
+
+    </div>
+
+    <script src="codigo-js/responsivo.js"></script>
+    <script src="codigo-js/responsivo.js"></script>
+</body>
+
+</html>
