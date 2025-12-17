@@ -13,6 +13,10 @@ function esconderBotaoBiblioteca() {
 }
 
 function esconderTitleIa() {
-    const bibliotecasIa = document.querySelector("#bibliotecas-ia") 
+    const bibliotecasIa = document.querySelector("#bibliotecas-ia")
     bibliotecasIa.classList.toggle("openTitle")
 }
+
+
+    
+
