@@ -288,7 +288,7 @@ body {
   color: var(--colorLetra-cinza);
 }
 
-#infos, #dom, #condicao, #estruturaDeRepeticao, #function, #codigos, #array, #date {
+#infos, #codigos, #function, #propriedades, #dom, #condicao, #estruturaDeRepeticao, #function, #array, #objetoLiteral, #date, #math {
   scroll-margin-top: 10rem;
 }
 
