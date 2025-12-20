@@ -537,6 +537,44 @@
                         </div>
                     </div>
 
+                    <div class="main_caixa_content">
+                        <h2>input enter</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Variavel</span>.addEventListener("keypress" function(<span>a</span>){ <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan">if (<span>a</span>.keycode == 13){}<br></span>
+
+                                })
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Para o input ser pressionado pelo enter
+                            </p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Qualquer tecla</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Variavel</span>.addEventListener("keypress" function(<span>a</span>){ <br>
+                                <span class="span-MaisEspaco spanDentroDeSpan"> console.log(<span>a</span>)</span> <br>
+                    
+                                })
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Para saber qual e o keycode de cada tecla
+                            </p>
+                    
+                        </div>
+                    </div>
+
                    
 
 
@@ -804,6 +842,97 @@
                         </div>
                     </div>
 
+                    <div class="main_caixa_content">
+                        <h2>foreach()</h2>
+                        <div class="codigo">
+                            <p>
+                               <span>const fruta = ["pera", "uva"]</span> <br>
+                               <span>fruta</span>.forEach(function(<span>valor</span>,<span>indice</span>){
+                                <span>console.log(valor, indice)</span>
+                               })
+
+                                <br>
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O foreach é uma forma de percorrer (passar por) vários itens de uma lista, um por um, de forma automática, so funciona em arrays.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>getComputedStyle()</h2>
+                        <div class="codigo">
+                            <p>
+                               <span>const style = </span>getComputedStyle(document.<span>body</span>)
+                               <span>const body = style.background</span>
+                    
+                                
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele retorna os estilos finais de um elemento.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>setInterval()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const time = </span>setInterval(função, tempo em milesegundos)
+                    
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Executa uma função dentro de um intervalo</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>setInterval()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const time = </span>setTimeout(função, tempo em milesegundos)
+                    
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Executa UMA VEZ, depois de um tempo</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>map()</h2>
+                        <div class="codigo">
+                            <p>
+                                .map()
+                    
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Cria um novo array com os resultados da execução da função</p>
+                    
+                        </div>
+                    </div>
+
+                    
+
                 </div>
             </section>
 
@@ -887,6 +1016,36 @@
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
                             <p>diz se a mediaquery e true ou false</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.setAttribute</h2>
+                        <div class="codigo">
+                            <p>
+                              <span>variavel</span>.setAttribute("<span>class</span>","<span>apagar</span>")
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Adicionar qualquer atribute</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.dataSet.index</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>variavel</span>.dataset.index = <span>1</span>
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>é uma etiqueta escondida no HTML usada para guardar um valor (número ou texto) para o JavaScript.</p>
                     
                         </div>
                     </div>
@@ -1157,6 +1316,17 @@
                 <div class="main_caixa_side">
 
                     <div class="main_caixa_content">
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p><strong>For clássico:</strong> Usado com contador, quando é necessário controlar índice, início e fim.</p>
+                            <p><strong>For in:</strong> Retorna o índice (arrays/strings) ou a chave (objetos).</p>
+                            <p><strong>For of:</strong> Retorna o valor dos elementos (iteráveis como arrays e strings).</p>
+
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
                         <h2>While = enquanto</h2>
                         <div class="codigo">
                             <p>
@@ -1279,6 +1449,24 @@
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
                             <p>For que ler os valores, não funciona em objetos</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Pegar os valores da chaves</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const pessoa = { nome: "brenno" }</span> <br>
+                                <span>for (let valor in pessoa) {</span> <br>
+                                <span class="span-MaisEspaco spanDentroDeSpan"><span>console.log(pessoa</span>[<span>valor</span>])</span>
+                                }
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>For que pega os valores da chaves</p>
                     
                         </div>
                     </div>
@@ -1991,6 +2179,61 @@
                     
                         </div>
                     </div>
+
+                    <div class="main_caixa_content">
+                        <h2>every()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const n =</span>[<span>2, 4, 6</span>] <br>
+                                <span>const pares = n</span>.every(function(<span>n</span>){ <br>
+                                    <span>return numero % 2 === 0</span> <br>
+                                })
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele serve para verificar se TODOS os itens do array passam em uma condição.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>some()</h2>
+                        <div class="codigo">
+                            <p>
+                                .some(function(){ <br>
+
+                                })
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele verifica se PELO MENOS UM item do array passa em uma condição. Se um só passar → retorna true Se nenhum passar → retorna false, e a mesma coisa que o very porem o every tem que ser todos os valores, ja o some so precisa de um</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>filter()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const a = [2, 3, "ola"]</span> <br>
+                                <span>a</span>.filter(function(<span>valor, indice, _a</span>){ <br>
+                                    <span> return typeof a === "number"</span> <br>
+                                })
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira vereficar os valores e cria um novo array</p>
+                    
+                        </div>
+                    </div>
+
+                    
 
 
 
