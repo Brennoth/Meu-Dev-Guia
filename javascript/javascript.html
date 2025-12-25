@@ -1839,6 +1839,53 @@
                         </div>
                     </div>
 
+                    <div class="main_caixa_content">
+                        <h2>Função recursiva</h2>
+                        <div class="codigo">
+                            <p>
+                                function <span>chamarRecursiva(max){</span> <br>
+                                <span class="span-MaisEspaco">if(max >= 10) return</span> <br>
+                                <span class="span-MaisEspaco">max++</span> <br>
+                                <span class="span-MaisEspaco">console.log(max)</span> <br>
+                                <span class="span-MaisEspaco">chamarRecursiva(max)</span> <br>
+                                }        <br>
+                                chamarRecursiva(0)
+                                
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>E uma função que chama ela de volta</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Função geradora</h2>
+                        <div class="codigo">
+                            <p>
+                                function* <span>geradora1</span>(){ <br>
+                                <span class="span-MaisEspaco spanDentroDeSpan">yield <span>"valor 1"</span></span> <br>
+                                <span class="span-MaisEspaco spanDentroDeSpan">yield <span>"valor 2"</span></span> <br>
+                                <span class="span-MaisEspaco spanDentroDeSpan">yield <span>"valor 3"</span></span> <br>
+                                } <br>
+                                <span>const g1 = geradora1()</span> <br>
+                                <span class="spanDentroDeSpan"><span>console.log(</span>g1.next().value<span>)</span></span>
+                                
+                               
+                                
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Uma função geradora é uma função especial do JavaScript que não retorna tudo de uma vez vai “entregando” valores aos poucos, quando você pede</p>
+                    
+                        </div>
+                    </div>
+
+
 
 
 
