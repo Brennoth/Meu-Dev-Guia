@@ -1885,6 +1885,54 @@
                         </div>
                     </div>
 
+                    <div class="main_caixa_content">
+                        <h2>Função call()</h2>
+                        <div class="codigo">
+                            <p>       
+                                <span>const pessoa =</span> { <br>
+                                <span>nome: "Ana"</span> <br>
+                                }; <br>
+                                function <span>mostrarNome</span>() { <br>
+                                <span>console.log(this.nome);</span> <br>
+                                } <br>
+
+                                <span>mostrarNome</span>.call(<span>pessoa</span>);
+
+               
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>chama a função definindo o this</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Função apply()</h2>
+                        <div class="codigo">
+                            <p>       
+                                <span>const pessoa =</span> { <br>
+                                <span>nome: "Ana"</span> <br>
+                                }; <br>
+                                function <span>mostrarNome</span>() { <br>
+                                <span>console.log(this.nome);</span> <br>
+                                } <br>
+
+                                <span>mostrarNome</span>.apply(<span>pessoa</span>, [<span>argumentos</span>] );
+
+               
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>.apply() faz o mesmo, mas recebe os argumentos em array</p>
+                    
+                        </div>
+                    </div>
+
 
 
 
