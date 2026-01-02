@@ -942,6 +942,25 @@
                         </div>
                     </div>
 
+                    <div class="main_caixa_content">
+                        <h2>replace()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let texto = "Olá mundo";</span>
+                                <span>let novoTexto = texto</span>.replace(<span>"mundo", "JavaScript"</span>);
+
+                    
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>troca uma parte de um texto por outra.</p>
+                    
+                        </div>
+                    </div>
+
                     
 
                     
@@ -1742,6 +1761,30 @@
                             <p>É uma função usada com new para criar objetos.
                             
                             Ela funciona como um molde.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Prototype</h2>
+                        <div class="codigo">
+                            <p>
+                                function <span>Pessoa</span>(<span>nome, sobrenome</span>){ <br>
+                                    <span class="span-MaisEspaco">this.nome = nome</span> <br>
+                                    <span class="span-MaisEspaco">this.sobrenome = sobrenome</span> <br>
+                                } <br>
+                                <span>Pessoa</span>.prototype.<span>nomeCompleto</span> = function(){ <br>
+                                    <span class="span-MaisEspaco">return `${this.nome} ${this.sobrenome}`</span> <br>
+                                } <br>
+                                <span>const p1</span> = new <span>Pessoa("brenno", "thiago")</span> <br>
+                                <span>console.log(p1.nomeCompleto())</span>
+                                
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Prototype é um lugar onde ficam funções que vários objetos podem usar. Ele serve para compartilhar funções e economizar memória.</p>
                     
                         </div>
                     </div>
@@ -2641,7 +2684,36 @@
                     </div>
 
                     <div class="main_caixa_content">
-                        <h2>Copiar o objeto</h2>
+                        <h2>Object.setPrototypeOf()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const pessoa</span> = { <br>
+                                    <span class="span-MaisEspaco">falar()</span> { <br>
+                                        <span class="span-MuitoMaisEspaco">console.log("Oi");</span> <br>
+                                    } <br>
+                                }; <br>
+
+                                <span>const p1</span> = { <br>
+                                    <span class="span-MaisEspaco">nome: "Ana"</span> <br>
+                                }; <br>
+
+                                Object.setPrototypeOf(<span>p1</span>, <span>pessoa</span>); <br>
+
+                                <span>p1.falar(); // Oi</span>
+
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Esse objeto (obj) agora vai usar esse outro objeto (proto) como prototype.” Ou seja você troca o prototype de um objeto que já existe</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Object.getOwnPropertyDescriptor()</h2>
                         <div class="codigo">
                             <p>
                                 <span>const produto</span> = {  <br>
@@ -2719,6 +2791,48 @@
 
                         </div>
                     </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Prototype</h2>
+                        <div class="codigo">
+                            <p>
+                                function <span>Pessoa</span>(<span>nome, sobrenome</span>){ <br>
+                                    <span class="span-MaisEspaco">this.nome = nome</span> <br>
+                                    <span class="span-MaisEspaco">this.sobrenome = sobrenome</span> <br>
+                                } <br>
+                                <span>Pessoa</span>.prototype.<span>nomeCompleto</span> = function(){ <br>
+                                    <span class="span-MaisEspaco">return `${this.nome} ${this.sobrenome}`</span> <br>
+                                } <br>
+                                <span>const p1</span> = new <span>Pessoa("brenno", "thiago")</span> <br>
+                                <span>console.log(p1.nomeCompleto())</span>
+                                
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Prototype é um lugar onde ficam funções que vários objetos podem usar. Ele serve para compartilhar funções e economizar memória.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Herença</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>Camiseta</span>.prototype = Object.create(<span>Produto</span>.prototype)
+                                
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Herança é quando um objeto pode usar propriedades e métodos de outro objeto.</p>
+                    
+                        </div>
+                    </div>
+
+                    
 
                 </div>
 
