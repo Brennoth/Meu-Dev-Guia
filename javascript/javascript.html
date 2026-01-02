@@ -2465,6 +2465,22 @@
                 <div class="main_caixa_side">
 
                     <div class="main_caixa_content">
+                        <h2>Objeto Construtur</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const pessoa =</span> new Object() <br>
+                                <span>pessoa.nome = "brenno"</span>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Para criar um objeto construtor</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
                         <h2>Objeto</h2>
                         <div class="codigo">
                             <p>
@@ -2532,6 +2548,174 @@
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
                             <p>ira apagar uma chave do objeto</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Object.freeze()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const usuario</span> = {  <br>
+                                    <span>nome: "Ana",</span> <br>
+                                    <span>idade: 25</span> <br>
+                                }; <br>
+
+                                Object.freeze(usuario); <br>
+
+                                <span>usuario.nome = "Carlos"; // NÃO funciona</span> 
+
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Object.freeze() congela um objeto. Isso significa que: você não pode alterar valores não pode adicionar novas propriedades não pode remover propriedades Depois de congelado, o objeto fica somente leitura.</p>
+
+                        </div>
+                    </div>
+
+                     <div class="main_caixa_content">
+                        <h2>Object.defineProperty()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const pessoa = {}</span> <br>
+                                Object.defineProperty(<span>pessoa</span>, <span>"nome"</span>,{ <br>
+                                    <span class="spanDentroDeSpan span-MaisEspaco">value:</span> <span>"Ana"</span>, <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan">writable:</span> <span>true</span>, <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan">enumerable:</span> <span>true</span>, <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan">configurable:</span> <span>true</span> <br>
+                                }); 
+
+
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>cria uma propriedade ou modifica uma propriedade de um objeto, e permite controlar o comportamento dessa propriedade,As opções de Object.defineProperty() são chamadas de descritores</p>
+                            <p><strong>value:</strong> Valor da propriedade:</p>
+                            <p><strong>writable:</strong> Pode mudar o valor?</p>
+                            <p><strong>enumerable:</strong> Aparece em for...in, Object.keys(), A propriedade existe, mas fica “escondida”.</p>
+                            <p><strong>configurable:</strong> Pode apagar ou redefinir?</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Object.defineProperties()</h2>
+                        <div class="codigo">
+                            <p>
+                            <span>const pessoa = {};</span> <br>
+
+                            Object.defineProperties(<span>pessoa</span>, { <br>
+                            <span>nome</span>: { <br>
+                                <span class="spanDentroDeSpan span-MaisEspaco">value:</span> <span>"Ana"</span>, <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan">writable:</span> <span>true</span>, <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan">enumerable:</span> <span>true</span>, <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan">configurable:</span> <span>true</span> <br>
+                            }, <br>
+                            <span>idade</span>: { <br>
+                                <span class="spanDentroDeSpan span-MaisEspaco">value:</span> <span>20</span>, <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan">writable:</span> <span>true</span>, <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan">enumerable:</span> <span>true</span>, <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan">configurable:</span> <span>true</span> <br>
+                            } <br>
+                            });
+
+
+
+
+
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Object.defineProperties() faz a mesma coisa que Object.defineProperty(), só que permite definir VÁRIAS propriedades de uma vez.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Copiar o objeto</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const produto</span> = {  <br>
+                                    <span>nome: "caneca"</span> <br>
+                                } <br>
+                                <span>console.log</span>(Object.getOwnPropertyDescriptor(<span>produto,"nome"</span>))
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Object.getOwnPropertyDescriptor() mostra como uma propriedade foi definida, ele retorna o descritor da propriedade</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Copiar o objeto</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const produto</span> = { <br>
+                                    <span class="span-MaisEspaco">nome: "caneca",</span> <br>
+                                    <span class="span-MaisEspaco">preco: 1.8</span> <br>
+                                } <br>
+                                <span>const outraCoisa</span> = {...produto} <br>
+                                <span style="color: red;">OU</span> <br>
+                                <span>const outraCoisa</span> = Object.assign({}, <span>produto</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira copiar o objeto, ai se altera o principal, n ira alterar a copia</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Ler apenas os valores</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const produto</span> = { <br>
+                                    <span class="span-MaisEspaco">nome: "caneca",</span> <br>
+                                    <span class="span-MaisEspaco">preco: 2</span> <br>
+                                } <br>
+                                <span>console.log</span>(Object.values(<span>produto</span>))
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira ver os valores do objeto, e colocar dentro de um array</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>entries</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const produto</span> = { <br>
+                                    <span class="span-MaisEspaco">nome: "caneca",</span> <br>
+                                    <span class="span-MaisEspaco">preco: 2</span> <br>
+                                } <br>
+                                <span>console.log</span>(Object.entries(<span>produto</span>))
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Object.entries() transforma um objeto em uma lista de pares(no array)</p>
 
                         </div>
                     </div>
