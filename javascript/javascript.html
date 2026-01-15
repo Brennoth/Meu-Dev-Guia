@@ -207,6 +207,12 @@
                     <p>Métodos de objeto são funções dentro de objetos</p>
                 </div>
 
+                <div class="main_infos_content">
+                    <h2>Diferença entre nodeLista e HTMLCollection</h2>
+                    <p><strong>NodeList:</strong> É uma lista de elementos tirada em um momento específico, não se atualiza sozinha, document.querySelectorAll()</p>
+                    <p><strong>HTMLCollection:</strong> É uma lista de elementos HTML, atualiza automaticamente quando o HTML muda, document.getElementsByClassName(), document.getElementsByTagName()</p>
+                </div>
+
 
             </section>
 
@@ -813,21 +819,6 @@
                     </div>
 
                     <div class="main_caixa_content">
-                        <h2>insertBefore()</h2>
-                        <div class="codigo">
-                            <p>
-                                insertBefore(<span>novo elemento</span>,<span>elemento referencial</span>)
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Inserir um elementos depois.</p>
-                    
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
                         <h2>mathMedia()</h2>
                         <div class="codigo">
                             <p>
@@ -914,8 +905,6 @@
                         </div>
                     </div>
 
-                    
-
                     <div class="main_caixa_content">
                         <h2>bind()</h2>
                         <div class="main_caixa_content_explicacao">
@@ -990,23 +979,6 @@
                         </div>
                     </div>
                     
-                    <div class="main_caixa_content">
-                        <h2>ParantElement</h2>
-                        <div class="codigo">
-                            <p>
-                                .parentNode
-                                <span style="color: red;">OU</span>
-                                .parentElement
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Seleciona o pai.</p>
-                    
-                        </div>
-                    </div>
-
                     <div class="main_caixa_content">
                         <h2>Adicionar estilos</h2>
                         <div class="codigo">
@@ -1229,6 +1201,47 @@
                     </div>
 
                     <div class="main_caixa_content">
+                        <h2>createAttribute("")</h2>
+                        <div class="codigo">
+                            <p>document.createAttribute("<span>class</span>")</p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira criar apenas um atributo</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>setAttribute()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>title</span>.setAttribute("<span>class</span>", "<span>nome da class</span>") <br>
+                                <span style="color: red;"> OU(mais moderno)</span> <br>
+                                title.className = "<span>nome da class</span>"
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>ira adicionar ou criar um atributo no elemento</p>
+                    
+                        </div>
+                    </div>
+
+                    
+
+
+
+
+
+
+
+
+
+
+                    <div class="main_caixa_content">
                         <h2>.appendChild()</h2>
                         <div class="codigo">
                             <p>.appendChild(<span>variavel</span>)</p>
@@ -1236,10 +1249,72 @@
                         </div>
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
-                            <p>Para adicionar um elemnto em outra tag.</p>
+                            <p>Para adicionar um elemento em outra tag, e ira adicionar dps do ultimo filho.</p>
                     
                         </div>
                     </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.prepend()</h2>
+                        <div class="codigo">
+                            <p>.prepend(<span>variavel</span>)</p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Para adicionar um elemento em outra tag, e ira adicionar antes do primeiro filho.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>insertBefore()</h2>
+                        <div class="codigo">
+                            <p>
+                                insertBefore(<span>novo elemento</span>,<span>elemento referencial</span>)
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Inserir um elementos depois.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.Before</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>variavel</span>.before
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Inserir algo antes do elemento.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.after</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>variavel</span>.after
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Inserir algo depois do elemento.</p>
+                    
+                        </div>
+                    </div>
+
+
+
+
 
                     <div class="main_caixa_content">
                         <h2>.addeventlistener()</h2>
@@ -1310,6 +1385,160 @@
                     
                         </div>
                     </div>
+
+                    <div class="main_caixa_content">
+                        <h2>ParantElement</h2>
+                        <div class="codigo">
+                            <p>
+                                .parentNode
+                                <span style="color: red;">OU</span>
+                                .parentElement
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Seleciona o pai.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>nextElementSibling</h2>
+                        <div class="codigo">
+                            <p>
+                                .nextElementSibling
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega o próximo irmão.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>previousElementSibling</h2>
+                        <div class="codigo">
+                            <p>
+                                .previousElementSibling
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega o irmão anterior.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>children</h2>
+                        <div class="codigo">
+                            <p>
+                                .children
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>ira pegar todos os filhos que são elementos, e transforma em array.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>childNodes</h2>
+                        <div class="codigo">
+                            <p>
+                                .childNodes
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>ira pegar todos os filhos(nós) que são elementos e textos, ou qualquer outra coisa e transforma e um array.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>firstChild</h2>
+                        <div class="codigo">
+                            <p>
+                                .firstChild
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>ira pegar o primeiro filho que pode ser elemnto ou texto ou qualquer outra coisa.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>firstElementChild</h2>
+                        <div class="codigo">
+                            <p>
+                                .firstElementChild
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>ira pegar o primeiro filho que e elemento.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>lastChild</h2>
+                        <div class="codigo">
+                            <p>
+                                .lastChild
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>ira pegar o ultimo filho que pode ser elemnto ou texto ou qualquer outra coisa.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>lastElementChild</h2>
+                        <div class="codigo">
+                            <p>
+                                .lastElementChild
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>ira pegar o ultimo filho que e elemento.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>hasChildNodes()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>console.log(ul.lastElementChild</span>.hasChildNodes()<span>)</span>
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p><strong>true</strong> → se o elemento tiver qualquer nó filho <strong>false</strong> → se não tiver nenhum.</p>
+                    
+                        </div>
+                    </div>
+
+                    
 
                     
 
