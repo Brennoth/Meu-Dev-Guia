@@ -59,6 +59,7 @@
                     <li><a href="#objetoLiteral">Objeto Literal</a></li>
                     <li><a href="#date">Date</a></li>
                     <li><a href="#math">Math</a></li>
+                    <li><a href="#POO">POO</a></li>
                     
 
 
@@ -950,6 +951,24 @@
                         </div>
                     </div>
 
+                    <div class="main_caixa_content">
+                        <h2>.trim()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>variavel</span>.trim()
+
+                    
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Remove espaços em branco, do início, do fim.</p>
+                    
+                        </div>
+                    </div>
+
                     
 
                     
@@ -1091,6 +1110,25 @@
                             <h3>Explicação</h3>
                             <p>innerText é uma propriedade dos elementos HTML
                             Ela serve para ler ou alterar o texto visível dentro de um elemento.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.disabled</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>variavel</span>.disabled = true; <span>//desabilitar</span> <br>
+
+                                 <span>variavel</span>.disabled = false; <span>//habilitar</span>
+
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>habilitar ou desabilitar algo.</p>
                     
                         </div>
                     </div>
@@ -1313,6 +1351,28 @@
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
                             <p>É um método do JavaScript que insere código HTML dentro da página, em posições específicas, sem apagar o conteúdo existente.</p>
+                            <p>
+                                <strong>beforebegin:</strong>Antes do elemento <br>
+                                <strong>afterbegin:</strong>Dentro do elemento, no início <br>
+                                <strong>beforeend:</strong>Dentro do elemento, no final <br>
+                                <strong>afterend:</strong>Depois do elemento
+                            </p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.insertAdjacentElement()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const div = document.querySelector("#container")</span> <br>
+                                <span>div</span>.insertAdjacentElement("<span>beforeend</span>", "<span>elemento ou variavel</p></span>");
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>É um método do JavaScript que insere elemntos dentro da página, em posições específicas, sem apagar o conteúdo existente.</p>
                             <p>
                                 <strong>beforebegin:</strong>Antes do elemento <br>
                                 <strong>afterbegin:</strong>Dentro do elemento, no início <br>
@@ -1994,6 +2054,74 @@
                     </div>
 
                     <div class="main_caixa_content">
+                        <h2>Factory Function (prototype)</h2>
+                        <div class="codigo">
+                            <p>
+                                function <span>criaPessoa</span>(<span>nome</span>, <span>sobrenome</span>){ <br>
+
+                                    <span class="spanDentroDeSpan span-MaisEspaco">const <span>pessoaProtoype</span> = {</span> <br>
+                                        <span class="spanDentroDeSpan span-MuitoMaisEspaco"><span>falar</span>(){</span> <br>
+                                            <span class="spanDentroDeSpan span-MuitoMaisEspaco"><span>console.log(`${this.nome} esta falando`)</span></span> <br>
+                                        <span class="spanDentroDeSpan span-MuitoMaisEspaco">}</span> <br>
+                                    <span class="spanDentroDeSpan span-MaisEspaco">}</span> <br>
+                                    <span class="spanDentroDeSpan span-MaisEspaco">return Object.create(<span>pessoaProtoype</span>,{</span> <br>
+                                        <span class="spanDentroDeSpan span-MuitoMaisEspaco"><span>nome</span>: {value: <span>nome</span>},</span> <br>
+                                        <span class="spanDentroDeSpan span-MuitoMaisEspaco"><span>sobrenome</span>: {value: <span>sobrenome</span>}</span> <br>
+                                    <span class="spanDentroDeSpan span-MaisEspaco">})</span> <br>
+                                } <br>
+
+                                const <span>p1</span> = <span>criaPessoa</span>("<span>brenno</span>", "<span>thiago</span>") <br>
+                                <span>console.log(p1.falar())</span>
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>e uma forma de Factory function de n criar funções desnecessarias</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Factory Function (prototype) ou mudolo de comportamento</h2>
+                        <div class="codigo">
+                            <p>
+                                const falar = {  <br>
+                                    falar(){ <br>
+                                        console.log(`${this.nome} esta falando`) <br>
+                                    } <br>
+                                } <br>
+                                const comer = { <br>
+                                    comer(){ <br>
+                                        console.log(`${this.nome} esta comendo`) <br>
+                                    } <br>
+                                } <br>
+
+                                const pessoaProtoype = {... falar, ...comer}
+                                
+
+
+
+                                function <span>criaPessoa</span>(<span>nome</span>, <span>sobrenome</span>){ <br>
+                                    <span class="spanDentroDeSpan span-MaisEspaco">return Object.create(<span>pessoaProtoype</span>,{</span> <br>
+                                        <span class="spanDentroDeSpan span-MuitoMaisEspaco"><span>nome</span>: {value: <span>nome</span>},</span> <br>
+                                        <span class="spanDentroDeSpan span-MuitoMaisEspaco"><span>sobrenome</span>: {value: <span>sobrenome</span>}</span> <br>
+                                    <span class="spanDentroDeSpan span-MaisEspaco">})</span> <br>
+                                } <br>
+
+                                const <span>p1</span> = <span>criaPessoa</span>("<span>brenno</span>", "<span>thiago</span>") <br>
+                                <span>console.log(p1.falar())</span>
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>e uma forma de Factory function de n criar funções desnecessarias</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
                         <h2>Constructor Function</h2>
                         <div class="codigo">
                             <p>
@@ -2012,6 +2140,30 @@
                             <p>É uma função usada com new para criar objetos.
                             
                             Ela funciona como um molde.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Constructor Function Prototype</h2>
+                        <div class="codigo">
+                            <p>
+                                function <span>Pessoa</span>(<span>nome, sobrenome</span>){ <br>
+                                    <span class="span-MaisEspaco">this.nome = nome</span> <br>
+                                    <span class="span-MaisEspaco">this.sobrenome = sobrenome</span> <br>
+                                } <br>
+                                <span>Pessoa</span>.prototype.<span>nomeCompleto</span> = function(){ <br>
+                                    <span class="span-MaisEspaco">return `${this.nome} ${this.sobrenome}`</span> <br>
+                                } <br>
+                                <span>const p1</span> = new <span>Pessoa("brenno", "thiago")</span> <br>
+                                <span>console.log(p1.nomeCompleto())</span>
+                                
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Prototype é um lugar onde ficam funções que vários objetos podem usar. Ele serve para compartilhar funções e economizar memória.</p>
                     
                         </div>
                     </div>
@@ -3066,30 +3218,6 @@
                     </div>
 
                     <div class="main_caixa_content">
-                        <h2>Prototype</h2>
-                        <div class="codigo">
-                            <p>
-                                function <span>Pessoa</span>(<span>nome, sobrenome</span>){ <br>
-                                    <span class="span-MaisEspaco">this.nome = nome</span> <br>
-                                    <span class="span-MaisEspaco">this.sobrenome = sobrenome</span> <br>
-                                } <br>
-                                <span>Pessoa</span>.prototype.<span>nomeCompleto</span> = function(){ <br>
-                                    <span class="span-MaisEspaco">return `${this.nome} ${this.sobrenome}`</span> <br>
-                                } <br>
-                                <span>const p1</span> = new <span>Pessoa("brenno", "thiago")</span> <br>
-                                <span>console.log(p1.nomeCompleto())</span>
-                                
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Prototype é um lugar onde ficam funções que vários objetos podem usar. Ele serve para compartilhar funções e economizar memória.</p>
-                    
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
                         <h2>Herença</h2>
                         <div class="codigo">
                             <p>
@@ -3298,6 +3426,74 @@
 
                 </div>
 
+
+            </section>
+
+            <section class="main_caixa" id="POO">
+
+                <h1 class="main_caixa_title">POO</h1>
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>POO</h2>
+                        <div class="codigo">
+                            <p>
+                                class <span>Pessoa</span>{ <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan"><span>constructor</span>(<span>nome</span>, <span>sobrenome</span>)</span>{ <br>
+                                        <span class="spanDentroDeSpan span-MuitoMaisEspaco">this.<span>nome</span> = <span>nome</span></span> <br>
+                                        <span class="spanDentroDeSpan span-MuitoMaisEspaco">this.<span>sobrenome</span> = <span>sobrenome</span></span> <br>
+                                    <span class="spanDentroDeSpan span-MaisEspaco">}</span> <br>
+                                    <span class="span-MaisEspaco">falar</span>(){ <br>
+                                        <span class="span-MuitoMaisEspaco">console.log(this.nome+ " esta falando")</span> <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan">} </span><br> <br>
+                                } <br>
+                                const <span>p1</span>  = new <span>Pessoa</span>("<span>brenno</span>", "<span>thiago</span>") <br>
+                                <span>p1.falar()</span>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Este código utiliza Programação Orientada a Objetos (POO) para criar uma classe que serve como modelo para criar objetos com propriedades e métodos.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Symbol</h2>
+                        <div class="codigo">
+                            <p>
+                                const<span>_velocidade</span> = Symbol("<span>velocidade</span>") <br>
+                                class <span>Carro</span>{ <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan"><span>constructor</span>(<span>nome</span>, <span>sobrenome</span>)</span>{ <br>
+                                        <span class="spanDentroDeSpan span-MuitoMaisEspaco">this.<span>nome</span> = <span>nome</span></span> <br>
+                                        <span class="spanDentroDeSpan span-MuitoMaisEspaco">this<span>[_velocidade]</span> = <span>0</span></span> <br>
+                                    <span class="spanDentroDeSpan span-MaisEspaco">}</span> <br>
+                                    <span class="span-MaisEspaco">acelerar</span>(){ <br>
+                                        <span class="span-MuitoMaisEspaco">if(this[_velocidade] >= 100) return <br>
+        this[_velocidade]++</span> <br>
+                                    <span class="span-MaisEspaco spanDentroDeSpan">} </span><br> <br>
+                                } <br>
+                                const <span>p1</span>  = new <span>Pessoa</span>("<span>brenno</span>", "<span>thiago</span>") <br>
+                                <span>p1.falar()</span>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Symbol é um tipo primitivo usado para criar chaves únicas em objetos.
+Ele serve para proteger propriedades internas, evitando que sejam acessadas ou alteradas diretamente.
+No código, foi usado para esconder a variável velocidade, garantindo que ela só seja modificada pelos métodos da classe (acelerar).
+Assim, valores atribuídos diretamente ao objeto não afetam o valor real protegido pelo Symbol.</p>
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
 
             </section>
 
