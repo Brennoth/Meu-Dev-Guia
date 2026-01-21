@@ -969,6 +969,21 @@
                         </div>
                     </div>
 
+                    <div class="main_caixa_content">
+                        <h2>.test()</h2>
+                        <div class="codigo">
+                            <p>
+                                /<span>^[a-zA-Z0-9]+$</span>/.test(<span>texto</span>)
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Esse texto combina com essa expressão regular?.</p>
+                    
+                        </div>
+                    </div>
+
                     
 
                     
@@ -1304,16 +1319,16 @@
                         </div>
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
-                            <p>Inserir um elementos depois.</p>
+                            <p>Inserir um elementos antes.</p>
                     
                         </div>
                     </div>
 
                     <div class="main_caixa_content">
-                        <h2>.Before</h2>
+                        <h2>.Before()</h2>
                         <div class="codigo">
                             <p>
-                                <span>variavel</span>.before
+                                <span>variavel</span>.before()
                             </p>
                     
                         </div>
@@ -1325,10 +1340,10 @@
                     </div>
 
                     <div class="main_caixa_content">
-                        <h2>.after</h2>
+                        <h2>.after()</h2>
                         <div class="codigo">
                             <p>
-                                <span>variavel</span>.after
+                                <span>variavel</span>.after()
                             </p>
                     
                         </div>
@@ -3486,6 +3501,53 @@
 Ele serve para proteger propriedades internas, evitando que sejam acessadas ou alteradas diretamente.
 No código, foi usado para esconder a variável velocidade, garantindo que ela só seja modificada pelos métodos da classe (acelerar).
 Assim, valores atribuídos diretamente ao objeto não afetam o valor real protegido pelo Symbol.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>extends</h2>
+                        <div class="codigo">
+                            <p>
+                                class <span>DispositivoEletronico</span>{...} <br>
+                                class <span>Smartphone</span> extends <span>DispositivoEletronico</span>{...}
+
+}
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>smartphone ira herdar atributos e métodos da classe pai,pode sobrescrever métodos e usar super/parent.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>super()</h2>
+                        <div class="codigo">
+                            <p>
+                                class <span>DispositivoEletronico</span>{
+                                    <span class="spanDentroDeSpan span-MaisEspaco">constructor(<span>nome</span>){</span> <br>
+                                        <span class="spanDentroDeSpan span-MuitoMaisEspaco">this.<span>nome</span> = <span>nome</span></span> <br>
+                                    <span class="spanDentroDeSpan span-MaisEspaco">}</span> <br>
+                                } <br>
+                                class <span>Smartphone</span> extends <span>DispositivoEletronico</span>{ <br>
+                                    <span class="spanDentroDeSpan span-MaisEspaco">constructor(<span>nome</span>, <span>cor</span>){</span> <br>
+                                        <span class="spanDentroDeSpan span-MuitoMaisEspaco">super(<span>nome</span>)</span> <br>
+                                        <span class="spanDentroDeSpan span-MuitoMaisEspaco">this.<span>cor</span> = <span>cor</span></span>  <br>
+                                    <span class="spanDentroDeSpan span-MaisEspaco">}</span>
+                                }
+
+
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Serve para chamar métodos ou o construtor da classe pai dentro da classe filha..</p>
 
 
                         </div>
