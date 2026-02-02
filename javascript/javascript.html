@@ -60,6 +60,7 @@
                     <li><a href="#date">Date</a></li>
                     <li><a href="#math">Math</a></li>
                     <li><a href="#POO">POO</a></li>
+                    <li><a href="#assincrono">Assincrono</a></li>
                     
 
 
@@ -3580,6 +3581,98 @@ Assim, valores atribuídos diretamente ao objeto não afetam o valor real proteg
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
                             <p>Serve para chamar métodos ou o construtor da classe pai dentro da classe filha..</p>
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </section>
+
+            <section class="main_caixa" id="assincrono">
+
+                <h1 class="main_caixa_title">Assincrono</h1>
+                <div class="main_caixa_side">
+
+                    <div class="main_caixa_content">
+                        <h2>Promise</h2>
+                        <div class="codigo">
+                            <p>
+                                const <span>buscarDados</span> = new Promise((resolve, reject) => { <br>
+
+                                    <span>const sucesso = Math.random() > 0.5</span> <br>
+                                    <span class="spanDentroDeSpan span-MaisEspaco"><span>setTimeout(() => {</span></span> <br>
+                                        <span class="span-MuitoMaisEspaco">if (sucesso) {</span> <br>
+                                            <span class="span-MuitoMaisEspaco">resolve("Dados carregados!");</span> <br>
+                                        <span class="span-MuitoMaisEspaco">} else {</span> <br>
+                                            <span class="span-MuitoMaisEspaco">reject("Erro ao carregar os dados!");</span> <br>
+                                        <span class="span-MuitoMaisEspaco">}</span> <br>
+                                        
+                                    <span class="span-MaisEspaco">}, 2000);</span> <br>
+                                }); <br>
+
+                                <span>buscarDados</span>.then(<span>resposta</span> => { <br>
+                                    <span class="span-MaisEspaco">console.log(resposta);</span> <br>
+                                }).catch(<span>erro</span> => { <br>
+                                    <span class="span-MuitoMaisEspaco">console.log(erro);</span> <br>
+                                });
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>new Promise cria uma promessa de que algo vai acontecer no futuro — ou dar certo (resolve) ou dar errado (reject).</p>
+                            <p><sstrong>.then():</sstrong> é executado quando a Promise dá certo (quando chama resolve).</p>
+                            <p><strong>.catch():</strong> é executado quando a Promise dá errado (quando chama reject).</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Promise.all</h2>
+                        <div class="codigo">
+                            <p>
+                                Promise.all(<span>[promise1, promise2, promise3]</span>).then(<span>resultados</span> => { <br>
+                                    <span class="span-MaisEspaco">console.log(resultados);</span> <br>
+                                }) <br>
+                                .catch(<span>erro</span> => { <br>
+                                    <span class="span-MaisEspaco">console.log(erro);</span> <br>
+                                });
+                                
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele recebe várias Promises e, só entra no .then() quando todas derem certo, se uma falhar, ele cai direto no .catch()</p>
+                            
+
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Promise.race</h2>
+                        <div class="codigo">
+                            <p>
+                                Promise.race(<span>[promise1, promise2, promise3]</span>).then(<span>resultados</span> => { <br>
+                                    <span class="span-MaisEspaco">console.log(resultados);</span> <br>
+                                }) <br>
+                                .catch(<span>erro</span> => { <br>
+                                    <span class="span-MaisEspaco">console.log(erro);</span> <br>
+                                });
+                                
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele recebe várias Promises e, retorna a primeira que terminar (seja sucesso ou erro) não importa se as outras ainda estão rodando — ele ignora.</p>
+                            
 
 
                         </div>
