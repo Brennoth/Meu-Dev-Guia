@@ -38,7 +38,6 @@ body {
   left: 0;
   top: 0;
   z-index: 99;
-  /*mudando a posição dos traços de cima e de baixo*/
 }
 .header .hamburguer {
   position: relative;
@@ -71,6 +70,9 @@ body {
   height: 0.2rem;
   width: 2.4rem;
   position: absolute;
+}
+.header {
+  /*mudando a posição dos traços de cima e de baixo*/
 }
 .header .traço-hambuerguer::after {
   transform: translateY(8px);
@@ -288,7 +290,7 @@ body {
   color: var(--colorLetra-cinza);
 }
 
-#infos, #codigos, #function, #propriedades, #dom, #condicao, #estruturaDeRepeticao, #function, #array, #objetoLiteral, #date, #math {
+#infos, #codigos, #function, #propriedades, #dom, #condicao, #estruturaDeRepeticao, #function, #array, #objetoLiteral, #date, #math, #POO, #assincrono, #node {
   scroll-margin-top: 10rem;
 }
 
