@@ -49,7 +49,7 @@
                 <ul class="links_nav_list">
                     <li><a href="#infos">Infos</a></li>
                     <li><a href="#codigos">Códigos</a></li>
-                    <li><a href="#funções">Funções</a></li>
+                    <li><a href="#métodos">métodos </a></li>
                     <li><a href="#propriedades">Propriedades</a></li>
                     <li><a href="#dom">DOM</a></li>
                     <li><a href="#condicao">Condição</a></li>
@@ -723,25 +723,12 @@
 
             </section>
 
-            <section class="main_caixa" id="funções">
+            <section class="main_caixa" id="métodos ">
 
-                <h1 class="main_caixa_title">Funções</h1>
+                <h1 class="main_caixa_title">Métodos </h1>
                 <div class="main_caixa_side">
 
-                    <div class="main_caixa_content">
-                        <h2>tostring()</h2>
-                        <div class="codigo">
-                            <p>
-                                .tostring()
-                            </p>
-
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Transforma um numero ou qualquer coisa em string</p>
-
-                        </div>
-                    </div>
+                    
 
                     <div class="main_caixa_content">
                         <h2>Boolean()</h2>
@@ -766,7 +753,7 @@
                         <h2>isNaN()</h2>
                         <div class="codigo">
                             <p>
-                                .isNaN(<span>Variavel</span>)
+                                Number.isNaN(<span>Variavel</span>)
                             </p>
 
                         </div>
@@ -778,16 +765,16 @@
                     </div>
 
                     <div class="main_caixa_content">
-                        <h2>isinfinite()</h2>
+                        <h2>isFinite()</h2>
                         <div class="codigo">
                             <p>
-                                .isinfinite(<span>Variavel</span>)
+                                Number.isFinite(<span>variavel</span>)
                             </p>
 
                         </div>
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
-                            <p>E inverso de "isNaN"</p>
+                            <p>serve para verificar se um valor é um número finito válido.</p>
 
                         </div>
                     </div>
@@ -807,20 +794,7 @@
                         </div>
                     </div>
 
-                    <div class="main_caixa_content">
-                        <h2>tostring()</h2>
-                        <div class="codigo">
-                            <p>
-                                .tostring()
-                            </p>
-
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Transforma qualquer valor em uma string</p>
-
-                        </div>
-                    </div>
+                    
 
                     <div class="main_caixa_content">
                         <h2>CharAt()</h2>
@@ -847,10 +821,71 @@
                         </div>
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
-                            <p>Colocar mais casas decimais em numeros</p>
+                            <p>Colocar mais casas decimais em numeros, porem o numero quando e colocado isso vira string.</p>
 
                         </div>
                     </div>
+
+                    <div class="main_caixa_content">
+                        <h2>toPrecision()</h2>
+                        <div class="codigo">
+                            <p>
+                                toPrecision(<span>2</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>define quantos algarismos significativos um número terá, arredondando o valor quando necessário. Ele retorna o resultado como texto (string).</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>toExponential()</h2>
+                        <div class="codigo">
+                            <p>
+                                toExponential(<span>2</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira retornar uma notação cientifica Ele retorna o resultado como texto (string).</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>tostring()</h2>
+                        <div class="codigo">
+                            <p>
+                                .tostring()
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Transforma qualquer valor em uma string</p>
+
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>toLocaleString()</h2>
+                        <div class="codigo">
+                            <p>
+                                toLocaleString(<span>pt-br</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>formata um valor de acordo com o idioma/região escolhida, principalmente números e datas.</p>
+
+                        </div>
+                    </div>
+
 
                     <div class="main_caixa_content">
                         <h2>indexOf()</h2>
