@@ -158,7 +158,7 @@
                     
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
-                            <p>Quando você arrasta uma fórmula, a âncora impede que certas partes mudem.</p>              
+                            <p>Quando você arrasta uma fórmula, a âncora impede que certas partes mudem, vc seleciona oq vc quer travar e apertar o f4.</p>              
                         </div>
                     </div>
 
@@ -220,6 +220,25 @@
                     
                         </div>
                     </div>
+
+                    <div class="main_caixa_content">
+                        <h2>PROCURAR()</h2>
+                    
+                        <div class="codigo">
+                            <p><span>Brenno Thiago Sousa</span> = PROCURAR(<span>Thiago;A1;1</span>)</p>
+                            <p class="res">Resultado = <span>8</span></p>
+                        </div>
+                    
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O excel ira procurar o texto que vc quer, e ira mostrar o indice desse texto e A função PROCURAR() não diferencia letras maiúsculas e minúsculas e aceita o uso de curingas (* e ?)s. <br><strong>O primeiro (Thiago);</strong> É o texto que vc quer achar
+                                <br><strong>O segundo (A1);</strong>É a frase onde vc quer selecionar o texto. <br><strong>O terceiro (1);</strong>Por onde o excel ira começar a procurar
+                            </p>
+                    
+                        </div>
+                    </div>
+
+
 
                     <div class="main_caixa_content">
                         <h2>LOCALIZAR() + EXE.TEXTO()</h2>
@@ -370,6 +389,25 @@
                         </div>
                     </div>
 
+
+                    <div class="main_caixa_content">
+                        <h2>MUDAR()</h2>
+                    
+                        <div class="codigo">
+                            <p><span>Brenno Sousa</span>=MUDAR(<span>A1;7;5"Thiago"</span>)</p>
+                            <p class="res">Resultado = <span>Brenno Thiago</span></p>
+                        </div>
+                    
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Essa função serve para substituir caracteres pela posição dentro do texto.</p>
+                            <p><strong>O primeiro (A1)</strong> ira selecionar o texto para arrumar.</p>
+                            <p><strong>O segundo (7):</strong>começar no caractere 17</p>
+                            <p><strong>O terceiro (5):</strong>substituir 5 caracteres</p>
+                            <p><strong>O quarto (thiago):</strong>Novo texto</p>
+                        </div>
+                    </div>
+
                     <div class="main_caixa_content">
                         <h2>SUBTOTAL()</h2>
                     
@@ -398,6 +436,113 @@
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
                             <p>Colocar uma data especifica</p>
+                        </div>
+                    </div>
+
+
+                    <div class="main_caixa_content">
+                        <h2>AGREGAR()</h2>
+                    
+                        <div class="codigo">
+                            <p>AGREGAR(<span>1</span>;<span>6</span>;<span>A1</span>;<span>A2</span>)</p>
+                             
+                        </div>
+                    
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>é uma função avançada que permite realizar cálculos como SOMA, MÉDIA, MÁXIMO, MÍNIMO, CONTAGEM, entre outros, com uma grande vantagem: ela pode ignorar erros, linhas ocultas e outras funções SUBTOTAL/AGREGAR.</p>
+                            <p><strong>O primeiro (1)</strong> ira selecionar o calculo que vc quer.</p>
+                            <p><strong>O segundo (6):</strong>IRA selecionar oq vc quer isgnorar.</p>
+                            <p><strong>O terceiro (A1):</strong>Vai ateo outro numero que vc quer calcular</p>
+                            <p><strong>O terceiro (A2):</strong>Vai ateo outro numero que vc quer calcular</p>
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>CONT.SE()</h2>
+                    
+                        <div class="codigo">
+                            <p>
+                                <span>breno</span> <br> 
+                                <span>thiago</span> <br>
+                                <span>brenno</span> <br> 
+
+                                =CONT.SE(<span>A1:A3</span>;<span>brenno</span>)
+                            
+                            </p>
+                            <p class="res">Resultado = <span>2</span> </p>
+                        </div>
+                    
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>A função CONT.SE() serve para contar quantas células atendem a um determinado critério.</p>
+                            <p><strong>O primeiro (A1)</strong> ira selecionar o texto para analisar.</p>
+                            <p><strong>O segundo (A3):</strong> ira selecionar o texto para analisar</p>
+                            <p><strong>O terceiro (brenno):</strong> sera o texto analisado</p>
+                            <p><strong>O quarto (thiago):</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>ARRED()</h2>
+                    
+                        <div class="codigo">
+                            <p>
+                                <span>12344,6668</span> <br>
+
+                                =ARRED(<span>A1</span>;<span>1</span>)
+                            
+                            </p>
+                            <p class="res">Resultado = <span>12344,7</span> </p>
+                        </div>
+                    
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>A função serve para arredontar valores.</p>
+                            <p><strong>O (1)</strong> quantas casas decimais quer.</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>ARREDONDAR.PARA.BAIXO()</h2>
+                    
+                        <div class="codigo">
+                            <p>
+                                <span>12344,6668</span> <br>
+
+                                =ARRED(<span>A1</span>;<span>2</span>)
+                            
+                            </p>
+                            <p class="res">Resultado = <span>12344,66</span> </p>
+                        </div>
+                    
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>A função serve para arredontar pra baixo.</p>
+                            <p><strong>O (2)</strong> quantas casas decimais quer.</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>ARREDONDAR.PARA.CIMA()</h2>
+                    
+                        <div class="codigo">
+                            <p>
+                                <span>12344,6668</span> <br>
+
+                                =ARRED(<span>A1</span>;<span>2</span>)
+                            
+                            </p>
+                            <p class="res">Resultado = <span>12344,67</span> </p>
+                        </div>
+                    
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>A função serve para arredontar pra cima.</p>
+                            <p><strong>O (2)</strong> quantas casas decimais quer.</p>
+                            
                         </div>
                     </div>
 
