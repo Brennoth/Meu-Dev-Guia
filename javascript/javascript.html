@@ -728,26 +728,8 @@
                 <h1 class="main_caixa_title">Métodos </h1>
                 <div class="main_caixa_side">
 
-                    
 
-                    <div class="main_caixa_content">
-                        <h2>Boolean()</h2>
-                        <div class="codigo">
-                            <p>
-                                <span>let nome = "Bn"<br></span>
 
-                                <span>if (</span>Boolean(nome) <span>) { <br>
-                                    console.log("O nome existe") <br>
-                                    } <br> </span>
-                            </p>
-
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Função que converte um valor para true ou false.</p>
-
-                        </div>
-                    </div>
 
                     <div class="main_caixa_content">
                         <h2>isNaN()</h2>
@@ -789,24 +771,7 @@
                         </div>
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
-                            <p>Descubrir se a variavel e nmero inteiro</p>
-
-                        </div>
-                    </div>
-
-                    
-
-                    <div class="main_caixa_content">
-                        <h2>CharAt()</h2>
-                        <div class="codigo">
-                            <p>
-                                .CharAt(<span>6</span>)
-                            </p>
-
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Pega o indice de uma string</p>
+                            <p>Descubrir se a variavel e numero inteiro</p>
 
                         </div>
                     </div>
@@ -857,21 +822,6 @@
                     </div>
 
                     <div class="main_caixa_content">
-                        <h2>tostring()</h2>
-                        <div class="codigo">
-                            <p>
-                                .tostring()
-                            </p>
-
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Transforma qualquer valor em uma string</p>
-
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
                         <h2>toLocaleString()</h2>
                         <div class="codigo">
                             <p>
@@ -884,8 +834,7 @@
                             <p>formata um valor de acordo com o idioma/região escolhida, principalmente números e datas.</p>
 
                         </div>
-                    </div>
-
+                    </div>                 
 
                     <div class="main_caixa_content">
                         <h2>indexOf()</h2>
@@ -904,6 +853,37 @@
                     </div>
 
                     <div class="main_caixa_content">
+                        <h2>matchAll()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span> const texto = "banana" </span>
+                                <span> const resultado</span> = [...<span>texto</span>.matchAll(<span>"a"</span>)];
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O método matchAll() é usado para encontrar todas as ocorrências de um padrão dentro de uma string. Ele retorna um iterador contendo informações sobre cada ocorrência encontrada ou seja ele retorna um array com varios arrays com informações da string, so funciona em string</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>.test()</h2>
+                        <div class="codigo">
+                            <p>
+                                /<span>^[a-zA-Z0-9]+$</span>/.test(<span>texto</span>)
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Esse texto combina com essa expressão regular?.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
                         <h2>slice()</h2>
                         <div class="codigo">
                             <p>
@@ -917,152 +897,6 @@
                             <h3>Explicação</h3>
                             <p>O slice() recorta uma parte de algo e retorna uma cópia sem alterar o original</p>
 
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
-                        <h2>PreventDefault()</h2>
-                        <div class="codigo">
-                            <p>
-                                <span>form.onsubmit = function (event) {</span> <br>
-                                <span class="span-MaisEspaco spanDentroDeSpan"><span>event</span>.preventDefault();</span> <br>
-                                <span class="span-MaisEspaco">alert("A página NÃO recarregou");</span> <br>
-                                };
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>O preventDefault() impede o comportamento padrão do navegador.</p>
-                    
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
-                        <h2>RemoveChild()</h2>
-                        <div class="codigo">
-                            <p>
-                                removeChild(<span>variavel</span>)
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Remove o filho.</p>
-                    
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
-                        <h2>mathMedia()</h2>
-                        <div class="codigo">
-                            <p>
-                                window.matchMedia("(<SPAN>max-width: 768px</SPAN>)");
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>window.matchMedia() serve para verificar, no JavaScript, se a tela atende a uma media query do CSS..</p>
-                    
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
-                        <h2>foreach()</h2>
-                        <div class="codigo">
-                            <p>
-                               <span>const fruta = ["pera", "uva"]</span> <br>
-                               <span>fruta</span>.forEach(function(<span>valor</span>,<span>indice</span>){
-                                <span>console.log(valor, indice)</span>
-                               })
-
-                                <br>
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>O foreach é uma forma de percorrer (passar por) vários itens de uma lista, um por um, de forma automática, so funciona em arrays.</p>
-                    
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
-                        <h2>getComputedStyle()</h2>
-                        <div class="codigo">
-                            <p>
-                               <span>const style = </span>getComputedStyle(document.<span>body</span>)
-                               <span>const body = style.background</span>
-                    
-                                
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Ele retorna os estilos finais de um elemento.</p>
-                    
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
-                        <h2>setInterval()</h2>
-                        <div class="codigo">
-                            <p>
-                                <span>const time = </span>setInterval(função, tempo em milesegundos)
-                    
-                    
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Executa uma função dentro de um intervalo</p>
-                    
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
-                        <h2>setInterval()</h2>
-                        <div class="codigo">
-                            <p>
-                                <span>const time = </span>setTimeout(função, tempo em milesegundos)
-                    
-                    
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Executa UMA VEZ, depois de um tempo</p>
-                    
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
-                        <h2>bind()</h2>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>bind() cria uma nova função com o this travado.</p>
-                    
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
-                        <h2>eval()</h2>
-                        <div class="codigo">
-                            <p>
-                                .eval()
-                    
-                    
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Toda string vira em codigo javascript, e perigoso de se ultizar</p>
-                    
                         </div>
                     </div>
 
@@ -1123,51 +957,6 @@
                     </div>
 
                     <div class="main_caixa_content">
-                        <h2>.test()</h2>
-                        <div class="codigo">
-                            <p>
-                                /<span>^[a-zA-Z0-9]+$</span>/.test(<span>texto</span>)
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Esse texto combina com essa expressão regular?.</p>
-                    
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
-                        <h2>window.getComputedStyle(element)</h2>
-                        <div class="codigo">
-                            <p>
-                                window.getComputedStyle(<span>element</span>)
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>É uma função do navegador que retorna os estilos finais reais de um elemento.</p>
-                    
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
-                        <h2>focus()</h2>
-                        <div class="codigo">
-                            <p>
-                                <span>input</span>.focus()
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>coloca o foco em um elemento, deixando ele ativo para interação do usuário..</p>
-                    
-                        </div>
-                    </div>
-
-                    <div class="main_caixa_content">
                         <h2>toLocaleUpperCase()</h2>
                         <div class="codigo">
                             <p>
@@ -1196,24 +985,6 @@
                     
                         </div>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>valueOf()</h2>
-                        <div class="codigo">
-                            <p>
-                                <span>let str1 = new String </span> (<span>"ola mundo" </span>)
-                                str1.valueOf()
-                                <span> </span>
-                            </p>
-                    
-                        </div>
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>retorna o valor primitivo de um objeto, permitindo que ele seja usado em operações como números, datas ou comparações.</p>
-                    
-                        </div>
-                    </div>
-
 
                     <div class="main_caixa_content">
                         <h2>padStart()</h2>
@@ -1245,21 +1016,69 @@
                             <p>serve para completar o fim de um texto com caracteres que estão faltando até ele atingir um tamanho específico. o primeiro valor tem que ser o maior que o tamanho de caracter na variavel, e o segundo valor e oq vc quer add</p>
                     
                         </div>
+                    </div>           
+
+                    <div class="main_caixa_content">
+                        <h2>tostring()</h2>
+                        <div class="codigo">
+                            <p>
+                                .tostring()
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Transforma qualquer valor em uma string</p>
+
+                        </div>
                     </div>
 
                     <div class="main_caixa_content">
-                        <h2>matchAll()</h2>
+                        <h2>valueOf()</h2>
                         <div class="codigo">
                             <p>
-                                <span> const texto = "banana" </span>
-                                <span> const resultado</span> = [...<span>texto</span>.matchAll(<span>"a"</span>)];
+                                <span>let str1 = new String </span> (<span>"ola mundo" </span>)
+                                str1.valueOf()
+                                <span> </span>
                             </p>
                     
                         </div>
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
-                            <p>O método matchAll() é usado para encontrar todas as ocorrências de um padrão dentro de uma string. Ele retorna um iterador contendo informações sobre cada ocorrência encontrada ou seja ele retorna um array com varios arrays com informações da string, so funciona em string</p>
+                            <p>retorna o valor primitivo de um objeto, permitindo que ele seja usado em operações como números, datas ou comparações.</p>
                     
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>eval()</h2>
+                        <div class="codigo">
+                            <p>
+                                .eval()
+                    
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Toda string vira em codigo javascript, e perigoso de se ultizar</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>CharAt()</h2>
+                        <div class="codigo">
+                            <p>
+                                .CharAt(<span>6</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Pega o indice de uma string</p>
+
                         </div>
                     </div>
 
@@ -1299,9 +1118,183 @@
                         </div>
                     </div>
 
-                    
+                    <div class="main_caixa_content">
+                        <h2>foreach()</h2>
+                        <div class="codigo">
+                            <p>
+                               <span>const fruta = ["pera", "uva"]</span> <br>
+                               <span>fruta</span>.forEach(function(<span>valor</span>,<span>indice</span>){
+                                <span>console.log(valor, indice)</span>
+                               })
 
+                                <br>
+                            </p>
                     
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O foreach é uma forma de percorrer (passar por) vários itens de uma lista, um por um, de forma automática, so funciona em arrays.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>PreventDefault()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>form.onsubmit = function (event) {</span> <br>
+                                <span class="span-MaisEspaco spanDentroDeSpan"><span>event</span>.preventDefault();</span> <br>
+                                <span class="span-MaisEspaco">alert("A página NÃO recarregou");</span> <br>
+                                };
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>O preventDefault() impede o comportamento padrão do navegador.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>getComputedStyle()</h2>
+                        <div class="codigo">
+                            <p>
+                               <span>const style = </span>getComputedStyle(document.<span>body</span>)
+                               <span>const body = style.background</span>
+                    
+                                
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ele retorna os estilos finais de um elemento.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>RemoveChild()</h2>
+                        <div class="codigo">
+                            <p>
+                                removeChild(<span>variavel</span>)
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Remove o filho.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>focus()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>input</span>.focus()
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>coloca o foco em um elemento, deixando ele ativo para interação do usuário..</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>mathMedia()</h2>
+                        <div class="codigo">
+                            <p>
+                                window.matchMedia("(<SPAN>max-width: 768px</SPAN>)");
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>window.matchMedia() serve para verificar, no JavaScript, se a tela atende a uma media query do CSS..</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>setInterval()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const time = </span>setInterval(função, tempo em milesegundos)
+                    
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Executa uma função dentro de um intervalo</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>setInterval()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const time = </span>setTimeout(função, tempo em milesegundos)
+                    
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Executa UMA VEZ, depois de um tempo</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>bind()</h2>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>bind() cria uma nova função com o this travado.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>window.getComputedStyle(element)</h2>
+                        <div class="codigo">
+                            <p>
+                                window.getComputedStyle(<span>element</span>)
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>É uma função do navegador que retorna os estilos finais reais de um elemento.</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Boolean()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>let nome = "Bn"<br></span>
+
+                                <span>if (</span>Boolean(nome) <span>) { <br>
+                                    console.log("O nome existe") <br>
+                                    } <br> </span>
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Função que converte um valor para true ou false.</p>
+
+                        </div>
+                    </div>
 
                 </div>
             </section>
@@ -3703,6 +3696,21 @@
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
                             <p>Raiz quadrada de um numero</p>
+
+                        </div>
+                    </div>
+
+                     <div class="main_caixa_content">
+                        <h2>Math</h2>
+                        <div class="codigo">
+                            <p>
+                                Math.cbrt(<span>16</span>)
+                            </p>
+
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Raiz cubica de um numero</p>
 
                         </div>
                     </div>
