@@ -1237,7 +1237,7 @@
                     </div>
 
                     <div class="main_caixa_content">
-                        <h2>setInterval()</h2>
+                        <h2>setTimeout()</h2>
                         <div class="codigo">
                             <p>
                                 <span>const time = </span>setTimeout(função, tempo em milesegundos)
@@ -1249,6 +1249,32 @@
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
                             <p>Executa UMA VEZ, depois de um tempo</p>
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>clearInterval()</h2>
+                        <div class="codigo">
+                            <p>
+                                <span>const intervalo = setInterval(function(){</span> <br>
+                                    <span class="span-MaisEspaco">console.log("setInterval", n++)</span><br>
+
+                                   <span class="span-MuitoMaisEspaco">if(n > 3){</span> <br>
+                                        clearInterval(intervalo)<br>
+                                    <span class="span-MuitoMaisEspaco">}</span><br>
+    
+
+
+                                <span>}, 2000)</span>
+                    
+                    
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Encerra com a função</p>
                     
                         </div>
                     </div>
