@@ -21,10 +21,40 @@ body {
   line-height: 1.6;
 }
 
+.spanEspaço-1 {
+  margin-left: 2rem;
+  display: inline-block;
+}
+
+.spanEspaço-2 {
+  margin-left: 4rem;
+  display: inline-block;
+}
+
+.spanEspaço-3 {
+  margin-left: 6rem;
+  display: inline-block;
+}
+
+.spanEspaço-4 {
+  margin-left: 8rem;
+  display: inline-block;
+}
+
+.spanEspaço-5 {
+  margin-left: 10rem;
+  display: inline-block;
+}
+
+.spanEspaço-6 {
+  margin-left: 12rem;
+  display: inline-block;
+}
+
 /* Offset para os IDs não ficarem cobertos pelo menu */
 #infos, #codigos, #function, #propriedades, #dom, #condicao,
 #estruturaDeRepeticao, #array, #objetoLiteral, #date, #math,
-#POO, #assincrono, #node {
+#POO, #assincrono, #node, #métodos {
   scroll-margin-top: 8rem;
 }
 
