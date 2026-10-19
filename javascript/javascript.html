@@ -4194,13 +4194,42 @@ Assim, valores atribuídos diretamente ao objeto não afetam o valor real proteg
                         </div>
                         <div class="main_caixa_content_explicacao">
                             <h3>Explicação</h3>
-                            <p>npm (Node Package Manager) é o gerenciador de pacotes do Node.js.
-                            
-                            Ele permite:
-                            
-                            instalar bibliotecas (ex: React, Express)
-                            gerenciar dependências do projeto
-                            rodar scripts, no terminal</p>
+                            <p>é usado para criar o arquivo package.json automaticamente em um projeto JavaScript/Node.js</p>
+            
+            
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>package.json</h2>
+                        <div class="codigo">
+                            <p>
+                                
+                            </p>
+            
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>package.json
+É um arquivo que guarda informações e configurações importantes do seu projeto, como nome, versão, dependências e comandos disponíveis.</p>
+<p>Imagine que seu projeto precise usar o Express, uma biblioteca para criar servidores e APIs, O npm instala a biblioteca e registra informações sobre ela no package.json, geralmente na seção dependencies.</p>
+<p>Resumindo o package.json declara quais bibliotecas o projeto precisa e quais versões são aceitas, além de guardar configurações e scripts.</p>
+            
+            
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>package-lock.json</h2>
+                        <div class="codigo">
+                            <p>
+                                
+                            </p>
+            
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>registra as versões exatas que o npm resolveu instalar, incluindo as dependências dessas bibliotecas.</p>
             
             
                         </div>
@@ -4225,6 +4254,82 @@ Assim, valores atribuídos diretamente ao objeto não afetam o valor real proteg
                     </div>
 
                     <div class="main_caixa_content">
+                        <h2>dependencies</h2>
+                        <div class="codigo">
+                            <p>
+                                
+                            </p>
+            
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Bibliotecas necessárias para a aplicação funcionar, inclusive em produção.
+Exemplos: express, pg (PostgreSQL) e jsonwebtoken, quando utilizados pela aplicação em produção.</p>
+            
+            
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>devDependencies</h2>
+                        <div class="codigo">
+                            <p>
+                                npm install <span>express</span> --save-dev
+                            </p>
+                            <p>npm install -D <span>express</span></p>
+                            <p>npm install <span>express</span> --save-prod</p>
+            
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ferramentas necessárias durante o desenvolvimento, mas que normalmente não são necessárias para executar a aplicação em produção.Exemplos: nodemon, eslint e vitest.</p>
+                            <p>Se caso algo esta na devDependencies, e quiser mudar para dependencies e so se baser no terceiro codigo </p>
+            
+            
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>Instalar uma version especifica</h2>
+                        <div class="codigo">
+                            <p>
+                                npm install <span>express</span>@<span>2.1.0</span> -E
+                            </p>
+                            
+            
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>Ira instalar  uma versio especifica</p>
+                            
+            
+            
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>^</h2>
+                        <div class="codigo">
+                            <p>
+                                Exemplo
+                                "express": "^5.3.0"
+                            </p>
+                            
+            
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p><strong>5:</strong>Major, Mudanças principais</p>
+                            <p><strong>3:</strong>Minor, Novas funcionalidades compatíveis</p>
+                            <p><strong>0:</strong>Patch, Correções de bugs</p>
+                            <p>O ^ permite versões a partir da 5.3.0, desde que não mudem a versão principal 5. Isso acontece porque o ^ permite atualizações compatíveis dentro da mesma versão principal, segundo as regras do SemVer.</p>
+                            
+            
+            
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
                         <h2>npm</h2>
                         <div class="codigo">
                             <p>
@@ -4236,6 +4341,40 @@ Assim, valores atribuídos diretamente ao objeto não afetam o valor real proteg
                             <h3>Explicação</h3>
                             <p>pega seu arquivo script.js transforma o código (usando o Babel)
                             gera um novo arquivo chamado nomeDoScriptBabel.js</p>
+                            
+                    
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>uninstall</h2>
+                        <div class="codigo">
+                            <p>
+                                npm uninstall <span>express</span>
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>desinstala a biblioteca ja instalada</p>
+                            
+                    
+                    
+                        </div>
+                    </div>
+
+                    <div class="main_caixa_content">
+                        <h2>lista das bibliotecas</h2>
+                        <div class="codigo">
+                            <p>
+                                npm ls
+                            </p>
+                    
+                        </div>
+                        <div class="main_caixa_content_explicacao">
+                            <h3>Explicação</h3>
+                            <p>mostra a lista de bibliotecas instaladas</p>
                             
                     
                     
