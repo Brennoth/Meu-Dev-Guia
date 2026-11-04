@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,745 +12,644 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!--FONTE-ICONS-->
 </head>
-<body>
-    <header class="header">
 
-        <nav class="header_nav">
+<header class="top-header">
+    <nav class="top-header__nav largura-definida">
+        <div class="top-header__logo">
+            <figure>
+                <a href="excel.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg"
+                        alt="Microsoft Excel logo" width="40">
+                </a>
+            </figure>
+            <p>Caderno de Excel</p>
+        </div>
+        <a href="../index.html" class="top-header__link">
+            <i class="fas fa-home"></i> Início
+        </a>
+    </nav>
+</header>
 
-            <div class="header_logo">
-                <figure>
-                    <a href="excel.html"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg"alt="Microsoft Excel logo" width="50"></a>
-                </figure>
-                <p>Excel</p>
-            </div>
+<div class="layout-container largura-definida">
 
-            <a href="../index.html"> <i class="fas fa-home"></i> Início</a>
-        </nav>
-
-    </header>
-
-    <div class="container">
-
-        <div class="links">
-            <nav class="links_nav">
+    <!-- Sidebar / Índice Lateral -->
+    <aside class="sidebar-index">
+        <div class="sidebar-index__fixed">
+            <h3 class="sidebar-index__title">Índice</h3>
+            <nav class="sidebar-index__nav">
                 <ul>
-                    <li><a href="#abas">Abas</a></li>
-                    <li><a href="#funcao">Funções</a></li>
-                    <li><a href="#if">IF</a></li>
+                    <li><a href="#abas"><span class="marker marker--blue"></span> Abas</a></li>
+                    <li><a href="#info"><span class="marker marker--purple"></span> Info</a></li>
+                    <li><a href="#funcao"><span class="marker marker--green"></span> Funções</a></li>
+                    <li><a href="#if"><span class="marker marker--orange"></span> IF</a></li>
                 </ul>
             </nav>
-
         </div>
+    </aside>
 
+    <!-- Área Principal do Caderno -->
+    <main class="notebook-main">
 
-        <main class="largura-definida main">
+        <!-- SEÇÃO: ABAS -->
+        <section class="notebook-section theme-blue" id="abas">
+            <header class="notebook-section__header">
+                <h1 class="notebook-section__title">Abas</h1>
+                <p class="notebook-section__desc">Conhecendo a interface e menus principais do Excel.</p>
+            </header>
 
-            <section class="main_caixa" id="abas">
-                <h1 class="main_caixa_title">Abas</h1>
-                
-                <div class="main_caixa_side">
-                
-                    <div class="main_caixa_content">
-                        <h2>Arquivo</h2>
-                
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Essa aba serve para mexer no arquivo do Excel..</p>
-                        </div>
+            <div class="cards-grid">
+                <article class="card">
+                    <h2 class="card__title">Arquivo</h2>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Essa aba serve para mexer no arquivo do Excel..</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>Página Inicial</h2>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Serve para editar e formatar células.</p>
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">Página Inicial</h2>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Serve para editar e formatar células.</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>Inserir</h2>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Serve para adicionar elementos na planilha..</p>
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">Inserir</h2>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Serve para adicionar elementos na planilha..</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>Layout da Página</h2>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Controla a aparência da planilha para impressão..</p>
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">Layout da Página</h2>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Controla a aparência da planilha para impressão..</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>Fórmulas</h2>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Serve para trabalhar com funções, cálculos, matemática, procura de dados, Funções e financeiras.</p>
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">Fórmulas</h2>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Serve para trabalhar com funções, cálculos, matemática, procura de dados, Funções e
+                            financeiras.</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>Dados</h2>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Serve para organizar e analisar informações Ordenar A-Z, Filtrar, Remover duplicados, Dividir textos, Atualizar dados externos.</p>
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">Dados</h2>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Serve para organizar e analisar informações Ordenar A-Z, Filtrar, Remover duplicados, Dividir
+                            textos, Atualizar dados externos.</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>Revisão</h2>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Serve para revisar e proteger , ortografia, Inserir comentários, Proteger planilha, Bloquear células.</p>
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">Revisão</h2>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Serve para revisar e proteger , ortografia, Inserir comentários, Proteger planilha, Bloquear
+                            células.</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>Exibir</h2>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Controla a forma como a planilha aparece na tela Dar zoom, Congelar painéis, Mostrar linhas de grade, Abrir.</p>
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">Exibir</h2>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Controla a forma como a planilha aparece na tela Dar zoom, Congelar painéis, Mostrar linhas
+                            de grade, Abrir.</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>Desenvolvedor</h2>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>erve para Macros, VBA, Automação, Botões, Formulário.
-                            </p>
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">Desenvolvedor</h2>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>erve para Macros, VBA, Automação, Botões, Formulário.</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>Ajuda</h2>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Procurar funções, Aprender recursos, Suporte da Microsoft
-                            </p>
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">Ajuda</h2>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Procurar funções, Aprender recursos, Suporte da Microsoft</p>
                     </div>
-                
-                </div>
-            </section>
+                </article>
+            </div>
+        </section>
 
-            <section class="main_caixa">
-                <h1 class="main_caixa_title">Info</h1>
+        <!-- SEÇÃO: INFO -->
+        <section class="notebook-section theme-purple" id="info">
+            <header class="notebook-section__header">
+                <h1 class="notebook-section__title">Info</h1>
+                <p class="notebook-section__desc">Informações gerais, atalhos e dicas essenciais.</p>
+            </header>
 
-                <div class="main_caixa_side">
-
-                    <div class="main_caixa_content">
-                        <h2>Ancora</h2>
-                    
-                        <div class="codigo">
-                            <p>$<span>A</span>$1</p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Quando você arrasta uma fórmula, a âncora impede que certas partes mudem, vc seleciona oq vc quer travar e apertar o f4.</p>              
-                        </div>
+            <div class="cards-grid">
+                <article class="card">
+                    <h2 class="card__title">Ancora</h2>
+                    <div class="card__code">
+                        <p>$<span>A</span>$1</p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>mostrar o dia da semana</h2>
-                    
-                        <div class="codigo">
-                            <span>21/10/2026</span>
-                            =TEXTO(A1;"DDDD")
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>o resultado ira sair como o dia da semana se colocar o "dddd"</p>              
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Quando você arrasta uma fórmula, a âncora impede que certas partes mudem, vc seleciona oq vc
+                            quer travar e apertar o f4.</p>
                     </div>
+                </article>
 
-                </div>
-
-            </section>
-
-            <section class="main_caixa" id="funcao">
-                <h1 class="main_caixa_title">Funções</h1>
-
-                <div class="main_caixa_side">
-
-                    <div class="main_caixa_content">
-                        <h2>CONCATENAR()</h2>
-                    
-                        <div class="codigo">
-                            <p><span>Brenno |</span> <span>Thiago</span> = CONCATENAR(<span>A1;" ";B1</span>)</p>
-                            <p class="res">Resultado = <span>Brenno Thiago</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>O excel ira juntar. <br><strong>O primeiro (A1);</strong> tera que selecionar a palavra.
-                                <br><strong>O segundo ("");</strong> e so para deixar um espaço. <br><strong>O terceiro (B1);</strong> Vc
-                                seleciona a outra palavra que quer juntar
-                            </p>
-                    
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">mostrar o dia da semana</h2>
+                    <div class="card__code">
+                        <span class="code-context">21/10/2026</span>
+                        <p>=TEXTO(A1;"DDDD")</p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>EXE.TEXT()</h2>
-
-                        <div class="codigo">
-                            <p><span>983.456.abc-10</span> = EXT.TEXTO(<span>A1;9;3</span>)</p>
-                            <p class="res">Resultado = <span>abc</span></p>
-                        </div>
-
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Seleciona o caracter que desejar. <br><strong>O primeiro (A1);</strong> tera que selecionar a palavra. <br><strong>O segundo (9);</strong> vc seleciona aonde quer começar. <br><strong>O terceiro (3);</strong> vc seleciona quantos caracter são</p>
-                    
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>o resultado ira sair como o dia da semana se colocar o "dddd"</p>
                     </div>
+                </article>
+            </div>
+        </section>
 
-                    <div class="main_caixa_content">
-                        <h2>LOCALIZAR()</h2>
-                    
-                        <div class="codigo">
-                            <p><span>Brenno Thiago Sousa</span> = LOCALIZAR(<span>Thiago;A1;1</span>)</p>
-                            <p class="res">Resultado = <span>8</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>O excel ira procurar o texto que vc quer, e ira mostrar o indice desse texto. <br><strong>O primeiro (Thiago);</strong> É o texto que vc quer achar
-                                <br><strong>O segundo (A1);</strong>É a frase onde vc quer selecionar o texto. <br><strong>O terceiro (1);</strong>Por onde o excel ira começar a procurar
-                            </p>
-                    
-                        </div>
+        <!-- SEÇÃO: FUNÇÕES -->
+        <section class="notebook-section theme-green" id="funcao">
+            <header class="notebook-section__header">
+                <h1 class="notebook-section__title">Funções</h1>
+                <p class="notebook-section__desc">Sintaxes, comportamentos e exemplos de cálculos.</p>
+            </header>
+
+            <div class="cards-grid">
+                <article class="card">
+                    <h2 class="card__title">CONCATENAR()</h2>
+                    <div class="card__code">
+                        <p><span>Brenno |</span> <span>Thiago</span> = CONCATENAR(<span>A1;" ";B1</span>)</p>
+                        <p class="res">Resultado = <span>Brenno Thiago</span></p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>PROCURAR()</h2>
-                    
-                        <div class="codigo">
-                            <p><span>Brenno Thiago Sousa</span> = PROCURAR(<span>Thiago;A1;1</span>)</p>
-                            <p class="res">Resultado = <span>8</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>O excel ira procurar o texto que vc quer, e ira mostrar o indice desse texto e A função PROCURAR() não diferencia letras maiúsculas e minúsculas e aceita o uso de curingas (* e ?)s. <br><strong>O primeiro (Thiago);</strong> É o texto que vc quer achar
-                                <br><strong>O segundo (A1);</strong>É a frase onde vc quer selecionar o texto. <br><strong>O terceiro (1);</strong>Por onde o excel ira começar a procurar
-                            </p>
-                    
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>O excel ira juntar. <br><strong>O primeiro (A1);</strong> tera que selecionar a palavra.
+                            <br><strong>O segundo ("");</strong> e so para deixar um espaço. <br><strong>O terceiro
+                                (B1);</strong> Vc seleciona a outra palavra que quer juntar
+                        </p>
                     </div>
+                </article>
 
-
-
-                    <div class="main_caixa_content">
-                        <h2>LOCALIZAR() + EXE.TEXTO()</h2>
-                    
-                        <div class="codigo">
-                            <p><span>Brenno Thiago Sousa</span> = EXE.TEXTO(<span>A1;</span>LOCALIZAR<span>("Thiago";A1;1)</span>;6) </p>
-                            <p class="res">Resultado = <span>Brenno</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Seleciona o caracter que desejar.<br>
-                                <strong>O primeiro (A1);</strong> tera que selecionar a frase/palavra. <br>
-                                <strong>O segundo (1);</strong> vc seleciona aonde quer começar. <br>
-                                <strong>O terceiro (LOCALIZAR);</strong> vc seleciona quantos caracter são, pq a função localizar retorna o indice.
-                            </p>
-                    
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">EXE.TEXT()</h2>
+                    <div class="card__code">
+                        <p><span>983.456.abc-10</span> = EXT.TEXTO(<span>A1;9;3</span>)</p>
+                        <p class="res">Resultado = <span>abc</span></p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>MINÚSCULA()</h2>
-                    
-                        <div class="codigo">
-                            <p><span>Brenno Thiago Sousa</span> =MINÚSCULA(<span>A1</span>)</p>
-                            <p class="res">Resultado = <span>brenno thiago sousa</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>O excel ira deixar o texto minúsculo
-                            </p>
-                    
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Seleciona o caracter que desejar. <br><strong>O primeiro (A1);</strong> tera que selecionar a
+                            palavra. <br><strong>O segundo (9);</strong> vc seleciona aonde quer começar. <br><strong>O
+                                terceiro (3);</strong> vc seleciona quantos caracter são</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>MAIÚSCULA()</h2>
-                    
-                        <div class="codigo">
-                            <p><span>Brenno Thiago Sousa</span> =MAIÚSCULA(<span>A1</span>)</p>
-                            <p class="res">Resultado = <span>BRENNO THIAGO SOUSA</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>O excel ira deixar o texto maisúsculo
-                            </p>
-                    
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">LOCALIZAR()</h2>
+                    <div class="card__code">
+                        <p><span>Brenno Thiago Sousa</span> = LOCALIZAR(<span>Thiago;A1;1</span>)</p>
+                        <p class="res">Resultado = <span>8</span></p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>PRI.MAIÚSCULA()</h2>
-                    
-                        <div class="codigo">
-                            <p><span>Brenno Thiago Sousa</span> =PRI.MAIÚSCULA(<span>A1</span>)</p>
-                            <p class="res">Resultado = <span>Brenno Thiago Sousa</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>O excel ira deixar a primeira palavra do texto em maisúsculo
-                            </p>
-                    
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>O excel ira procurar o texto que vc quer, e ira mostrar o indice desse texto. <br><strong>O
+                                primeiro (Thiago);</strong> É o texto que vc quer achar
+                            <br><strong>O segundo (A1);</strong>É a frase onde vc quer selecionar o texto. <br><strong>O
+                                terceiro (1);</strong>Por onde o excel ira começar a procurar
+                        </p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>ESQUERDA()</h2>
-                    
-                        <div class="codigo">
-                            <p><span>Brenno Thiago Sousa</span> =ESQUERDA(<span>A1;1</span>)</p>
-                            <p class="res">Resultado = <span>B</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>O excel ira selecionar a quantidade de caracter do lado esquerdo da frase.</p>
-                            <p><strong>O primeiro (A1)</strong> ira selecionar o texto</p>
-                            <p><strong>O segundo (1)</strong> ira selecionar quantas caracter são</p>
-                    
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">PROCURAR()</h2>
+                    <div class="card__code">
+                        <p><span>Brenno Thiago Sousa</span> = PROCURAR(<span>Thiago;A1;1</span>)</p>
+                        <p class="res">Resultado = <span>8</span></p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>DIREITA()</h2>
-                    
-                        <div class="codigo">
-                            <p><span>Brenno Thiago Sousa</span> =DIREITA(<span>A1;1</span>)</p>
-                            <p class="res">Resultado = <span>a</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>O excel ira selecionar a quantidade de caracter do lado direito da frase.</p>
-                            <p><strong>O primeiro (A1)</strong> ira selecionar o texto</p>
-                            <p><strong>O segundo (1)</strong> ira selecionar quantas caracter são</p>
-                    
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>O excel ira procurar o texto que vc quer, e ira mostrar o indice desse texto e A função
+                            PROCURAR() não diferencia letras maiúsculas e minúsculas e aceita o uso de curingas (* e
+                            ?)s. <br><strong>O primeiro (Thiago);</strong> É o texto que vc quer achar
+                            <br><strong>O segundo (A1);</strong>É a frase onde vc quer selecionar o texto. <br><strong>O
+                                terceiro (1);</strong>Por onde o excel ira começar a procurar
+                        </p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>COPIAR"não e função"</h2>
-                    
-                        <div class="codigo">
-                            <p><span>Brenno</span> =(<span>A1</span>)</p>
-                            <p class="res">Resultado = <span>Brenno</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>serve so para copiar o mesmo texto</p>
-                            
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">LOCALIZAR() + EXE.TEXTO()</h2>
+                    <div class="card__code">
+                        <p><span>Brenno Thiago Sousa</span> =
+                            EXE.TEXTO(<span>A1;</span>LOCALIZAR<span>("Thiago";A1;1)</span>;6) </p>
+                        <p class="res">Resultado = <span>Brenno</span></p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>ARRUMAR()</h2>
-                    
-                        <div class="codigo">
-                            <p><span>Brenno</span> <span style="margin-left: 1.5rem;">Thiago</span> =ARRUMAR(<span>A1</span>)</p>
-                            <p class="res">Resultado = <span>Brenno Thiago</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>serve para limpar espaços desnecessários dentro de um texto, deixando ele “arrumado”, organizado e mais fácil de
-                            trabalhar..</p>
-                            <p><strong>O primeiro (A1)</strong> ira selecionar o texto para arrumar</p>               
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Seleciona o caracter que desejar.<br>
+                            <strong>O primeiro (A1);</strong> tera que selecionar a frase/palavra. <br>
+                            <strong>O segundo (1);</strong> vc seleciona aonde quer começar. <br>
+                            <strong>O terceiro (LOCALIZAR);</strong> vc seleciona quantos caracter são, pq a função
+                            localizar retorna o indice.
+                        </p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>SUBSTITUIR()</h2>
-                    
-                        <div class="codigo">
-                            <p><span>Brenno Sousa</span>=SUBSTITUIR(<span>A1;"Sousa";"Thiago"</span>)</p>
-                            <p class="res">Resultado = <span>Brenno Thiago</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Serve para substituir as palavras/frases, por outras</p>
-                            <p><strong>O primeiro (A1)</strong> ira selecionar o texto para arrumar.</p>
-                            <p><strong>O segundo ("Sousa"):</strong>E o texto que vc quer substituir.</p>
-                            <p><strong>O terceiro ("Thiago"):</strong>E o novo texto que vc quer colocar</p>
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">MINÚSCULA()</h2>
+                    <div class="card__code">
+                        <p><span>Brenno Thiago Sousa</span> =MINÚSCULA(<span>A1</span>)</p>
+                        <p class="res">Resultado = <span>brenno thiago sousa</span></p>
                     </div>
-
-
-                    <div class="main_caixa_content">
-                        <h2>MUDAR()</h2>
-                    
-                        <div class="codigo">
-                            <p><span>Brenno Sousa</span>=MUDAR(<span>A1;7;5"Thiago"</span>)</p>
-                            <p class="res">Resultado = <span>Brenno Thiago</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Essa função serve para substituir caracteres pela posição dentro do texto.</p>
-                            <p><strong>O primeiro (A1)</strong> ira selecionar o texto para arrumar.</p>
-                            <p><strong>O segundo (7):</strong>começar no caractere 17</p>
-                            <p><strong>O terceiro (5):</strong>substituir 5 caracteres</p>
-                            <p><strong>O quarto (thiago):</strong>Novo texto</p>
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>O excel ira deixar o texto minúsculo</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>SUBTOTAL()</h2>
-                    
-                        <div class="codigo">
-                            <p><span>2 2 2</span>=SUBTOTAL(<span>1;A1:C1</span>)</p>
-                            <p class="res">Resultado = <span>3</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Serve para realizar varios calculos, neste exemplo e a média</p>
-                            <p><strong>O primeiro (1)</strong> ira selecionar o calculo que vc quer.</p>
-                            <p><strong>O segundo (A1):</strong>E o numero que vc quer calcular.</p>
-                            <p><strong>O terceiro (C1):</strong>Vai ateo outro numero que vc quer calcular</p>
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">MAIÚSCULA()</h2>
+                    <div class="card__code">
+                        <p><span>Brenno Thiago Sousa</span> =MAIÚSCULA(<span>A1</span>)</p>
+                        <p class="res">Resultado = <span>BRENNO THIAGO SOUSA</span></p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>DATA()</h2>
-                    
-                        <div class="codigo">
-                            <p>DATA(<span>2026</span>;<span>01</span>;<span>03</span>)</p>
-                            <p class="res">Resultado = <span>03/01/2026</span></p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Colocar uma data especifica</p>
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>O excel ira deixar o texto maisúsculo</p>
                     </div>
+                </article>
 
-
-                    <div class="main_caixa_content">
-                        <h2>AGREGAR()</h2>
-                    
-                        <div class="codigo">
-                            <p>AGREGAR(<span>1</span>;<span>6</span>;<span>A1</span>;<span>A2</span>)</p>
-                             
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>é uma função avançada que permite realizar cálculos como SOMA, MÉDIA, MÁXIMO, MÍNIMO, CONTAGEM, entre outros, com uma grande vantagem: ela pode ignorar erros, linhas ocultas e outras funções SUBTOTAL/AGREGAR.</p>
-                            <p><strong>O primeiro (1)</strong> ira selecionar o calculo que vc quer.</p>
-                            <p><strong>O segundo (6):</strong>IRA selecionar oq vc quer isgnorar.</p>
-                            <p><strong>O terceiro (A1):</strong>Vai ateo outro numero que vc quer calcular</p>
-                            <p><strong>O terceiro (A2):</strong>Vai ateo outro numero que vc quer calcular</p>
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">PRI.MAIÚSCULA()</h2>
+                    <div class="card__code">
+                        <p><span>Brenno Thiago Sousa</span> =PRI.MAIÚSCULA(<span>A1</span>)</p>
+                        <p class="res">Resultado = <span>Brenno Thiago Sousa</span></p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>CONT.SE()</h2>
-                    
-                        <div class="codigo">
-                            <p>
-                                <span>breno</span> <br> 
-                                <span>thiago</span> <br>
-                                <span>brenno</span> <br> 
-
-                                =CONT.SE(<span>A1:A3</span>;<span>brenno</span>)
-                            
-                            </p>
-                            <p class="res">Resultado = <span>2</span> </p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>A função CONT.SE() serve para contar quantas células atendem a um determinado critério.</p>
-                            <p><strong>O primeiro (A1)</strong> ira selecionar o texto para analisar.</p>
-                            <p><strong>O segundo (A3):</strong> ira selecionar o texto para analisar</p>
-                            <p><strong>O terceiro (brenno):</strong> sera o texto analisado</p>
-                            <p><strong>O quarto (thiago):</strong></p>
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>O excel ira deixar a primeira palavra do texto em maisúsculo</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>ARRED()</h2>
-                    
-                        <div class="codigo">
-                            <p>
-                                <span>12344,6668</span> <br>
-
-                                =ARRED(<span>A1</span>;<span>1</span>)
-                            
-                            </p>
-                            <p class="res">Resultado = <span>12344,7</span> </p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>A função serve para arredontar valores.</p>
-                            <p><strong>O (1)</strong> quantas casas decimais quer.</p>
-                            
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">ESQUERDA()</h2>
+                    <div class="card__code">
+                        <p><span>Brenno Thiago Sousa</span> =ESQUERDA(<span>A1;1</span>)</p>
+                        <p class="res">Resultado = <span>B</span></p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>ARREDONDAR.PARA.BAIXO()</h2>
-                    
-                        <div class="codigo">
-                            <p>
-                                <span>12344,6668</span> <br>
-
-                                =ARRED(<span>A1</span>;<span>2</span>)
-                            
-                            </p>
-                            <p class="res">Resultado = <span>12344,66</span> </p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>A função serve para arredontar pra baixo.</p>
-                            <p><strong>O (2)</strong> quantas casas decimais quer.</p>
-                            
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>O excel ira selecionar a quantidade de caracter do lado esquerdo da frase.</p>
+                        <p><strong>O primeiro (A1)</strong> ira selecionar o texto</p>
+                        <p><strong>O segundo (1)</strong> ira selecionar quantas caracter são</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>ARREDONDAR.PARA.CIMA()</h2>
-                    
-                        <div class="codigo">
-                            <p>
-                                <span>12344,6668</span> <br>
-
-                                =ARRED(<span>A1</span>;<span>2</span>)
-                            
-                            </p>
-                            <p class="res">Resultado = <span>12344,67</span> </p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>A função serve para arredontar pra cima.</p>
-                            <p><strong>O (2)</strong> quantas casas decimais quer.</p>
-                            
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">DIREITA()</h2>
+                    <div class="card__code">
+                        <p><span>Brenno Thiago Sousa</span> =DIREITA(<span>A1;1</span>)</p>
+                        <p class="res">Resultado = <span>a</span></p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>TRUNCAR()</h2>
-                    
-                        <div class="codigo">
-                            <p>
-                                <span>60,78</span> <br>
-
-                                =TRUNCAR(<span>A1</span>;<span>0</span>)
-                            
-                            </p>
-                            <p class="res">Resultado = <span>60,00</span> </p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Remove o decimal deixando apenas o número inteiro.</p>
-                            <p><strong>O (9)</strong> quantas casas decimais quer tirar.</p>
-                            
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>O excel ira selecionar a quantidade de caracter do lado direito da frase.</p>
+                        <p><strong>O primeiro (A1)</strong> ira selecionar o texto</p>
+                        <p><strong>O segundo (1)</strong> ira selecionar quantas caracter são</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>INT()</h2>
-                    
-                        <div class="codigo">
-                            <p>
-                                <span>60,78</span> <br>
-
-                                =INT(<span>A1</span>)
-                            
-                            </p>
-                            <p class="res">Resultado = <span>60,00</span> </p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Retorna o número inteiro anterior.</p>
-                            
-                            
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">COPIAR"não e função"</h2>
+                    <div class="card__code">
+                        <p><span>Brenno</span> =(<span>A1</span>)</p>
+                        <p class="res">Resultado = <span>Brenno</span></p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>PAR()</h2>
-                    
-                        <div class="codigo">
-                            <p>
-                                <span>60,78</span> <br>
-
-                                =PAR(<span>A1</span>)
-                            
-                            </p>
-                            <p class="res">Resultado = <span>62,00</span> </p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p> Retorna o número arredondado para o inteiro PAR mais próximo..</p>
-                            
-                            
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>serve so para copiar o mesmo texto</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>ÍMPAR()</h2>
-                    
-                        <div class="codigo">
-                            <p>
-                                <span>60,78</span> <br>
-
-                                =ÍMPAR(<span>A1</span>)
-                            
-                            </p>
-                            <p class="res">Resultado = <span>61,00</span> </p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p> Retorna o número arredondado para cima até o inteiro ímpar mais próximo...</p>
-                            
-                            
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">ARRUMAR()</h2>
+                    <div class="card__code">
+                        <p><span>Brenno</span> <span style="margin-left: 1.5rem;">Thiago</span>
+                            =ARRUMAR(<span>A1</span>)</p>
+                        <p class="res">Resultado = <span>Brenno Thiago</span></p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>ÉNÚM()</h2>
-                    
-                        <div class="codigo">
-                            <p>
-                                <span>1</span><br>
-                                =ÉNÚM(<span>A1</span>)
-                            
-                            </p>
-                            <p class="res">Resultado = <span>VERDADEIRO</span> </p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p> ira retonar se o valor e um numero ou n</p>
-                            
-                            
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>serve para limpar espaços desnecessários dentro de um texto, deixando ele “arrumado”,
+                            organizado e mais fácil de trabalhar..</p>
+                        <p><strong>O primeiro (A1)</strong> ira selecionar o texto para arrumar</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>ÉNÚM()</h2>
-                    
-                        <div class="codigo">
-                            <p>
-                                <span>1</span><br>
-                                =ÉNÚM(<span>A1</span>)
-                            
-                            </p>
-                            <p class="res">Resultado = <span>VERDADEIRO</span> </p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p> ira retonar se o valor e um numero ou n</p>
-                            
-                            
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">SUBSTITUIR()</h2>
+                    <div class="card__code">
+                        <p><span>Brenno Sousa</span>=SUBSTITUIR(<span>A1;"Sousa";"Thiago"</span>)</p>
+                        <p class="res">Resultado = <span>Brenno Thiago</span></p>
                     </div>
-
-                    
-
-                    
-
-                    
-
-                    
-
-                </div>
-
-            </section>
-
-            <section class="main_caixa" id="if">
-                <h1 class="main_caixa_title">IF</h1>
-
-                <div class="main_caixa_side">
-
-                    <div class="main_caixa_content">
-                        <h2>IF</h2>
-                    
-                        <div class="codigo">
-                            <p><span>9</span> =SE(<span>A1</span>>=<span>7</span>;"<span>true</span>";"<span>false</span>")</p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Ira vereficar se uma condição de verdadeira ou não</p>              
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Serve para substituir as palavras/frases, por outras</p>
+                        <p><strong>O primeiro (A1)</strong> ira selecionar o texto para arrumar.</p>
+                        <p><strong>O segundo ("Sousa"):</strong>E o texto que vc quer substituir.</p>
+                        <p><strong>O terceiro ("Thiago"):</strong>E o novo texto que vc quer colocar</p>
                     </div>
+                </article>
 
-                    <div class="main_caixa_content">
-                        <h2>IF E</h2>
-                        <span>banana</span> <span>5</span>
-                    
-                        <div class="codigo">
-                            <p>=SE(E(A1="banana";A2=5);"Comprar banana dia 5"; "Não comprar")</p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>Quando os testes logicos todos tem que ser verdadeiro</p>              
-                        </div>
+                <article class="card">
+                    <h2 class="card__title">MUDAR()</h2>
+                    <div class="card__code">
+                        <p><span>Brenno Sousa</span>=MUDAR(<span>A1;7;5"Thiago"</span>)</p>
+                        <p class="res">Resultado = <span>Brenno Thiago</span></p>
                     </div>
-
-                    <div class="main_caixa_content">
-                        <h2>IF OU</h2>
-                        <span>banana</span> <span>5</span>
-                    
-                        <div class="codigo">
-                            <p>=SE(OU(A1="banana";A2=5);"Comprar banana dia 5"; "Não comprar")</p>
-                        </div>
-                    
-                        <div class="main_caixa_content_explicacao">
-                            <h3>Explicação</h3>
-                            <p>quando os dois testes logico apenas 1 recisa ser verdadeiro</p>              
-                        </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Essa função serve para substituir caracteres pela posição dentro do texto.</p>
+                        <p><strong>O primeiro (A1)</strong> ira selecionar o texto para arrumar.</p>
+                        <p><strong>O segundo (7):</strong>começar no caractere 17</p>
+                        <p><strong>O terceiro (5):</strong>substituir 5 caracteres</p>
+                        <p><strong>O quarto (thiago):</strong>Novo texto</p>
                     </div>
+                </article>
 
-                </div>
+                <article class="card">
+                    <h2 class="card__title">SUBTOTAL()</h2>
+                    <div class="card__code">
+                        <p><span>2 2 2</span>=SUBTOTAL(<span>1;A1:C1</span>)</p>
+                        <p class="res">Resultado = <span>3</span></p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Serve para realizar varios calculos, neste exemplo e a média</p>
+                        <p><strong>O primeiro (1)</strong> ira selecionar o calculo que vc quer.</p>
+                        <p><strong>O segundo (A1):</strong>E o numero que vc quer calcular.</p>
+                        <p><strong>O terceiro (C1):</strong>Vai ateo outro numero que vc quer calcular</p>
+                    </div>
+                </article>
 
-            </section>
+                <article class="card">
+                    <h2 class="card__title">DATA()</h2>
+                    <div class="card__code">
+                        <p>DATA(<span>2026</span>;<span>01</span>;<span>03</span>)</p>
+                        <p class="res">Resultado = <span>03/01/2026</span></p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Colocar uma data especifica</p>
+                    </div>
+                </article>
 
-        </main>
+                <article class="card">
+                    <h2 class="card__title">AGREGAR()</h2>
+                    <div class="card__code">
+                        <p>AGREGAR(<span>1</span>;<span>6</span>;<span>A1</span>;<span>A2</span>)</p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>é uma função avançada que permite realizar cálculos como SOMA, MÉDIA, MÁXIMO, MÍNIMO,
+                            CONTAGEM, entre outros, com uma grande vantagem: ela pode ignorar erros, linhas ocultas e
+                            outras funções SUBTOTAL/AGREGAR.</p>
+                        <p><strong>O primeiro (1)</strong> ira selecionar o calculo que vc quer.</p>
+                        <p><strong>O segundo (6):</strong>IRA selecionar oq vc quer isgnorar.</p>
+                        <p><strong>O terceiro (A1):</strong>Vai ateo outro numero que vc quer calcular</p>
+                        <p><strong>O terceiro (A2):</strong>Vai ateo outro numero que vc quer calcular</p>
+                    </div>
+                </article>
 
-    </div>
+                <article class="card">
+                    <h2 class="card__title">CONT.SE()</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>breno</span> <br>
+                            <span>thiago</span> <br>
+                            <span>brenno</span> <br>
+                            =CONT.SE(<span>A1:A3</span>;<span>brenno</span>)
+                        </p>
+                        <p class="res">Resultado = <span>2</span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>A função CONT.SE() serve para contar quantas células atendem a um determinado critério.</p>
+                        <p><strong>O primeiro (A1)</strong> ira selecionar o texto para analisar.</p>
+                        <p><strong>O segundo (A3):</strong> ira selecionar o texto para analisar</p>
+                        <p><strong>O terceiro (brenno):</strong> sera o texto analisado</p>
+                        <p><strong>O quarto (thiago):</strong></p>
+                    </div>
+                </article>
 
-    
+                <article class="card">
+                    <h2 class="card__title">ARRED()</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>12344,6668</span> <br>
+                            =ARRED(<span>A1</span>;<span>1</span>)
+                        </p>
+                        <p class="res">Resultado = <span>12344,7</span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>A função serve para arredontar valores.</p>
+                        <p><strong>O (1)</strong> quantas casas decimais quer.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">ARREDONDAR.PARA.BAIXO()</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>12344,6668</span> <br>
+                            =ARRED(<span>A1</span>;<span>2</span>)
+                        </p>
+                        <p class="res">Resultado = <span>12344,66</span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>A função serve para arredontar pra baixo.</p>
+                        <p><strong>O (2)</strong> quantas casas decimais quer.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">ARREDONDAR.PARA.CIMA()</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>12344,6668</span> <br>
+                            =ARRED(<span>A1</span>;<span>2</span>)
+                        </p>
+                        <p class="res">Resultado = <span>12344,67</span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>A função serve para arredontar pra cima.</p>
+                        <p><strong>O (2)</strong> quantas casas decimais quer.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">TRUNCAR()</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>60,78</span> <br>
+                            =TRUNCAR(<span>A1</span>;<span>0</span>)
+                        </p>
+                        <p class="res">Resultado = <span>60,00</span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Remove o decimal deixando apenas o número inteiro.</p>
+                        <p><strong>O (9)</strong> quantas casas decimais quer tirar.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">INT()</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>60,78</span> <br>
+                            =INT(<span>A1</span>)
+                        </p>
+                        <p class="res">Resultado = <span>60,00</span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Retorna o número inteiro anterior.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">PAR()</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>60,78</span> <br>
+                            =PAR(<span>A1</span>)
+                        </p>
+                        <p class="res">Resultado = <span>62,00</span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p> Retorna o número arredondado para o inteiro PAR mais próximo..</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">ÍMPAR()</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>60,78</span> <br>
+                            =ÍMPAR(<span>A1</span>)
+                        </p>
+                        <p class="res">Resultado = <span>61,00</span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p> Retorna o número arredondado para cima até o inteiro ímpar mais próximo...</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">ÉNÚM()</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>1</span><br>
+                            =ÉNÚM(<span>A1</span>)
+                        </p>
+                        <p class="res">Resultado = <span>VERDADEIRO</span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p> ira retonar se o valor e um numero ou n</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">ÉNÚM()</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>1</span><br>
+                            =ÉNÚM(<span>A1</span>)
+                        </p>
+                        <p class="res">Resultado = <span>VERDADEIRO</span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p> ira retonar se o valor e um numero ou n</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO: IF -->
+        <section class="notebook-section theme-orange" id="if">
+            <header class="notebook-section__header">
+                <h1 class="notebook-section__title">Condicionais (IF)</h1>
+                <p class="notebook-section__desc">Lógica de validação e testes lógicos.</p>
+            </header>
+
+            <div class="cards-grid">
+                <article class="card">
+                    <h2 class="card__title">IF</h2>
+                    <div class="card__code">
+                        <p><span>9</span> =SE(<span>A1</span>>=<span>7</span>;"<span>true</span>";"<span>false</span>")
+                        </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Ira vereficar se uma condição de verdadeira ou não</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">IF E</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>banana</span>
+                            <span>5</span> <br>
+                            =SE(E(A1="banana";A2=5);"Comprar banana dia 5"; "Não comprar")
+
+                        </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Quando os testes logicos todos tem que ser verdadeiro</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">IF OU</h2>  
+                    <div class="card__code">
+                        <p>
+                            <span>banana</span>
+                            <span>5</span> <br>
+                            =SE(OU(A1="banana";A2=5);"Comprar banana dia 5"; "Não comprar")
+                        </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>quando os dois testes logico apenas 1 recisa ser verdadeiro</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+</div>
 </body>
+
 </html>
