@@ -178,6 +178,18 @@
                         <p>o resultado ira sair como o dia da semana se colocar o "dddd"</p>
                     </div>
                 </article>
+
+                <article class="card">
+                    <h2 class="card__title">Lista de dados</h2>
+                    <div class="card__code">
+                        <span class="code-context">21/10/2026</span>
+                        <p>=TEXTO(A1;"DDDD")</p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Fazer uma lista de dados, em dentro d apropria planilha ou em outra, ir na aba de dados, ir em validação de dados, e dps em lista</p>
+                    </div>
+                </article>
             </div>
         </section>
 
@@ -592,6 +604,123 @@
                     <div class="card__explanation">
                         <h3>Explicação</h3>
                         <p> ira retonar se o valor e um numero ou n</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">PROCV()</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>A</span> <span style="margin-left: 2rem;">B</span> <br>
+                            <span>123</span> <span>MEIA</span> <br>
+                            <span>12</span> <span>TENIS</span> <br>
+
+                            =PROCV("<span>123</span>;<span>A:B</span>;<span>2</span>;<span>0</span>")
+                        </p>
+                        <p class="res">Resultado = <span>MEIA</span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>
+                            <strong>123: </strong>E o valor que vai ser procurado <br>
+                            <strong>A:B: </strong>E as colunas que serão selecionadas <br>
+                            <strong>2: </strong>E o numero da coluna que vai ser selecionada <br>
+                            <strong>0: </strong>Indica que queremos uma correspondência exata, ou seja, encontrar exatamente o valor procurado. 
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">SEERRO()</h2>
+                    <div class="card__code">
+                        <p>
+                            =SEERRO("<span>Alguma função</span>;<span>Texto que vc quer deixar como erro</span>")
+                        </p>
+                        <p class="res">Resultado = <span></span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>Se caso der erro em algo, vc vai poder deixar uma mensagem</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">COL()</h2>
+                    <div class="card__code">
+                        <p>
+                             =COL(<span>B5</span>)
+                        </p>
+                        <p class="res">Resultado = <span>2</span></p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>
+                            <strong>B5:</strong> É a referência da célula
+                                da qual queremos descobrir o número da coluna.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">LIN()</h2>
+                    <div class="card__code">
+                        <p>
+                             =LIN(<span>B5</span>)
+                        </p>
+                        <p class="res">Resultado = <span>5</span></p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>
+                            <strong>B5:</strong> É a referência da célula
+                                da qual queremos descobrir o número da linha.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">ÍNDICE()</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>A</span> <span style="margin-left: 2rem;">B</span> <br>
+                            <span>123</span> <span>MEIA</span> <br>
+                            <span>12</span> <span>TENIS</span> <br>
+
+                            =ÍNDICE("<span>A:B</span>;<span>2</span>;<span>3</span>")
+                        </p>
+                        <p class="res">Resultado = <span>MEIA</span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>
+                            Retorna um valor ou a refer~encia da célula na interseção de uma linha e coluna específica, em um dado intervalo <br>
+                            <strong>A:B: </strong>E as colunas que serão selecionadas <br>
+                            <strong>2: </strong>E o numero da linha <br>
+                            <strong>2: </strong>E o numero da coluna
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">CORRESP()</h2>
+                    <div class="card__code">
+                        <p>
+                            <span>A</span> <span style="margin-left: 2rem;">B</span> <br>
+                            <span>123</span> <span>MEIA</span> <br>
+                            <span>12</span> <span>TENIS</span> <br>
+
+                            =CORRESP("<span>B2</span>;<span>B1:B2</span>;<span>0</span>")
+                        </p>
+                        <p class="res">Resultado = <span>2</span> </p>
+                    </div>
+                    <div class="card__explanation">
+                        <h3>Explicação</h3>
+                        <p>
+                            Retorna o indice do valor<br>
+                            <strong>B2: </strong>E o valor selecionado<br>
+                            <strong>B1:B2 </strong>E a coluna selecionado com os dados <br>
+                            <strong>0: </strong>Indica que queremos uma correspondência exata, ou seja, encontrar exatamente o valor procurado.
+                        </p>
                     </div>
                 </article>
 
